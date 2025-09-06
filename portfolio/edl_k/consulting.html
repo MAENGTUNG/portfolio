@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="">
+	<meta name="keywords" content="">
+	<meta name="Author" content="yoon">
+	<title>EDL_K</title>
+	<link rel="stylesheet" href="./resources/css/jquery.mCustomScrollbar.css"> <!-- 20200113 추가 -->
+	<link rel="stylesheet" href="./resources/css/aos.css">
+	<link rel="stylesheet" href="./resources/css/swiper.min.css">
+	<link rel="stylesheet" href="./resources/css/slick.css">
+	<link rel="stylesheet" href="./resources/css/slick-theme.css">
+	<link rel="stylesheet" href="./resources/css/default.css">
+	<link rel="stylesheet" href="./resources/css/main.css"> <!-- 20200203 추가 -->
+	<link rel="stylesheet" href="./resources/css/page.css">
+	<script src="./resources/js/jquery-3.3.1.js"></script>
+	<script src="./resources/js/modernizr.custom.js"></script>
+	<script src="./resources/js/jquery.mCustomScrollbar.js"></script> <!-- 20200113 추가 -->
+	<script src="./resources/js/aos.js"></script>
+	<script src="./resources/js/swiper.min.js"></script>
+	<script src="./resources/js/slick.min.js"></script>
+</head>
+<body class="sub">
+
+	<div class="s-wrap">
+		<a href="#contents" class="skip">본문바로가기</a>
+
+		<!-- 상단 시작 -->
+		<header class="header">
+			<h1 class="logo">
+				<a href="main.html" target="_self">E.DL K</a>
+			</h1>
+
+			<div class="gnb-wrap">
+				<ul class="mobile-util">
+					<li><a href="login.html" target="_self">LOGIN</a></li>
+					<li><a href="joinTerms.html" target="_self">JOIN</a></li>
+				</ul> <!-- (D) 모바일용 유틸 메뉴 추가 -->
+
+				<ul class="gnb-list">
+					<li>
+						<a href="service.html" target="_self">SERVICE</a>
+					</li>
+					<li>
+						<a href="#none">CONTENTS</a>
+						<ul class="depth2_01">
+							<li><a href="contentPopular.html" target="_self">POPULAR ON EDL.K</a></li>
+							<li><a href="contentTrending.html" target="_self">TRENDING NOW</a></li>
+							<li><a href="contentTotal.html" target="_self">TOTAL CONTENTS</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="brand.html" target="_self">BRAND</a>
+					</li>
+					<li>
+						<a href="consulting.html" target="_self">CONSULTING</a>
+					</li>
+					<li>
+						<a href="#none">NEWSROOM</a>
+						<ul class="depth2_02">
+							<li><a href="noticeList.html" target="_self">NOTICE</a></li>
+							<li><a href="mediaList.html" target="_self">MEDIA &amp; MARKETING</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="location.html" target="_self">LOCATION</a>
+					</li>
+				</ul>
+
+				<!-- <ul class="sns-share">
+					<li><a href="#none" class="instagram">인스타그램</a></li>
+					<li><a href="#none" class="facebook">페이스북</a></li>
+				</ul> --> <!-- (D) sns공유 서비스 시작 시 주석 풀어주면 됨 -->
+				
+				<a href="#none" class="mobile-menu-close">
+					<span class="line01"></span>
+					<span class="line02"></span>
+				</a>
+			</div>
+
+			<ul class="util">
+				<li><a href="login.html" target="_self">LOGIN</a></li>
+				<li><a href="joinTerms.html" target="_self">JOIN</a></li>
+			</ul>
+
+			<ul class="mobile-menu">
+				<li><a href="login.html" target="_self" class="login"></a></li>
+				<li><a href="#none" class="menu"></a></li>
+			</ul>
+
+			<div class="mobile-menu-dim"></div>
+		</header>
+		<!-- //상단 끝 -->
+		
+		<!-- 컨텐츠 시작 -->
+		<div id="contents" class="s-contents" tabindex="-1">
+
+			<!-- 비주얼 -->
+			<div class="s-visual">
+				<h2 class="title">CONSULTING</h2>
+				<p class="text"><span>전문 컨설턴트들이 </span>당신의 사업에 해법을 제시해 드립니다.</p>
+
+				<!-- mobile_bg_icon -->
+				<span class="icon ico01"></span>
+				<span class="icon ico02"></span>
+				<span class="icon ico03"></span>
+				<span class="icon ico04"></span>
+			</div>
+
+			<!-- 제휴 문의 -->
+			<h2 class="s-cont-title-wrap consulting">
+				<p class="s-cont-title">제휴 문의</p>
+			</h2>
+			<h2 class="mobile-s-cont-title">업무제휴 및 기타 문의하실 내용을 남겨주세요.</h2>		
+
+			<div class="consulting-wrap">
+				<div class="consulting-list-wrap first">
+					<dl>
+						<dt><label for="">이름<span class="essential">필수</span></label></dt>
+						<dd>
+							<input type="text" id="" name="" value="" class="input-text long" title="이름 입력" placeholder="이름을 입력하세요.">
+						</dd>
+					</dl>
+					<dl>
+						<dt><label for="">전화번호<span class="essential">필수</span></label></dt>
+						<dd>
+							<select id="" name="" class="input-text num" title="지역번호 선택">
+								<option value="">선택</option>
+								<option value="">02</option>
+								<option value="">032</option>
+								<option value="">031</option>
+								<option value="">033</option>
+								<option value="">044</option>
+								<option value="">042</option>
+								<option value="">041</option>
+								<option value="">043</option>
+								<option value="">053</option>
+								<option value="">052</option>
+								<option value="">051</option>
+								<option value="">054</option>
+								<option value="">055</option>
+								<option value="">062</option>
+								<option value="">063</option>
+								<option value="">061</option>
+								<option value="">064</option>
+								<option value="">010</option>
+								<option value="">070</option>
+							</select>
+							<input type="text" id="" name="" class="input-text short" title="중간 자리 입력" maxlength="4">
+							<span class="dash">-</span>
+							<input type="text" id="" name="" class="input-text short" title="끝 자리 입력" maxlength="4">
+						</dd>
+					</dl>
+				</div>
+				<div class="consulting-list-wrap">
+					<dl>
+						<dt><label for="">이메일주소<span class="essential">필수</span></label></dt>
+						<dd>
+							<div class="input-wrap long">
+								<input type="text" id="" name="" value="" title="이메일주소 입력" placeholder="이메일을 입력하세요. Ex) email@gnflex.co.kr">
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="consulting-list-wrap">
+					<dl>
+						<dt><label for="">희망지역<span class="essential">필수</span></label></dt>
+						<dd>
+							<div class="input-wrap long">
+								<select class="num" id="" name="" title="희망지역 선택">
+									<option value="" disabled selected hidden>시/도 선택</option>
+									<option value="">서울</option>
+									<option value="">부산</option>
+									<option value="">대구</option>
+									<option value="">인천</option>
+									<option value="">광주</option>
+									<option value="">대전</option>
+									<option value="">울산</option>
+									<option value="">경기</option>
+									<option value="">강원</option>
+									<option value="">충북</option>
+									<option value="">충남</option>
+									<option value="">전북</option>
+									<option value="">전남</option>
+									<option value="">경북</option>
+									<option value="">경남</option>
+									<option value="">제주</option>
+									<option value="">세종</option>
+								</select>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt><label for="">점포보유여부<span class="essential">필수</span></label></dt>
+						<dd class="line">
+							<ul class="check-list-wrap">
+								<li>
+									<p class="check-circle">
+										<input type="radio" id="check01" name="store" value="" title="보유 선택" checked>
+										<label for="check01">
+											<span>체크박스</span>보유
+										</label>
+									</p>
+								</li>
+								<li>
+									<p class="check-circle">
+										<input type="radio" id="check02" name="store" value="" title="미보유 선택">
+										<label for="check02">
+											<span>체크박스</span>미보유
+										</label>
+									</p>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				<div class="consulting-list-wrap last">
+					<dl>
+						<dt><label for="">문의내용<span class="essential">필수</span></label></dt>
+						<dd class="textarea">
+							<div class="input-wrap long">
+								<textarea name="" id="" cols="30" rows="10" placeholder="귀하에게 더 나은 서비스를 제공하기 위한 추가 정보를 남겨주십시오. 200자 내외"></textarea>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+
+			<div class="consulting-agree-wrap">
+				<div class="consulting-agree-box">
+					<div class="agree-wrap">
+						<h3 class="agree-title">개인정보의 제공 및 활용 동의서</h3>
+						<div class="agree-cont" tabindex="0">
+							<p class="agree-text">아래와 같은 개인정보 처리에 관하여 동의하여 주시면, 귀하의 문의사항을 신속히 처리하여 드리겠습니다.</p>
+							
+							<ol class="agree-list-type01">
+								<li>1. 개인정보 수집 및 이용목적: 고객의 문의사항 관련 답변 및 정보제공</li>
+								<li>2. 개인정보 필수 수집 항목 : 이름, 전화번호, 이메일주소 , 희망지역, 점포보유여부, 문의내용</li>
+								<li class="text-indent192">3. 개인정보 수집 및 보유기간 : 개인전보수집 / 이용목적이 달성될 경우, 해당 정보들은 파기될 것입니다. 다만 관련 법령에서 정하는 경우 법령에서<br> 정해진 기간 동안 대상 개인정보를 보유합니다.</li>
+							</ol>
+						</div>
+						<p class="check-circle">
+							<input type="checkbox" id="agree01" name="" value="" title="">
+							<label for="agree01">
+								<span>체크박스</span>개인정보 수집 및 이용에 동의합니다.
+							</label>
+						</p>
+					</div>
+
+					<button class="btn send">보내기</button>
+				</div>
+			</div>
+
+			<!-- TOP -->
+			<div class="pg-top"><a href="#">TOP</a></div> <!-- (D) 상단으로 이동 버튼 추가 -->
+
+		</div>
+		<!-- //컨텐츠 끝-->
+		
+		<!-- 푸터 시작 -->
+		<footer class="footer">
+			<div class="footer-wrap">
+				<div class="footer-left">
+					<ul class="footer-util">
+						<li><a href="#none" target="_self">가맹점찾기</a></li>
+						<li><a href="#none" target="_self">가맹점문의</a></li>
+						<li><a href="#none" target="_self">이용약관</a></li>
+						<li><a href="#none" target="_self">개인정보처리방침</a></li>
+						<li><a href="#none" target="_self">이메일무단수집거부</a></li>
+					</ul>
+
+					<ul class="footer-address">
+						<li>회사명 : ㈜지앤플렉스</li>
+						<li>사업자번호 : 304-87-01159</li>
+						<li>대표 : 엄준형</li>
+						<li>개인정보관리 책임자 : 이희복</li>
+						<li>주소 : 서울 중구 소공로 96 GSG빌딩 3층</li>
+						<li>이메일 : orange@gnflex.co.kr</li>
+					</ul>
+
+					<p class="footer-copyright">Copyright © G&FLEX. All Right Reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- //푸터 끝 -->
+
+	</div>
+
+	<!-- Common Script -->
+	<script src="./resources/js/default.js"></script>
+	<!-- Sub Script -->
+	<script src="./resources/js/main.js"></script> <!-- 20200203 추가 -->
+	<script src="./resources/js/sub.js"></script>
+	<script>
+		(function($) {
+			
+		})(jQuery);
+	</script>
+
+</body>
+</html>

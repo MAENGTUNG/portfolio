@@ -1,0 +1,1381 @@
+@charset "UTF-8";
+
+.m-contents {
+    position: relative;
+    padding: 0;
+}
+
+/* ------------------------- Main Page ------------------------- */
+/* ------------------------- main Header  ------------------------- */
+.header-wrap {
+    overflow: hidden;
+    padding: 0 5%;
+    border-bottom: 1px solid #cdd4e2;
+}
+.header-wrap .header-box {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 109px;
+}
+.header-box .header-title {
+    float: left;
+    letter-spacing: -0.05em;
+    line-height: 117px;
+    font-size: 2.5rem;
+    font-family: 'Gmarket-Bold', sans-serif;
+    color: #04296c;
+}
+.header-box .header-phone-number {
+    float: right;
+    margin: 24px 0 0;
+    padding: 0 33px 0 27px;
+    height: 59px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    line-height: 57px;
+    font-size: 1.5rem;
+    font-family: 'Noto-Bold', sans-serif;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #04296c;
+}
+.header-box .header-phone-number > span {
+    vertical-align: middle;
+    letter-spacing: -0.025em;
+    font-family: 'Gmarket-Bold', sans-serif;
+}
+
+@media screen and (max-width: 999px) {
+    .header-wrap {
+        padding: 0 30px;
+    }
+    .header-wrap .header-box {
+        margin: 0;
+        max-width: none;
+        height: 54px;
+    }
+    .header-box .header-title {
+        line-height: 58px;
+        font-size: 1rem;
+    }
+    .header-box .header-phone-number {
+        margin: 13px 0 0;
+        padding: 0 12px 0 12px;
+        height: 28px;
+        line-height: 26px;
+        font-size: 0.75rem;
+        border-radius: 14px;
+    }
+    .header-box .header-phone-number > span {
+        vertical-align: middle;
+        font-family: 'Gmarket-Bold', sans-serif;
+    }
+}
+
+/* ------------------------- 비쥬얼 ------------------------- */
+.visual-wrap {
+    overflow: hidden;
+    padding: 0 5%;
+}
+.visual-wrap {
+	position: relative;
+    background-color: #d8e4fd;
+    background-image: url("../images/main/bg_visual_pc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.visual-wrap.type01 {
+    background-image: url("../images/main/bg_visual_pc01.jpg");
+}
+.visual-wrap.type02 {
+    background-image: url("../images/main/bg_visual_pc02.jpg");
+}
+.visual-wrap.type03 {
+    background-image: url("../images/main/bg_visual_pc03.jpg");
+}
+.visual-wrap.type04 {
+    background-image: url("../images/main/bg_visual_pc04.jpg");
+}
+.visual-wrap .visual-box {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.visual-wrap .visual-box .visual-small-title {
+	position: relative;
+	margin: 68px 0 17px;
+	padding: 0 0 33px;
+	letter-spacing: -0.025em;
+	line-height: 1.5rem;
+	font-size: 1.5rem;
+    font-family: 'Noto-Medium', sans-serif;
+	color: #000;
+	word-break: keep-all;
+}
+.visual-wrap .visual-box .visual-small-title:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 2px;
+	width: 30px;
+	height: 2px;
+	background-color: #45556d;
+}
+.visual-wrap .visual-box .visual-big-title {
+	letter-spacing: -0.08em;
+	line-height: 5.313rem;
+	font-size: 4.375rem;
+    font-family: 'Noto-Bold', sans-serif;
+	color: #000;
+	word-break: keep-all;
+}
+.visual-wrap .visual-box .visual-big-text {
+	margin: 10px 0 0;
+	letter-spacing: -0.08em;
+	line-height: 2.875rem;
+	font-size: 2.875rem;
+    font-family: 'Noto-Regular', sans-serif;
+	color: #000;
+	word-break: keep-all;
+}
+.visual-wrap .visual-box .visual-text {
+	margin: 43px 0 83px;
+	letter-spacing: -0.025em;
+	line-height: 2rem;
+	font-size: 1.5rem;
+    font-family: 'Noto-Regular', sans-serif;
+	color: #000;
+	word-break: keep-all;
+}
+
+.visual-wrap .visual-box .visual-menu-list {
+	margin: 0 0 71px;
+}
+.visual-wrap .visual-box .visual-menu-list:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.visual-box .visual-menu-list > li {
+	float: left;
+	margin-right: 10px;
+}
+.visual-box .visual-menu-list > li:last-child {
+	margin-right: 0;
+}
+.visual-box .visual-menu-list > li > a {
+	display: block;
+	width: 170px;
+	height: 170px;
+	text-align: center;
+	letter-spacing: -0.06em;
+	line-height: 1.5rem;
+	font-size: 1.25rem;
+    font-family: 'Noto-Medium', sans-serif;
+	color: #136acb;
+	background-color: #fbfcfc;
+	border-radius: 50%;
+	-o-box-shadow: 9px 10px 16px rgba(30, 46, 62, .16);
+	-ms-box-shadow: 9px 10px 16px rgba(30, 46, 62, .16);
+	-moz-box-shadow: 9px 10px 16px rgba(30, 46, 62, .16);
+	-webkit-box-shadow: 9px 10px 16px rgba(30, 46, 62, .16);
+	box-shadow: 9px 10px 16px rgba(30, 46, 62, .16);
+
+	-o-transition: background-color .7s ease;
+	-ms-transition: background-color .7s ease;
+	-moz-transition: background-color .7s ease;
+	-webkit-transition: background-color .7s ease;
+    transition: background-color .7s ease;
+}
+.visual-box .visual-menu-list > li:nth-child(1) > a {
+	padding: 30px 0 0;
+}
+.visual-box .visual-menu-list > li:nth-child(2) > a {
+	padding: 29px 0 0;
+}
+.visual-box .visual-menu-list > li:nth-child(3) > a,
+.visual-box .visual-menu-list > li:nth-child(4) > a {
+	padding: 28px 0 0;
+}
+.visual-box .visual-menu-list > li > a:hover,
+.visual-box .visual-menu-list > li > a.on {
+	padding: 45px 0 0;
+	letter-spacing: -0.05em;
+	color: #fff;
+	background-color: #0063c9;
+}
+.visual-box .visual-menu-list > li > a:hover:before,
+.visual-box .visual-menu-list > li > a.on:before {
+	display: none;
+}
+.visual-box .visual-menu-list > li > a:before {
+	content: "";
+	display: block;
+	background-image: url("../images/main/icon.png");
+	background-repeat: no-repeat;
+}
+.visual-box .visual-menu-list > li:nth-child(1) > a:before {
+	margin: 0 auto 5px;
+	width: 83px;
+	height: 57px;
+	background-position: 0 0;
+}
+.visual-box .visual-menu-list > li:nth-child(2) > a:before {
+	margin: 0 auto 12px;
+	width: 69px;
+	height: 51px;
+	background-position: -100px 0;
+}
+.visual-box .visual-menu-list > li:nth-child(3) > a:before {
+	margin: 0 auto 14px;
+	width: 56px;
+	height: 50px;
+	background-position: -200px 0;
+}
+.visual-box .visual-menu-list > li:nth-child(4) > a:before {
+	margin: 0 auto 11px;
+	width: 61px;
+	height: 53px;
+	background-position: -300px 0;
+}
+.visual-box .visual-menu-list > li > a:after {
+	display: none;
+}
+.visual-box .visual-menu-list > li > a:hover:after,
+.visual-box .visual-menu-list > li > a.on:after {
+	content: "";
+	display: block;
+	margin: 17px auto;
+	width: 29px;
+	height: 29px;
+	background-image: url("../images/main/icon.png");
+	background-repeat: no-repeat;
+	background-position: 0 -100px;
+}
+
+@media screen and (max-width: 999px) {
+	.visual-wrap {
+	    padding: 0;
+	}
+	.visual-wrap {
+	    background-image: url("../images/main/bg_visual_mobile.png");
+	    background-size: 292px 227px;
+	    background-position: center bottom;
+	}
+	.visual-wrap.type01 {
+	    background-image: url("../images/main/bg_visual_mobile01.png");
+	}
+	.visual-wrap.type02 {
+	    background-image: url("../images/main/bg_visual_mobile02.png");
+	}
+	.visual-wrap.type03 {
+	    background-image: url("../images/main/bg_visual_mobile03.png");
+	}
+	.visual-wrap.type04 {
+	    background-image: url("../images/main/bg_visual_mobile04.png");
+	}
+	.visual-wrap .visual-box,
+	.insurance-advice-wrap .insurance-advice-box {
+	    margin: 0;
+	    max-width: none;
+	}
+	.visual-wrap .visual-box .visual-small-title {
+		margin: 39px 0 8px;
+		padding: 0 30px 14px;
+		line-height: 0.75rem;
+		font-size: 0.75rem;
+	}
+	.visual-wrap .visual-box .visual-small-title:after {
+		left: 30px;
+		width: 15px;
+		height: 1px;
+		background-color: #000;
+	}
+	.visual-wrap .visual-box .visual-big-title {
+		padding: 0 25px 0 30px;
+		line-height: 2.25rem;
+		font-size: 1.75rem;
+	}
+	.visual-wrap .visual-box .visual-big-title > br {
+		display: none;
+	}
+	.visual-wrap .visual-box .visual-big-text {
+		margin: 3px 0 0;
+		padding: 0 20px 0 30px;
+		line-height: 1.25rem;
+		font-size: 1.25rem;
+	}
+	.visual-wrap .visual-box .visual-text {
+		margin: 14px 0 130px;
+		padding: 0 20px 0 30px;
+		line-height: 0.938rem;
+		font-size: 0.75rem;
+	}
+
+	.visual-wrap .visual-box .visual-menu-list {
+		margin: 0 0 20px;
+		padding: 0 30px;
+		width: 100%;
+	}
+	.visual-box .visual-menu-list > li {
+		display: table;
+		margin-right: 1.11111%;
+		width: 24.12698%;
+	}
+	.visual-box .visual-menu-list > li:last-child {
+		margin-right: 0;
+	}
+	.visual-box .visual-menu-list > li > a {
+		display: table-cell;
+		width: 100%;
+		height: auto;
+		vertical-align: middle;
+		letter-spacing: -0.17em;
+		line-height: 0.688rem;
+		font-size: 0.563rem;
+		color: #0063c9;
+		background-color: #fff;
+		-o-box-shadow: 4px 5px 8px rgba(30, 46, 62, .16);
+		-ms-box-shadow: 4px 5px 8px rgba(30, 46, 62, .16);
+		-moz-box-shadow: 4px 5px 8px rgba(30, 46, 62, .16);
+		-webkit-box-shadow: 4px 5px 8px rgba(30, 46, 62, .16);
+		box-shadow: 4px 5px 8px rgba(30, 46, 62, .16);
+	}
+	.visual-box .visual-menu-list > li:nth-child(1) > a,
+	.visual-box .visual-menu-list > li:nth-child(2) > a,
+	.visual-box .visual-menu-list > li:nth-child(3) > a,
+	.visual-box .visual-menu-list > li:nth-child(4) > a {
+		padding: 0;
+	}
+	.visual-box .visual-menu-list > li > a:hover,
+	.visual-box .visual-menu-list > li > a.on {
+		padding: 0;
+		letter-spacing: -0.10em;
+	}
+	.visual-box .visual-menu-list > li > a:before {
+		background-size: 1000px 500px;
+	}
+	.visual-box .visual-menu-list > li:nth-child(1) > a:before {
+		margin: 0 auto 1px;
+		width: 42px;
+		height: 29px;
+		background-position: 0 0;
+	}
+	.visual-box .visual-menu-list > li:nth-child(2) > a:before {
+		margin: 0 auto 6px;
+		width: 35px;
+		height: 26px;
+		background-position: -50px 0;
+	}
+	.visual-box .visual-menu-list > li:nth-child(3) > a:before {
+		margin: 0 auto 6px;
+		width: 28px;
+		height: 25px;
+		background-position: -100px 0;
+	}
+	.visual-box .visual-menu-list > li:nth-child(4) > a:before {
+		margin: 0 auto 4px;
+		width: 31px;
+		height: 27px;
+		background-position: -150px 0;
+	}
+	.visual-box .visual-menu-list > li > a:hover:after,
+	.visual-box .visual-menu-list > li > a.on:after {
+		margin: 7px auto 0;
+		width: 15px;
+		height: 15px;
+		background-size: 1000px 500px;
+		background-position: 0 -50px;
+	}
+}
+
+/* ------------------------- 보험 비교 상담받기 ------------------------- */
+.insurance-advice-wrap {
+    overflow: hidden;
+    padding: 0 5%;
+    background-color: #0063c9;
+}
+.insurance-advice-wrap .insurance-advice-box {
+    margin: 0 auto;
+    max-width: 1280px;
+	padding: 30px 0 0;
+    height: 205px;
+}
+.insurance-advice-wrap .insurance-advice-box:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.insurance-advice-box .insurance-advice-left {
+	float: left;
+	width: 80.859375%;
+}
+.insurance-advice-box .insurance-advice-left .input-list {
+	overflow: hidden;
+	font-size: 0;
+}
+.insurance-advice-box .insurance-advice-left .input-list > li {
+	float: left;
+	margin: 0 1.15942% 12px 0;
+	width: 19.32367%;
+}
+.insurance-advice-box .insurance-advice-left .input-list > li:nth-child(2) {
+	width: 28.40579%;
+}
+.insurance-advice-box .insurance-advice-left .input-list.type01 > li:nth-child(2) {
+	width: 19.32367%;
+}
+.insurance-advice-box .insurance-advice-left .input-list.type02 > li:nth-child(1),
+.insurance-advice-box .insurance-advice-left .input-list.type02 > li:nth-child(2) {
+	width: 39.80676%;
+}
+/* 20200409 추가 시작 */
+.insurance-advice-box .insurance-advice-left .input-list.type02 > li:nth-child(3) {
+	width: 9.95169%;
+}
+/* 20200409 추가 끝 */
+.insurance-advice-box .insurance-advice-left .input-list > li:last-child{
+	margin-right: 0;
+}
+/* 20200409 추가 시작 */
+.insurance-advice-box .insurance-advice-left .input-list.type02 > li.post > button {
+	display: inline-block;
+    padding: 0 10px 0 9px;
+    height: 40px;
+    letter-spacing: -0.05em;
+    font-size: 1rem;
+    font-family: 'Noto-Regular', sans-serif;
+    color: #084788;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+/* 20200409 추가 끝 */
+
+.check-square.visual {
+    padding: 8px 0 0;
+}
+
+.insurance-advice-box .insurance-advice-right {
+	display: table;
+	float: left;
+	width: 19.140625%;
+}
+.insurance-advice-box .insurance-advice-right > a {
+	display: table-cell;
+	position: relative;
+	padding: 0 22.85714% 0 16.32653%;
+	width: 100%;
+	height: 145px;
+	vertical-align: middle;
+	letter-spacing: -0.06em;
+	line-height: 1.938rem;
+	font-size: 1.625rem;
+    font-family: 'Noto-Bold', sans-serif;
+	color: #fff;
+	border-radius: 10px;
+	background-color: #17bec0;
+	word-break: keep-all;
+	-o-box-shadow: 13px 15px 24px rgba(50, 50, 50, .3);
+	-ms-box-shadow: 13px 15px 24px rgba(50, 50, 50, .3);
+	-moz-box-shadow: 13px 15px 24px rgba(50, 50, 50, .3);
+	-webkit-box-shadow: 13px 15px 24px rgba(50, 50, 50, .3);
+	box-shadow: 13px 15px 24px rgba(50, 50, 50, .3);
+}
+.insurance-advice-box .insurance-advice-right > a:before,
+.insurance-advice-box .insurance-advice-right > a:after {
+	content: "";
+	position: absolute;
+	background-image: url("../images/main/icon.png");
+	background-repeat: no-repeat;
+}
+.insurance-advice-box .insurance-advice-right > a:before {
+	top: 23px;
+	left: 6.12244%;
+	width: 26px;
+	height: 32px;
+	background-position: 0 -300px;
+}
+.insurance-advice-box .insurance-advice-right > a:after {
+	top: 54px;
+	right: 5.71428%;
+	width: 42px;
+	height: 43px;
+	background-position: 0 -200px;
+}
+.insurance-advice-box .insurance-advice-right > a > br {
+	display: none;
+}
+
+@media screen and (max-width: 999px) {
+	.insurance-advice-wrap {
+	    padding: 0 30px;
+	}
+	.insurance-advice-wrap .insurance-advice-box {
+	    margin: 0;
+	    max-width: none;
+		padding: 20px 0 18px;
+	    width: 100%;
+	    height: auto;
+	    min-height: 110px;
+	}
+	.insurance-advice-box .insurance-advice-left {
+		width: 73.80952%;
+	}
+	.insurance-advice-box .insurance-advice-left .input-list > li {
+		margin: 0 3.22580% 5px 0;
+		width: 43.01075%;
+	}
+	.insurance-advice-box .insurance-advice-left .input-list > li:nth-child(2) {
+		width: 49.24731%;
+	}
+	.insurance-advice-box .insurance-advice-left .input-list.type01 > li:nth-child(2) {
+		width: 43.01075%;
+	}
+	.insurance-advice-box .insurance-advice-left .input-list.type02 > li:nth-child(1),
+	.insurance-advice-box .insurance-advice-left .input-list.type02 > li:nth-child(2) {
+		width: 89.24731%;
+	}
+	/* 20200409 추가 시작 */
+	.insurance-advice-box .insurance-advice-left .input-list.type02 > li:nth-child(3) {
+		width: 89.24731%;
+	}
+	/* 20200409 추가 끝 */
+	.insurance-advice-box .insurance-advice-left .input-list > li:nth-child(2n+2) {
+		margin-right: 0;
+	}
+	/* 20200409 추가 시작 */
+	.insurance-advice-box .insurance-advice-left .input-list.type02 > li.post > button {
+		display: block;
+	    padding: 0;
+	    width: 100%;
+	    height: 20px;
+	    text-align: center;
+	    letter-spacing: -0.025em;
+	    line-height: 1.25rem;
+	    font-size: 0.5rem;
+	    font-family: 'Noto-Light', sans-serif;
+	    border-radius: 2px;
+	}
+	/* 20200409 추가 끝 */
+
+	.check-square.visual {
+	    padding: 3px 0 0;
+	}
+
+	.insurance-advice-box .insurance-advice-right {
+		display: block;
+		width: 26.19047%;
+	}
+	.insurance-advice-box .insurance-advice-right > a {
+		display: block;
+		padding: 13px 1% 0;
+		width: 100%;
+		height: 70px;
+		text-align: center;
+		vertical-align: baseline;
+		line-height: 0.875rem;
+		font-size: 0.75rem;
+		border-radius: 10px;
+		-o-box-shadow: 6px 7px 12px rgba(50, 50, 50, .3);
+		-ms-box-shadow: 6px 7px 12px rgba(50, 50, 50, .3);
+		-moz-box-shadow: 6px 7px 12px rgba(50, 50, 50, .3);
+		-webkit-box-shadow: 6px 7px 12px rgba(50, 50, 50, .3);
+		box-shadow: 6px 7px 12px rgba(50, 50, 50, .3);
+	}
+	.insurance-advice-box .insurance-advice-right > a:before,
+	.insurance-advice-box .insurance-advice-right > a:after {
+		background-size: 1000px 500px;
+	}
+	.insurance-advice-box .insurance-advice-right > a:before {
+		top: 10px;
+		left: 6.06060%;
+		width: 9px;
+		height: 11px;
+		background-position: 0 -200px;
+	}
+	.insurance-advice-box .insurance-advice-right > a:after {
+		display: block;
+		position: static;
+		top: auto;
+		right: auto;
+		margin: 4px auto 0;
+		width: 16px;
+		height: 16px;
+		background-position: 0 -250px;
+	}
+	.insurance-advice-box .insurance-advice-right > a > br {
+		display: block;
+	}
+}
+
+/* ------------------------- 재난배상책임보험 화재배상 ------------------------- */
+.insurance-info-wrap {
+	overflow: hidden;
+	padding: 0 5%;
+}
+.insurance-info-wrap .insurance-info-box {
+    margin: 0 auto;
+    padding: 70px 0;
+    max-width: 1280px;
+}
+.insurance-info-box .insurance-info {
+	position: relative;
+	margin: 0 0 50px;
+}
+.insurance-info-box .insurance-info:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.insurance-info-box .insurance-info .insurance-info-left {
+	position: absolute;
+	top: 47px;
+	left: 0;
+	padding: 13px 0 0;
+	width: 35.703125%;
+	background-color: #fff;
+}
+.insurance-info-box .insurance-info.type01 .insurance-info-left {
+	top: 53px;
+}
+.insurance-info-box .insurance-info.type02 .insurance-info-left,
+.insurance-info-box .insurance-info.type03 .insurance-info-left {
+	top: 42px;
+	width: 50.46875%;
+}
+.insurance-info-box .insurance-info .insurance-info-left .insurance-info-small-title {
+	letter-spacing: 0;
+	line-height: 3.375rem;
+	font-size: 2.250rem;
+    font-family: 'Noto-Bold', sans-serif;
+	color: #202020;
+	word-break: keep-all;
+}
+.insurance-info-box .insurance-info.type01 .insurance-info-left .insurance-info-small-title {
+	letter-spacing: -0.05em;
+	word-break: normal;
+}
+.insurance-info-box .insurance-info.type02 .insurance-info-left .insurance-info-small-title {
+	letter-spacing: -0.05em;
+}
+.insurance-info-box .insurance-info.type03 .insurance-info-left .insurance-info-small-title {
+	letter-spacing: -0.05em;
+}
+.insurance-info-box .insurance-info .insurance-info-left .insurance-info-big-title {
+	letter-spacing: -0.025em;
+	line-height: 3.375rem;
+	font-size: 3.125rem;
+    font-family: 'Noto-Bold', sans-serif;
+	color: #f6a200;
+	word-break: keep-all;
+}
+.insurance-info-box .insurance-info .insurance-info-left .insurance-info-text {
+	padding: 0 14.22319% 26px 0;
+	letter-spacing: -0.025em;
+	line-height: 1.438rem;
+	font-size: 1rem;
+    font-family: 'Noto-Regular', sans-serif;
+	color: #333;
+	word-break: keep-all;
+}
+.insurance-info-box .insurance-info.type01 .insurance-info-left .insurance-info-text {
+	padding: 0 14.22319% 13px 0;
+	text-indent: -8px;
+}
+.insurance-info-box .insurance-info.type02 .insurance-info-left .insurance-info-text {
+	padding: 0 18.57585% 20px 0;
+}
+.insurance-info-box .insurance-info.type03 .insurance-info-left .insurance-info-text {
+	padding: 0 4.64396% 0 0;
+}
+.insurance-info-box .insurance-info .insurance-info-left .insurance-info-text > span {
+	color: #006ce4;
+}
+.insurance-info-box .insurance-info .insurance-info-left .insurance-info-icon {
+	overflow: hidden;
+	margin: 13px 0 26px;
+}
+.insurance-info-box .insurance-info .insurance-info-left .insurance-info-icon > li {
+	float: left;
+	margin-right: 3.28227%;
+	width: 21.88183%;
+	/*max-width: 100px;*/
+}
+.insurance-info-box .insurance-info.type02 .insurance-info-left .insurance-info-icon > li,
+.insurance-info-box .insurance-info.type03 .insurance-info-left .insurance-info-icon > li {
+	margin-right: 2.32198%;
+	width: 15.47987%;
+}
+.insurance-info-box .insurance-info .insurance-info-left .insurance-info-icon > li:last-child {
+	margin-right: 0;
+}
+.insurance-info-box .insurance-info .insurance-info-left .insurance-info-icon > li > img {
+	width: 100%;
+}
+
+.insurance-info-box .insurance-info .insurance-info-right {
+	overflow: hidden;
+	margin-left: 25.78125%;
+	padding: 50px 3.90625% 50px 8.359375%;
+	border: 20px solid #f3f5f7;
+}
+.insurance-info-box .insurance-info.type01 .insurance-info-right {
+	padding: 50px 3.90625% 35px 8.359375%;
+}
+.insurance-info-box .insurance-info.type02 .insurance-info-right,
+.insurance-info-box .insurance-info.type03 .insurance-info-right {
+	padding: 50px 3.90625% 40px 23.125%;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl {
+	overflow: hidden;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl > dt {
+	height: 52px;
+	text-align: center;
+	letter-spacing: -0.05em;
+	line-height: 3.125rem;s
+	font-size: 1.25rem;
+    font-family: 'Noto-Regular', sans-serif;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	background-color: #45556d;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl > dd {
+	padding: 87px 0 107px;
+	text-align: center;
+	letter-spacing: -0.025em;
+	line-height: 1.75rem;
+	font-size: 1.25rem;
+    font-family: 'Noto-Regular', sans-serif;
+	color: #333;
+	background-color: #eef0f3;
+	word-break: keep-all;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list {
+	float: left;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list.type01 {
+	margin-right: 4.43262%;
+	width: 50%;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list.type02 {
+	width: 45.56737%;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dt > br {
+	display: none;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dd {
+	display: table;
+	padding: 0;
+	width: 100%;
+	height: 250px;
+	text-align: left;
+	line-height: 1.5rem;
+	font-size: 1rem;
+    font-family: 'Noto-Regular', sans-serif;
+	color: #333;
+	word-break: keep-all;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dd > ol,
+.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dd > ul {
+	display: table-cell;
+	vertical-align: middle;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dd > ol > li,
+.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dd > ul > li {
+	text-align: left;
+	line-height: 1.5rem;
+	font-size: 1rem;
+    font-family: 'Noto-Regular', sans-serif;
+	color: #333;
+	word-break: keep-all;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list.type01 > dd {
+	padding: 0 10.63829% 0 12.05673%;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list.type02 > dd {
+	padding: 0 9.33852% 0 11.28404%;
+}
+.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list.type02 > dd > ol > li {
+	margin-bottom: 5px;
+}
+
+.insurance-info-wrap .insurance-info-box .insurance-detail-btn {
+	display: block;
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	line-height: 4.5rem;
+	font-size: 1.563rem;
+    font-family: 'Noto-Medium', sans-serif;
+	color: #fff;
+	background-color: #006ce4;
+}
+.insurance-info-wrap .insurance-info-box .insurance-detail-btn:after {
+	content: "";
+	display: inline-block;
+	margin-left: 17px;
+	width: 38px;
+	height: 26px;
+	vertical-align: -3px;
+	background-image: url("../images/main/icon.png");
+	background-repeat: no-repeat;
+	background-position: 0 -600px;
+}
+
+@media screen and (max-width: 999px) {
+	.insurance-info-wrap {
+		padding: 30px 30px 35px;
+	}
+	.insurance-info-wrap .insurance-info-box {
+	    margin: 0;
+	    padding: 0;
+	    max-width: none;
+	}
+	.insurance-info-box .insurance-info {
+		margin: 0 0 15px;
+		border: 10px solid #f3f5f7;
+	}
+	.insurance-info-box .insurance-info .insurance-info-left,
+	.insurance-info-box .insurance-info.type01 .insurance-info-left,
+	.insurance-info-box .insurance-info.type02 .insurance-info-left,
+	.insurance-info-box .insurance-info.type03 .insurance-info-left {
+		position: static;
+		top: auto;
+		left: auto;
+		margin: 13px 0 0 -10px;
+		padding: 6px 0 29px;
+		width: 100%;
+	}
+	.insurance-info-box .insurance-info.type01 .insurance-info-left {
+		padding: 6px 0 14px;
+	}
+	.insurance-info-box .insurance-info.type02 .insurance-info-left {
+		padding: 6px 0 15px;
+	}
+	.insurance-info-box .insurance-info.type03 .insurance-info-left {
+		padding: 6px 0 20px;
+	}
+	.insurance-info-box .insurance-info .insurance-info-left .insurance-info-small-title {
+		line-height: 1.813rem;
+		font-size: 1.250rem;
+	}
+	.insurance-info-box .insurance-info .insurance-info-left .insurance-info-big-title {
+		letter-spacing: 0;
+		line-height: 1.813rem;
+		font-size: 1.5rem;
+	}
+	.insurance-info-box .insurance-info .insurance-info-left .insurance-info-text,
+	.insurance-info-box .insurance-info.type01 .insurance-info-left .insurance-info-text,
+	.insurance-info-box .insurance-info.type02 .insurance-info-left .insurance-info-text,
+	.insurance-info-box .insurance-info.type03 .insurance-info-left .insurance-info-text {
+		padding: 0 5.08474% 0 0;
+		letter-spacing: -0.15em;
+		line-height: 0.813rem;
+		font-size: 0.563rem;
+	}
+	.insurance-info-box .insurance-info.type01 .insurance-info-left .insurance-info-text {
+		padding: 0 13.55932% 0 0;
+		text-indent: -5px;
+	}
+	.insurance-info-box .insurance-info.type02 .insurance-info-left .insurance-info-text {
+		padding: 0 14.23728% 0 0;
+	}
+	.insurance-info-box .insurance-info.type03 .insurance-info-left .insurance-info-text {
+		font-size: 0.5rem;
+	}
+	.insurance-info-box .insurance-info .insurance-info-left .insurance-info-icon {
+		overflow: hidden;
+		margin: 12px 0 17px;
+	}
+	.insurance-info-box .insurance-info .insurance-info-left .insurance-info-icon > li,
+	.insurance-info-box .insurance-info.type01 .insurance-info-left .insurance-info-icon > li,
+	.insurance-info-box .insurance-info.type02 .insurance-info-left .insurance-info-icon > li,
+	.insurance-info-box .insurance-info.type03 .insurance-info-left .insurance-info-icon > li  {
+		margin-right: 2.54237%;
+		width: 16.94915%;
+	}
+
+	.insurance-info-box .insurance-info .insurance-info-right,
+	.insurance-info-box .insurance-info.type01 .insurance-info-right,
+	.insurance-info-box .insurance-info.type02 .insurance-info-right,
+	.insurance-info-box .insurance-info.type03 .insurance-info-right {
+		margin-left: 0;
+		padding: 0 20px 24px;
+		border: none;
+	}
+	.insurance-info-box .insurance-info.type01 .insurance-info-right,
+	.insurance-info-box .insurance-info.type03 .insurance-info-right {
+		padding: 0 20px 18px;
+	}
+	.insurance-info-box .insurance-info.type02 .insurance-info-right {
+		padding: 0 20px 21px;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl {
+		overflow: hidden;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl > dt {
+		height: 25px;
+		line-height: 1.563rem;
+		font-size: 0.625rem;
+		border-bottom: none;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl > dd {
+		padding: 42px 0 49px;
+		line-height: 0.875rem;
+		font-size: 0.625rem;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list {
+		display: table;
+		float: none;
+		width: 100%;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list.type01 {
+		margin-right: 0;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list.type02 {
+		width: 100%;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dt {
+		display: table-cell;
+		width: 83px;
+		vertical-align: middle;
+		line-height: 0.75rem;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dt > br {
+		display: block;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dd {
+		display: table-cell;
+		padding: 0;
+		width: auto;
+		height: auto;
+		letter-spacing: -0.1em;
+		line-height: 0.75rem;
+		font-size: 0.5rem;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dd > ol,
+	.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dd > ul {
+		display: block;
+		vertical-align: baseline;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dd > ol > li,
+	.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list > dd > ul > li {
+		line-height: 0.75rem;
+		font-size: 0.5rem;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list.type01 > dd {
+		padding: 10px 3.38983% 9px 4.06779%;
+	}
+	.insurance-info-box .insurance-info .insurance-info-right > dl.insurance-info-list.type02 > dd {
+		padding: 10px 3.38983% 7px 4.06779%;
+	}
+
+	.insurance-info-wrap .insurance-info-box .insurance-detail-btn {
+		height: 45px;
+		letter-spacing: -0.025em;
+		line-height: 2.813rem;
+		font-size: 0.813rem;
+	}
+	.insurance-info-wrap .insurance-info-box .insurance-detail-btn:after {
+		margin-left: 10px;
+		width: 19px;
+		height: 13px;
+		vertical-align: -2px;
+		background-size: 1000px 500px;
+		background-position: 0 -300px;
+	}
+}
+
+/* ------------------------- 의무보험 총괄 안내센터 ------------------------- */
+.information-wrap {
+	overflow: hidden;
+	padding: 0 5%;
+	background-image: url("../images/main/bg_information.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.information-wrap .information-box {
+    margin: 0 auto;
+    padding: 80px 0;
+    max-width: 1280px;
+}
+.information-box .information-list {
+	padding: 0 3.125%;
+}
+.information-box .information-list:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.information-box .information-list > li {
+	float: left;
+	padding: 0 2.5%;
+	width: 50%;
+}
+.information-box .information-list > li > a {
+	display: block;
+	position: relative;
+	padding: 43px 26.85185% 0 8.51851%;
+	width: 100%;
+	height: 280px;
+	-o-box-shadow: 11px 13px 32px rgba(69, 69, 69, .38);
+	-ms-box-shadow: 11px 13px 32px rgba(69, 69, 69, .38);
+	-moz-box-shadow: 11px 13px 32px rgba(69, 69, 69, .38);
+	-webkit-box-shadow: 11px 13px 32px rgba(69, 69, 69, .38);
+	box-shadow: 11px 13px 32px rgba(69, 69, 69, .38);
+}
+.information-box .information-list > li:nth-child(1) > a {
+	background-color: #003e8a;
+}
+.information-box .information-list > li:nth-child(2) > a {
+	background-color: #f6a200;
+}
+.information-box .information-list > li > a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 1;
+	background-image: url("../images/main/icon.png");
+	background-repeat: no-repeat;
+}
+.information-box .information-list > li:nth-child(1) > a:after {
+	bottom: 27px;
+	right: 5.55555%;
+	width: 145px;
+	height: 143px;
+	background-position: -400px 0;
+}
+.information-box .information-list > li:nth-child(2) > a:after {
+	bottom: 34px;
+	right: 5.55555%;
+	width: 166px;
+	height: 138px;
+	background-position: -600px 0;
+}
+.information-box .information-list .information-list-title {
+	position: relative;
+	z-index: 2;
+	letter-spacing: -0.05em;
+	line-height: 2.813rem;
+	font-size: 2.250rem;
+    font-family: 'Noto-Light', sans-serif;
+	color: #fff;
+	word-break: keep-all;
+}
+.information-box .information-list .information-list-text {
+	position: relative;
+	z-index: 2;
+	margin: 37px 0 0;
+	letter-spacing: -0.05em;
+	line-height: 1.250rem;
+	font-size: 1.250rem;
+    font-family: 'Noto-Medium', sans-serif;
+	color: #fff;
+	word-break: keep-all;
+}
+.information-box .information-list .information-list-text:after {
+	content: "";
+	display: inline-block;
+	margin-left: 14px;
+	width: 61px;
+	height: 14px;
+	vertical-align: -2px;
+	background-image: url("../images/main/icon.png");
+	background-repeat: no-repeat;
+	background-position: 0 -700px;
+}
+.information-box .information-list .information-list-phone {
+	overflow: hidden;
+	margin: 44px 0 0;
+}
+.information-box .information-list .information-list-phone > dt {
+	letter-spacing: -0.05em;
+	line-height: 1.250rem;
+	font-size: 1.250rem;
+    font-family: 'Noto-Medium', sans-serif;
+	color: #fff;
+}
+.information-box .information-list .information-list-phone > dd {
+	margin: 2px 0 0;
+	letter-spacing: -0.075em;
+	line-height: 3.125rem;
+	font-size: 3.125rem;
+    font-family: 'Noto-Medium', sans-serif;
+	color: #fff;
+	word-break: keep-all;
+}
+
+@media screen and (max-width: 999px) {
+	.information-wrap {
+		padding: 0;
+		border-bottom: 1px solid #e7e7e7;
+	}
+	.information-wrap .information-box {
+	    margin: 0;
+	    padding: 20px 30px 0;
+	    max-width: none;
+	}
+	.information-box .information-list {
+		padding: 0;
+	}
+	.information-box .information-list > li {
+		float: none;
+		margin: 0 0 20px;
+		padding: 0;
+		width: 100%;
+	}
+	.information-box .information-list > li > a {
+		display: block;
+		position: relative;
+		padding: 22px 0 0 7.93650%;
+		width: 100%;
+		height: auto;
+		-o-box-shadow: 5px 6px 16px rgba(69, 69, 69, .38);
+		-ms-box-shadow: 5px 6px 16px rgba(69, 69, 69, .38);
+		-moz-box-shadow: 5px 6px 16px rgba(69, 69, 69, .38);
+		-webkit-box-shadow: 5px 6px 16px rgba(69, 69, 69, .38);
+		box-shadow: 5px 6px 16px rgba(69, 69, 69, .38);
+	}
+	.information-box .information-list > li:nth-child(1) > a {
+		padding-bottom: 30px;
+	}
+	.information-box .information-list > li:nth-child(2) > a {
+		padding-bottom: 27px;
+	}
+	.information-box .information-list > li > a:after {
+		background-size: 1000px 500px;
+	}
+	.information-box .information-list > li:nth-child(1) > a:after {
+		bottom: 26px;
+		right: 10.15873%;
+		width: 73px;
+		height: 72px;
+		background-position: -200px 0;
+	}
+	.information-box .information-list > li:nth-child(2) > a:after {
+		bottom: 24px;
+		right: 9.52380%;
+		width: 83px;
+		height: 69px;
+		background-position: -300px 0;
+	}
+	.information-box .information-list .information-list-title {
+		line-height: 1.375rem;
+		font-size: 1.125rem;
+	}
+	.information-box .information-list .information-list-text {
+		margin: 18px 0 0;
+		line-height: 0.625rem;
+		font-size: 0.625rem;
+	}
+	.information-box .information-list .information-list-text:after {
+		margin-left: 8px;
+		width: 31px;
+		height: 7px;
+		vertical-align: -1px;
+		background-size: 1000px 500px;
+		background-position: 0 -350px;
+	}
+	.information-box .information-list .information-list-phone {
+		overflow: hidden;
+		margin: 13px 0 0;
+	}
+	.information-box .information-list .information-list-phone > dt {
+		line-height: 0.625rem;
+		font-size: 0.625rem;
+	}
+	.information-box .information-list .information-list-phone > dd {
+		margin: 2px 0 0;
+		line-height: 1.563rem;
+		font-size: 1.563rem;
+	}
+}
+
+/* ------------------------- 로고 배너 ------------------------- */
+.logo-banner-wrap {
+	overflow: hidden;
+	padding: 0 5%;
+}
+.logo-banner-wrap .logo-banner-box {
+	margin: 0 auto;
+	max-width: 1280px;
+}
+.logo-banner-box .logo-banner-list {
+	display: table;
+	overflow: hidden;
+	padding: 0 7.1875% 0 6.796875%;
+}
+.logo-banner-box .logo-banner-list > li {
+	display: table-cell;
+	height: 90px;
+	text-align: center;
+	vertical-align: middle;
+}
+.logo-banner-box .logo-banner-list > li:nth-child(1) {
+	width: 12.45210%;
+}
+.logo-banner-box .logo-banner-list > li:nth-child(2) {
+	width: 12.83524%;
+}
+.logo-banner-box .logo-banner-list > li:nth-child(3) {
+	width: 13.60153%;
+}
+.logo-banner-box .logo-banner-list > li:nth-child(4) {
+	width: 16.37931%;
+}
+.logo-banner-box .logo-banner-list > li:nth-child(5) {
+	width: 17.72030%;
+}
+.logo-banner-box .logo-banner-list > li:nth-child(6) {
+	width: 17.14559%;
+}
+.logo-banner-box .logo-banner-list > li:nth-child(7) {
+	width: 15.61302%;
+}
+.logo-banner-box .logo-banner-list > li > img {
+	max-width: 100%;
+}
+
+@media screen and (max-width: 999px) {
+	.logo-banner-wrap {
+		padding: 0 30px;
+	}
+	.logo-banner-wrap .logo-banner-box {
+		margin: 0;
+		max-width: none;
+	}
+	.logo-banner-box .logo-banner-list {
+		display: block;
+		padding: 21px 0 9px;
+		text-align: center;
+	}
+	.logo-banner-box .logo-banner-list > li {
+		display: inline-block;
+		margin: 0 8px 10px;
+		height: 20px;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(1) {
+		padding-top: 2px;
+		width: auto;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(2) {
+		padding-top: 3px;
+		width: auto;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(3) {
+		width: auto;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(4) {
+		width: auto;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(5) {
+		padding-top: 7px;
+		width: auto;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(6) {
+		padding-top: 5px;
+		width: auto;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(7) {
+		width: auto;
+	}
+
+	.logo-banner-box .logo-banner-list > li:nth-child(1) > img {
+		width: 48px;
+		height: 19px;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(2) > img {
+		width: 51px;
+		height: 12px;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(3) > img {
+		width: 56px;
+		height: 16px;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(4) > img {
+		width: 68px;
+		height: 18px;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(5) > img {
+		width: 74px;
+		height: 9px;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(6) > img {
+		width: 73px;
+		height: 13px;
+	}
+	.logo-banner-box .logo-banner-list > li:nth-child(7) > img {
+		width: 64px;
+		height: 16px;
+	}
+}
+
+/* ------------------------- 퀵 메뉴 ------------------------- */
+.quick-menu {
+	overflow: hidden;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	z-index: 100;
+}
+.quick-menu.scroll {
+	position: fixed;
+	top: 150px;
+}
+.quick-menu > li {
+	-o-box-shadow: 13px 15px 60px rgba(30, 46, 62, .3);
+	-ms-box-shadow: 13px 15px 60px rgba(30, 46, 62, .3);
+	-moz-box-shadow: 13px 15px 60px rgba(30, 46, 62, .3);
+	-webkit-box-shadow: 13px 15px 60px rgba(30, 46, 62, .3);
+	box-shadow: 13px 15px 60px rgba(30, 46, 62, .3);
+}
+.quick-menu > li > a {
+	display: block;
+	padding: 32px 0 0;
+	width: 200px;
+	height: 150px;
+	text-align: center;
+	letter-spacing: -0.025em;
+	line-height: 1.625rem;
+	font-size: 1.5rem;
+    font-family: 'Noto-Medium', sans-serif;
+	color: #fff;
+	background-color: rgba(77, 96, 134, 0.4);
+	-o-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.quick-menu > li > a:after {
+	content: "";
+	display: block;
+	margin: 15px auto 0;
+	width: 29px;
+	height: 29px;
+	background-image: url("../images/main/icon.png");
+	background-repeat: no-repeat;
+	background-position: 0 -100px;
+}
+.quick-menu > li > a:hover,
+.quick-menu > li > a.on {
+	background-color: rgba(0, 99, 201, 1);
+}
+.quick-menu > li > a:hover:after,
+.quick-menu > li > a.on:after {
+	opacity: 0.5;
+}
+
+@media screen and (max-width: 999px) {
+	.quick-menu {
+		display: none;
+	}
+}

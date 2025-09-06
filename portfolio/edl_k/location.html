@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="">
+	<meta name="keywords" content="">
+	<meta name="Author" content="yoon">
+	<title>EDL_K</title>
+	<link rel="stylesheet" href="./resources/css/jquery.mCustomScrollbar.css"> <!-- 20200113 추가 -->
+	<link rel="stylesheet" href="./resources/css/aos.css">
+	<link rel="stylesheet" href="./resources/css/swiper.min.css">
+	<link rel="stylesheet" href="./resources/css/slick.css">
+	<link rel="stylesheet" href="./resources/css/slick-theme.css">
+	<link rel="stylesheet" href="./resources/css/default.css">
+	<link rel="stylesheet" href="./resources/css/main.css"> <!-- 20200203 추가 -->
+	<link rel="stylesheet" href="./resources/css/page.css">
+	<script src="./resources/js/jquery-3.3.1.js"></script>
+	<script src="./resources/js/modernizr.custom.js"></script>
+	<script src="./resources/js/jquery.mCustomScrollbar.js"></script> <!-- 20200113 추가 -->
+	<script src="./resources/js/aos.js"></script>
+	<script src="./resources/js/swiper.min.js"></script>
+	<script src="./resources/js/slick.min.js"></script>
+</head>
+<body class="sub">
+
+	<div class="s-wrap">
+		<a href="#contents" class="skip">본문바로가기</a>
+
+		<!-- 상단 시작 -->
+		<header class="header">
+			<h1 class="logo">
+				<a href="main.html" target="_self">E.DL K</a>
+			</h1>
+
+			<div class="gnb-wrap">
+				<ul class="mobile-util">
+					<li><a href="login.html" target="_self">LOGIN</a></li>
+					<li><a href="joinTerms.html" target="_self">JOIN</a></li>
+				</ul> <!-- (D) 모바일용 유틸 메뉴 추가 -->
+
+				<ul class="gnb-list">
+					<li>
+						<a href="service.html" target="_self">SERVICE</a>
+					</li>
+					<li>
+						<a href="#none">CONTENTS</a>
+						<ul class="depth2_01">
+							<li><a href="contentPopular.html" target="_self">POPULAR ON EDL.K</a></li>
+							<li><a href="contentTrending.html" target="_self">TRENDING NOW</a></li>
+							<li><a href="contentTotal.html" target="_self">TOTAL CONTENTS</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="brand.html" target="_self">BRAND</a>
+					</li>
+					<li>
+						<a href="consulting.html" target="_self">CONSULTING</a>
+					</li>
+					<li>
+						<a href="#none">NEWSROOM</a>
+						<ul class="depth2_02">
+							<li><a href="noticeList.html" target="_self">NOTICE</a></li>
+							<li><a href="mediaList.html" target="_self">MEDIA &amp; MARKETING</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="location.html" target="_self">LOCATION</a>
+					</li>
+				</ul>
+
+				<!-- <ul class="sns-share">
+					<li><a href="#none" class="instagram">인스타그램</a></li>
+					<li><a href="#none" class="facebook">페이스북</a></li>
+				</ul> --> <!-- (D) sns공유 서비스 시작 시 주석 풀어주면 됨 -->
+				
+				<a href="#none" class="mobile-menu-close">
+					<span class="line01"></span>
+					<span class="line02"></span>
+				</a>
+			</div>
+
+			<ul class="util">
+				<li><a href="login.html" target="_self">LOGIN</a></li>
+				<li><a href="joinTerms.html" target="_self">JOIN</a></li>
+			</ul>
+
+			<ul class="mobile-menu">
+				<li><a href="login.html" target="_self" class="login"></a></li>
+				<li><a href="#none" class="menu"></a></li>
+			</ul>
+
+			<div class="mobile-menu-dim"></div>
+		</header>
+		<!-- //상단 끝 -->
+		
+		<!-- 컨텐츠 시작 -->
+		<div id="contents" class="s-contents" tabindex="-1">
+
+			<!-- 비주얼 -->
+			<div class="s-visual">
+				<h2 class="title">LOCATION</h2>
+				<p class="text">가장 가까운 지역의 E.DL을 만나보실 수 있습니다.</p>
+
+				<!-- mobile_bg_icon -->
+				<span class="icon ico01"></span>
+				<span class="icon ico02"></span>
+				<span class="icon ico03"></span>
+				<span class="icon ico04"></span>
+			</div>
+
+			<!-- Location -->
+			<h2 class="s-cont-title-wrap">
+				<p class="s-cont-title">지역선택</p>
+			</h2>
+
+			<!-- pc map -->
+			<div class="pc-map-wrap">
+				<div class="pc-map-box">
+					<div class="map-box-left">
+						<h3 class="title">광역지도</h3>
+						<p class="text">원하시는 지역을 선택해주세요.</p>
+						<div class="map-wrap-city">
+							<ul class="city-title-list">
+								<li class="city-seoul"><a href="#none">서울특별시</a></li>
+								<li class="city-incheon"><a href="#none">인천광역시</a></li>
+								<li class="city-gyeonggi"><a href="#none">경기도</a></li>
+								<li class="city-gangwon"><a href="#none">강원도</a></li>
+								<li class="city-sejong"><a href="#none">세종시</a></li>
+								<li class="city-daejeon"><a href="#none">대전광역시</a></li>
+								<li class="city-chungnam"><a href="#none">충청남도</a></li>
+								<li class="city-chungbuk"><a href="#none">충청북도</a></li>
+								<li class="city-daegu"><a href="#none">대구광역시</a></li>
+								<li class="city-ulsan"><a href="#none">울산광역시</a></li>
+								<li class="city-busan"><a href="#none">부산광역시</a></li>
+								<li class="city-gyeongbuk"><a href="#none">경상북도</a></li>
+								<li class="city-gyeongnam"><a href="#none">경상남도</a></li>
+								<li class="city-gwangju"><a href="#none">광주광역시</a></li>
+								<li class="city-jeonbuk"><a href="#none">전라북도</a></li>
+								<li class="city-jeonnam"><a href="#none">전라남도</a></li>
+								<li class="city-jeju"><a href="#none">제주도</a></li>
+							</ul>
+
+							<img src="./resources/images/sub/bg_city.png" name="map" useMap="#imgmapCity">
+							<map name="imgmapCity">
+								<area onclick="bgMapCity(0); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_seoul.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="서울특별시" coords="73,87,76,86,78,79,84,79,83,73,84,72,87,74,94,75,96,79,96,82,103,85,103,89,98,94,93,102,85,97,78,97,75,95,72,92,72,86" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(1); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_incheon.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="인천광역시" coords="48,102,47,96,51,92,52,82,55,85,63,82,67,87,71,88,72,97,70,101,64,102,58,100,48,102" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(2); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_gyeonggi.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="경기도" coords="48,102,51,91,51,85,52,81,55,84,63,82,67,86,71,87,78,84,78,79,83,77,85,73,89,75,95,74,97,83,104,85,102,90,98,93,93,102,84,97,77,98,71,90,72,88,71,100,65,103,66,114,61,121,62,126,68,130,69,137,66,141,76,148,90,146,103,145,111,151,112,146,117,140,130,134,141,124,142,105,147,100,143,93,147,88,145,83,135,83,126,80,128,72,124,69,125,61,129,56,128,50,122,48,117,38,110,34,104,34,98,27,97,24,96,24,87,27,83,29,80,30,77,35,74,35,73,35,74,38,78,38,79,40,79,47,76,51,67,51,66,56,68,61,68,63,63,67,58,69,50,65,45,61,38,65,31,63,31,67,33,68,31,72,24,74,25,77,35,83,38,84,40,93,39,101,44,103,48,102" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(3); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_gangwon.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="강원도" coords="98,26,103,34,116,36,123,49,129,51,130,58,124,63,126,72,127,73,128,77,126,79,133,84,145,84,147,87,146,90,143,93,147,100,145,103,142,105,141,123,151,127,156,125,157,115,160,115,165,123,172,118,178,118,184,125,191,125,193,128,204,133,216,134,219,132,227,132,232,130,247,131,252,132,262,121,260,113,254,104,243,90,241,87,239,74,221,58,208,37,195,5,189,-1,187,6,187,16,183,16,170,9,169,14,170,20,154,22,142,21,136,21,126,18,124,20,124,22,115,22,110,19,105,22,97,25,96,25" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(4); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_sejong.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="세종시" coords="109,166,104,162,98,168,97,174,101,179,103,192,107,197,109,191,115,188,113,177,109,171,110,166" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(5); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_daejeon.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="대전광역시" coords="124,210,117,216,110,209,105,203,107,197,108,191,115,187,122,189,125,190,125,196,123,207,123,208" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(6); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_chungnam.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="충청남도" coords="125,211,130,212,133,223,135,223,129,235,121,233,111,221,105,220,95,229,89,225,88,218,82,215,70,231,59,232,55,230,63,225,62,221,51,215,51,211,56,202,52,198,41,196,38,191,40,182,40,180,35,175,36,169,31,168,26,171,22,165,26,153,39,138,51,133,60,139,66,141,75,148,91,146,103,145,109,148,111,154,117,159,117,163,113,162,110,165,103,163,98,170,100,177,103,183,102,190,106,195,106,201,108,208,117,215,124,210" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(7); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_chungbuk.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="충청북도" coords="124,210,130,211,132,221,141,228,152,229,160,224,160,214,166,211,157,205,154,206,150,205,149,198,156,192,153,179,150,174,160,167,170,158,178,152,186,156,194,154,195,142,207,131,203,132,193,128,189,123,184,123,175,116,166,121,158,113,158,114,156,123,150,128,142,123,127,136,113,143,111,152,117,160,117,162,112,162,109,170,112,175,113,180,113,185,113,186,124,190,126,192,125,202,123,206,124,210" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(8); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_daegu.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="대구광역시" coords="188,264,187,261,188,256,193,254,191,242,188,240,200,232,206,229,214,231,218,237,220,240,219,243,216,246,213,250,213,256,209,258,204,257,202,264,197,263,188,265" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(9); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_ulsan.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="울산광역시" coords="257,291,272,283,274,271,270,259,262,261,257,259,253,255,250,256,246,260,239,263,239,266,234,272,238,274,245,280,249,281,256,291" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(10); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_busan.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="부산광역시" coords="223,320,230,320,234,316,243,316,250,308,257,307,257,291,252,285,248,285,231,300,228,301,226,307,224,311,209,310,204,314,196,316,198,322,205,326,211,325,217,318,222,319,221,319,222,319,221,320,222,319" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(11); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_gyeongbuk.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="경상북도" coords="202,265,210,268,222,270,232,266,238,264,240,263,246,260,250,256,253,255,259,260,271,260,277,258,275,246,278,239,279,225,272,228,268,229,267,226,271,219,267,215,267,183,272,157,266,138,267,130,260,121,252,131,240,130,226,132,220,131,216,134,203,134,195,142,194,152,193,155,188,156,176,153,168,158,163,165,150,173,151,179,154,190,149,199,151,205,160,207,165,210,165,211,160,215,159,225,152,230,154,243,166,245,170,245,174,255,177,262,181,265,186,265,187,265,186,260,194,254,189,240,202,232,215,231,221,242,215,248,212,253,212,257,208,258,204,258,201,264,196,262,186,265" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(12); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_gyeongnam.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="경상남도" coords="223,322,217,317,215,320,208,326,197,323,196,315,209,310,224,310,226,303,253,283,242,278,233,270,238,265,233,263,227,269,213,269,202,265,197,262,186,266,180,265,172,254,168,244,154,243,152,241,143,243,135,262,130,267,137,281,136,289,131,292,133,296,135,310,144,315,147,320,147,336,152,345,159,347,169,350,171,347,169,340,175,338,181,339,186,336,198,348,209,350,222,340,223,323" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(13); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_gwangju.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="광주광역시" coords="72,323,90,311,76,299,75,299,70,304,61,302,57,304,57,312,71,324" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(14); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_jeonbuk.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="전라북도" coords="46,285,48,286,52,291,62,292,70,285,72,279,75,279,81,284,87,285,91,290,91,295,97,296,104,291,116,296,125,290,132,292,136,287,136,277,129,266,140,250,145,242,153,242,154,235,152,229,141,227,135,223,131,232,126,235,120,232,111,221,104,222,95,231,91,226,90,218,83,215,76,224,65,232,57,229,55,232,62,241,58,255,51,261,51,267,52,271,48,273,46,283" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(15); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_jeonnam.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="전라남도" coords="46,285,49,285,53,291,65,291,70,286,71,280,75,279,80,284,88,284,91,291,89,294,97,296,104,291,115,296,124,289,131,292,134,302,135,311,144,315,148,325,147,337,150,342,151,347,149,351,146,359,133,358,128,361,132,372,127,379,124,377,120,370,117,371,108,381,100,381,97,388,78,387,69,391,59,383,52,384,43,377,27,386,29,389,31,394,17,393,11,401,0,392,9,378,14,368,16,362,7,357,6,339,12,335,11,328,20,325,16,311,19,307,37,309,40,308,36,301,43,290,46,286" href="#" onfocus="this.blur()"/>
+								<area onclick="bgMapCity(16); event.preventDefault();" onmouseover="if(document.images) map.src='./resources/images/sub/bg_city_jeju.png'" onmouseout="if(document.images) map.src='./resources/images/sub/bg_city.png'"
+								shape="poly" alt="제주도" coords="62,440,87,421,93,413,86,412,86,412,83,406,72,409,57,409,47,412,42,412,39,418,28,427,31,435,38,437,59,438,61,438,60,437,60,436" href="#" onfocus="this.blur()"/>
+							</map>
+						</div>
+					</div>
+					<div class="map-box-right">
+						<h3 class="title">상세지도</h3> <!-- 20200107 수정 -->
+						<p class="text">원하시는 지역을 선택해주세요.</p>
+						<div class="map-wrap-detail">
+							<ul>
+								<li>
+									<img src="./resources/images/sub/bg_seoul.png" name="map01" useMap="#imgmap01">
+									<a href="#none" class="seoul-gangnam">강남구</a>
+									<a href="#none" class="seoul-gangdong">강동구</a>
+									<a href="#none" class="seoul-gangbuk">강북구</a>
+									<a href="#none" class="seoul-gangseo">강서구</a>
+									<a href="#none" class="seoul-gwanak">관악구</a>
+									<a href="#none" class="seoul-gwangjin">광진구</a>
+									<a href="#none" class="seoul-guro">구로구</a>
+									<a href="#none" class="seoul-geumcheon">금천구</a>
+									<a href="#none" class="seoul-nowon">노원구</a>
+									<a href="#none" class="seoul-dobong">도봉구</a>
+									<a href="#none" class="seoul-dongdaemun">동대문구</a>
+									<a href="#none" class="seoul-dongjak">동작구</a>
+									<a href="#none" class="seoul-mapo">마포구</a>
+									<a href="#none" class="seoul-seodaemun">서대문구</a>
+									<a href="#none" class="seoul-seocho">서초구</a>
+									<a href="#none" class="seoul-seongdong">성동구</a>
+									<a href="#none" class="seoul-seongbuk">성북구</a>
+									<a href="#none" class="seoul-songpa">송파구</a>
+									<a href="#none" class="seoul-yangcheon">양천구</a>
+									<a href="#none" class="seoul-yeongdeungpo">영등포구</a>
+									<a href="#none" class="seoul-yongsan">용산구</a>
+									<a href="#none" class="seoul-eunpyeong">은평구</a>
+									<a href="#none" class="seoul-jongno">종로구</a>
+									<a href="#none" class="seoul-junggu">중구</a>
+									<a href="#none" class="seoul-jungnang">중랑구</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_incheon.png" name="map02" useMap="#imgmap02">
+									<a href="#none" class="incheon-junggu">중구</a>
+									<a href="#none" class="incheon-donggu">동구</a>
+									<a href="#none" class="incheon-yeonsu">연수구</a>
+									<a href="#none" class="incheon-namdong">남동구</a>
+									<a href="#none" class="incheon-bupyeong">부평구</a>
+									<a href="#none" class="incheon-gyeyang">계양구</a>
+									<a href="#none" class="incheon-seogu">서구</a>
+									<a href="#none" class="incheon-ganghwa">강화군</a>
+									<a href="#none" class="incheon-yeongjong">중구(영종도)</a>
+									<a href="#none" class="incheon-namgu">남구</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_gyeonggi.png" name="map03" useMap="#imgmap03">
+									<a href="#none" class="gyeonggi-suwon">수원</a>
+									<a href="#none" class="gyeonggi-seongnam">성남</a>
+									<a href="#none" class="gyeonggi-uijeongbu">의정부</a>
+									<a href="#none" class="gyeonggi-anyang">안양</a>
+									<a href="#none" class="gyeonggi-bucheon">부천</a>
+									<a href="#none" class="gyeonggi-gwangmyeong">광명</a>
+									<a href="#none" class="gyeonggi-pyeongtaeg">평택</a>
+									<a href="#none" class="gyeonggi-dongducheon">동두천</a>
+									<a href="#none" class="gyeonggi-ansan">안산</a>
+									<a href="#none" class="gyeonggi-goyang">고양</a>
+									<a href="#none" class="gyeonggi-gwacheon">과천</a>
+									<a href="#none" class="gyeonggi-guli">구리</a>
+									<a href="#none" class="gyeonggi-namyangju">남양주</a>
+									<a href="#none" class="gyeonggi-osan">오산</a>
+									<a href="#none" class="gyeonggi-siheung">시흥</a>
+									<a href="#none" class="gyeonggi-gunpo">군포</a>
+									<a href="#none" class="gyeonggi-uiwang">의왕</a>
+									<a href="#none" class="gyeonggi-hanam">하남</a>
+									<a href="#none" class="gyeonggi-yongin">용인</a>
+									<a href="#none" class="gyeonggi-paju">파주</a>
+									<a href="#none" class="gyeonggi-icheon">이천</a>
+									<a href="#none" class="gyeonggi-anseong">안성</a>
+									<a href="#none" class="gyeonggi-gimpo">김포</a>
+									<a href="#none" class="gyeonggi-hwaseong">화성</a>
+									<a href="#none" class="gyeonggi-gwangju">광주</a>
+									<a href="#none" class="gyeonggi-yangju">양주</a>
+									<a href="#none" class="gyeonggi-pocheon">포천</a>
+									<a href="#none" class="gyeonggi-yeoju">여주</a>
+									<a href="#none" class="gyeonggi-yeoncheon">연천</a>
+									<a href="#none" class="gyeonggi-gapyeong">가평</a>
+									<a href="#none" class="gyeonggi-yangpyeong">양평</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_gangwon.png" name="map04" useMap="#imgmap04">
+									<a href="#none" class="gangwon-chuncheon">춘천</a>
+									<a href="#none" class="gangwon-wonju">원주</a>
+									<a href="#none" class="gangwon-gangleung">강릉</a>
+									<a href="#none" class="gangwon-donghae">동해</a>
+									<a href="#none" class="gangwon-taebaeg">태백</a>
+									<a href="#none" class="gangwon-sogcho">속초</a>
+									<a href="#none" class="gangwon-samcheog">삼척</a>
+									<a href="#none" class="gangwon-hongcheon">홍천</a>
+									<a href="#none" class="gangwon-hoengseong">횡성</a>
+									<a href="#none" class="gangwon-yeongwol">영월</a>
+									<a href="#none" class="gangwon-pyeongchang">평창</a>
+									<a href="#none" class="gangwon-jeongseon">정선</a>
+									<a href="#none" class="gangwon-cheolwon">철원</a>
+									<a href="#none" class="gangwon-hwacheon">화천</a>
+									<a href="#none" class="gangwon-yanggu">양구</a>
+									<a href="#none" class="gangwon-inje">인제</a>
+									<a href="#none" class="gangwon-goseong">고성</a>
+									<a href="#none" class="gangwon-yangyang">양양</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_sejong.png" name="map05" useMap="#imgmap05">
+									<a href="#none" class="sejong-hansol01">한솔동</a>
+									<a href="#none" class="sejong-hansol02">한솔동</a>
+									<a href="#none" class="sejong-dodam">도담동</a>
+									<a href="#none" class="sejong-jochiwon">조치원읍</a>
+									<a href="#none" class="sejong-yeongi">연기면</a>
+									<a href="#none" class="sejong-yeondong">연동면</a>
+									<a href="#none" class="sejong-bugang">부강면</a>
+									<a href="#none" class="sejong-geumnam">금남면</a>
+									<a href="#none" class="sejong-janggun">장군면</a>
+									<a href="#none" class="sejong-yeonseo">연서면</a>
+									<a href="#none" class="sejong-jeonui">전의면</a>
+									<a href="#none" class="sejong-jeondong">전동면</a>
+									<a href="#none" class="sejong-sojeong">소정면</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_daejeon.png" name="map06" useMap="#imgmap06">
+									<a href="#none" class="daejeon-donggu">동구</a>
+									<a href="#none" class="daejeon-junggu">중구</a>
+									<a href="#none" class="daejeon-seogu">서구</a>
+									<a href="#none" class="daejeon-yuseonggu">유성구</a>
+									<a href="#none" class="daejeon-daedeoggu">대덕구</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_chungnam.png" name="map07" useMap="#imgmap07">
+									<a href="#none" class="chungnam-cheonan">천안</a>
+									<a href="#none" class="chungnam-gongju">공주</a>
+									<a href="#none" class="chungnam-bolyeong">보령</a>
+									<a href="#none" class="chungnam-asan">아산</a>
+									<a href="#none" class="chungnam-seosan">서산</a>
+									<a href="#none" class="chungnam-nonsan">논산</a>
+									<a href="#none" class="chungnam-gyelyong">계룡</a>
+									<a href="#none" class="chungnam-dangjin">당진</a>
+									<a href="#none" class="chungnam-geumsan">금산</a>
+									<a href="#none" class="chungnam-buyeo">부여</a>
+									<a href="#none" class="chungnam-seocheon">서천</a>
+									<a href="#none" class="chungnam-cheongyang">청양</a>
+									<a href="#none" class="chungnam-hongseong">홍성</a>
+									<a href="#none" class="chungnam-yesan">예산</a>
+									<a href="#none" class="chungnam-taean">태안</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_chungbuk.png" name="map08" useMap="#imgmap08">
+									<a href="#none" class="chungbuk-cheongju">청주</a>
+									<a href="#none" class="chungbuk-chungju">충주</a>
+									<a href="#none" class="chungbuk-jecheon">제천</a>
+									<a href="#none" class="chungbuk-boeun">보은</a>
+									<a href="#none" class="chungbuk-ogcheon">옥천</a>
+									<a href="#none" class="chungbuk-yeongdong">영동</a>
+									<a href="#none" class="chungbuk-jeungpyeong">증평</a>
+									<a href="#none" class="chungbuk-jincheon">진천</a>
+									<a href="#none" class="chungbuk-goesan">괴산</a>
+									<a href="#none" class="chungbuk-eumseong">음성</a>
+									<a href="#none" class="chungbuk-danyang">단양</a>
+									<a href="#none" class="chungbuk-cheongwon">청원</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_daegu.png" name="map09" useMap="#imgmap09">
+									<a href="#none" class="daegu-junggu">중구</a>
+									<a href="#none" class="daegu-donggu">동구</a>
+									<a href="#none" class="daegu-seogu">서구</a>
+									<a href="#none" class="daegu-namgu">남구</a>
+									<a href="#none" class="daegu-buggu">북구</a>
+									<a href="#none" class="daegu-suseong">수성구</a>
+									<a href="#none" class="daegu-dalseo">달서구</a>
+									<a href="#none" class="daegu-dalseong01">달성군</a>
+									<a href="#none" class="daegu-dalseong02">달성군</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_ulsan.png" name="map10" useMap="#imgmap10">
+									<a href="#none" class="ulsan-junggu">중구</a>
+									<a href="#none" class="ulsan-namgu">남구</a>
+									<a href="#none" class="ulsan-donggu">동구</a>
+									<a href="#none" class="ulsan-buggu">북구</a>
+									<a href="#none" class="ulsan-ulju">울주군</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_busan.png" name="map11" useMap="#imgmap11">
+									<a href="#none" class="busan-junggu">중구</a>
+									<a href="#none" class="busan-seogu">서구</a>
+									<a href="#none" class="busan-donggu">동구</a>
+									<a href="#none" class="busan-yeongdo">영도구</a>
+									<a href="#none" class="busan-busanjin">부산진구</a>
+									<a href="#none" class="busan-donglae">동래구</a>
+									<a href="#none" class="busan-namgu">상구</a>
+									<a href="#none" class="busan-buggu">북구</a>
+									<a href="#none" class="busan-haeundae">해운대구</a>
+									<a href="#none" class="busan-saha">사하구</a>
+									<a href="#none" class="busan-geumjeong">금정구</a>
+									<a href="#none" class="busan-gangseo">강서구</a>
+									<a href="#none" class="busan-yeonje">연제구</a>
+									<a href="#none" class="busan-suyeong">수영구</a>
+									<a href="#none" class="busan-sasang">사상구</a>
+									<a href="#none" class="busan-gijang">기장군</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_gyeongbuk.png" name="map12" useMap="#imgmap12">
+									<a href="#none" class="gyeongbuk-pohang">포항</a>
+									<a href="#none" class="gyeongbuk-gyeongju">경주</a>
+									<a href="#none" class="gyeongbuk-gimcheon">김천</a>
+									<a href="#none" class="gyeongbuk-andong">안동</a>
+									<a href="#none" class="gyeongbuk-gumi">구미</a>
+									<a href="#none" class="gyeongbuk-yeongju">영주</a>
+									<a href="#none" class="gyeongbuk-yeongcheon">영천</a>
+									<a href="#none" class="gyeongbuk-sangju">상주</a>
+									<a href="#none" class="gyeongbuk-mungyeong">문경</a>
+									<a href="#none" class="gyeongbuk-gyeongsan">경산</a>
+									<a href="#none" class="gyeongbuk-gunwi">군위</a>
+									<a href="#none" class="gyeongbuk-uiseong">의성</a>
+									<a href="#none" class="gyeongbuk-cheongsong">청송</a>
+									<a href="#none" class="gyeongbuk-yeongyang">영양</a>
+									<a href="#none" class="gyeongbuk-yeongdeog">영덕</a>
+									<a href="#none" class="gyeongbuk-cheongdo">청도</a>
+									<a href="#none" class="gyeongbuk-golyeong">고령</a>
+									<a href="#none" class="gyeongbuk-seongju">성주</a>
+									<a href="#none" class="gyeongbuk-chilgog">칠곡</a>
+									<a href="#none" class="gyeongbuk-yecheon">예천</a>
+									<a href="#none" class="gyeongbuk-bonghwa">봉화</a>
+									<a href="#none" class="gyeongbuk-uljin">울진</a>
+									<a href="#none" class="gyeongbuk-ulleung">울릉도</a>
+									<a href="#none" class="gyeongbuk-dogdo">독도</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_gyeongnam.png" name="map13" useMap="#imgmap13">
+									<a href="#none" class="gyeongnam-changwon">창원</a>
+									<a href="#none" class="gyeongnam-jinju">진주</a>
+									<a href="#none" class="gyeongnam-tongyeong">통영</a>
+									<a href="#none" class="gyeongnam-sacheon">사천</a>
+									<a href="#none" class="gyeongnam-gimhae">김해</a>
+									<a href="#none" class="gyeongnam-milyang">밀양</a>
+									<a href="#none" class="gyeongnam-geoje">거제</a>
+									<a href="#none" class="gyeongnam-yangsan">양산</a>
+									<a href="#none" class="gyeongnam-uilyeong">의령</a>
+									<a href="#none" class="gyeongnam-haman">함안</a>
+									<a href="#none" class="gyeongnam-changnyeong">창녕</a>
+									<a href="#none" class="gyeongnam-goseong">고성</a>
+									<a href="#none" class="gyeongnam-namhae">남해</a>
+									<a href="#none" class="gyeongnam-hadong">하동</a>
+									<a href="#none" class="gyeongnam-sancheong">산청</a>
+									<a href="#none" class="gyeongnam-hamyang">함양</a>
+									<a href="#none" class="gyeongnam-geochang">거창</a>
+									<a href="#none" class="gyeongnam-habcheon">합천</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_gwangju.png" name="map14" useMap="#imgmap14">
+									<a href="#none" class="gwangju-donggu">동구</a>
+									<a href="#none" class="gwangju-seogu">서구</a>
+									<a href="#none" class="gwangju-namgu">남구</a>
+									<a href="#none" class="gwangju-buggu">북구</a>
+									<a href="#none" class="gwangju-gwangsan">광산구</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_jeonbuk.png" name="map15" useMap="#imgmap15">
+									<a href="#none" class="jeonbuk-jeonju">전주</a>
+									<a href="#none" class="jeonbuk-gunsan">군산</a>
+									<a href="#none" class="jeonbuk-igsan">익산</a>
+									<a href="#none" class="jeonbuk-jeongeub">정읍</a>
+									<a href="#none" class="jeonbuk-namwon">남원</a>
+									<a href="#none" class="jeonbuk-gimje">김제</a>
+									<a href="#none" class="jeonbuk-wanju">완주</a>
+									<a href="#none" class="jeonbuk-jinan">진안</a>
+									<a href="#none" class="jeonbuk-muju">무주</a>
+									<a href="#none" class="jeonbuk-jangsu">장수</a>
+									<a href="#none" class="jeonbuk-imsil">임실</a>
+									<a href="#none" class="jeonbuk-sunchang">순창</a>
+									<a href="#none" class="jeonbuk-gochang">고창</a>
+									<a href="#none" class="jeonbuk-buan">부안</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_jeonnam.png" name="map16" useMap="#imgmap16">
+									<a href="#none" class="jeonnam-mogpo">목포</a>
+									<a href="#none" class="jeonnam-yeosu">여수</a>
+									<a href="#none" class="jeonnam-suncheon">순천</a>
+									<a href="#none" class="jeonnam-naju">나주</a>
+									<a href="#none" class="jeonnam-gwangyang">광양</a>
+									<a href="#none" class="jeonnam-damyang">담양</a>
+									<a href="#none" class="jeonnam-gogseong">곡성</a>
+									<a href="#none" class="jeonnam-gulye">구례</a>
+									<a href="#none" class="jeonnam-goheung">고흥</a>
+									<a href="#none" class="jeonnam-boseong">보성</a>
+									<a href="#none" class="jeonnam-hwasun">화순</a>
+									<a href="#none" class="jeonnam-jangheung">장흥</a>
+									<a href="#none" class="jeonnam-gangjin">강진</a>
+									<a href="#none" class="jeonnam-haenam">해남</a>
+									<a href="#none" class="jeonnam-yeongam">영암</a>
+									<a href="#none" class="jeonnam-muan">무안</a>
+									<a href="#none" class="jeonnam-hampyeong">함평</a>
+									<a href="#none" class="jeonnam-yeonggwang">영광</a>
+									<a href="#none" class="jeonnam-jangseong">장성</a>
+									<a href="#none" class="jeonnam-wando">완도</a>
+									<a href="#none" class="jeonnam-jindo">진도</a>
+									<a href="#none" class="jeonnam-sinan">신안</a>
+								</li>
+								<li>
+									<img src="./resources/images/sub/bg_jeju.png" name="map17" useMap="#imgmap17">
+									<a href="#none" class="jeju-jeju">제주</a>
+									<a href="#none"class="jeju-seogwipo">서귀포</a>
+									<a href="#none"class="jeju-gapado">가파도</a>
+									<a href="#none"class="jeju-malado">마라도</a>
+									<a href="#none"class="jeju-udo">우도</a>
+								</li>
+							</ul>
+							
+						</div>
+					</div>
+					<script>
+						$(document).ready(function(){
+
+							// 시/도 상세
+							$('.map-wrap-detail > ul > li').hide();
+							// $('.map-wrap-detail > ul > li').first().show(); // 20200107 수정
+
+							$('.city-title-list > li > a').on('click', function(){
+								var idx = $(this).parent('li').index();
+								bgMapCity(idx);
+							});
+
+							$('.map-wrap-detail > ul > li > a').click(function(){
+								$('.map-wrap-detail > ul > li > a').removeClass('on');
+								$(this).addClass('on');
+							});
+
+						});
+
+						function bgMapCity(index) {
+
+							// 시/도 상세 지역명
+							var mapDetailTitleArray = [
+								'서울특별시',
+								'인천광역시',
+								'경기도',
+								'강원도',
+								'세종시',
+								'대전광역시',
+								'충청남도',
+								'충청북도',
+								'대구광역시',
+								'울산광역시',
+								'부산광역시',
+								'경상북도',
+								'경상남도',
+								'광주광역시',
+								'전라북도',
+								'전라남도',
+								'제주도'
+							]
+							$('.map-box-right > h3.title').text(mapDetailTitleArray[index]);
+
+							// 시/도 상세
+							$('.map-wrap-detail > ul > li').hide();
+							$('.map-wrap-detail > ul > li').eq(index).show();
+
+							// 지역명 클릭시 on/off
+							$('.city-title-list > li').removeClass('on');
+							$('.city-title-list > li').eq(index).addClass('on');
+
+							// 시/도 상세 행정구역 off
+							$('.map-wrap-detail > ul > li > a').removeClass('on');
+
+						}
+							
+					</script>
+				</div>
+			</div>
+
+			<!-- mobile map -->
+			<div class="mobile-map-wrap">
+				<dl class="map-search">
+					<dt>
+						<label for="">
+							<select name="" id="cityChoice">
+								<option value="choice">시/도 선택</option> <!-- 20200107 추가 -->
+								<option value="0">서울특별시</option>
+								<option value="1">인천광역시</option>
+								<option value="2">경기도</option>
+								<option value="3">강원도</option>
+								<option value="4">세종시</option>
+								<option value="5">대전광역시</option>
+								<option value="6">충청남도</option>
+								<option value="7">충청북도</option>
+								<option value="8">대구광역시</option>
+								<option value="9">울산광역시</option>
+								<option value="10">부산광역시</option>
+								<option value="11">경상북도</option>
+								<option value="12">경상남도</option>
+								<option value="13">광주광역시</option>
+								<option value="14">전라북도</option>
+								<option value="15">전라남도</option>
+								<option value="16">제주도</option>
+							</select>
+						</label>
+					</dt>
+
+					<!-- 서울특별시 -->
+					<dd>
+						<ul>
+							<li><a href="#none">강남구</a></li>
+							<li><a href="#none">강동구</a></li>
+							<li><a href="#none">강북구</a></li>
+							<li><a href="#none">강서구</a></li>
+							<li><a href="#none">관악구</a></li>
+							<li><a href="#none">광진구</a></li>
+							<li><a href="#none">구로구</a></li>
+							<li><a href="#none">금천구</a></li>
+							<li><a href="#none">노원구</a></li>
+							<li><a href="#none">도봉구</a></li>
+							<li><a href="#none">동대문구</a></li>
+							<li><a href="#none">동작구</a></li>
+							<li><a href="#none">마포구</a></li>
+							<li><a href="#none">서대문구</a></li>
+							<li><a href="#none">서초구</a></li>
+							<li><a href="#none">성동구</a></li>
+							<li><a href="#none">성북구</a></li>
+							<li><a href="#none">송파구</a></li>
+							<li><a href="#none">양천구</a></li>
+							<li><a href="#none">영등포구</a></li>
+							<li><a href="#none">용산구</a></li>
+							<li><a href="#none">은평구</a></li>
+							<li><a href="#none">종로구</a></li>
+							<li><a href="#none">중구</a></li>
+							<li><a href="#none">중랑구</a></li>
+						</ul>
+
+						<!-- 인천광역시 -->
+						<ul>
+							<li><a href="#none">중구</a></li>
+							<li><a href="#none">동구</a></li>
+							<li><a href="#none">연수구</a></li>
+							<li><a href="#none">남동구</a></li>
+							<li><a href="#none">부평구</a></li>
+							<li><a href="#none">계양구</a></li>
+							<li><a href="#none">서구</a></li>
+							<li><a href="#none">강화군</a></li>
+							<li><a href="#none">중구(영종도)</a></li>
+							<li><a href="#none">남구</a></li>
+						</ul>
+					
+						<!-- 경기도 -->
+						<ul>
+							<li><a href="#none">수원</a></li>
+							<li><a href="#none">성남</a></li>
+							<li><a href="#none">의정부</a></li>
+							<li><a href="#none">안양</a></li>
+							<li><a href="#none">부천</a></li>
+							<li><a href="#none">광명</a></li>
+							<li><a href="#none">평택</a></li>
+							<li><a href="#none">동두천</a></li>
+							<li><a href="#none">안산</a></li>
+							<li><a href="#none">고양</a></li>
+							<li><a href="#none">과천</a></li>
+							<li><a href="#none">구리</a></li>
+							<li><a href="#none">남양주</a></li>
+							<li><a href="#none">오산</a></li>
+							<li><a href="#none">시흥</a></li>
+							<li><a href="#none">군포</a></li>
+							<li><a href="#none">의왕</a></li>
+							<li><a href="#none">하남</a></li>
+							<li><a href="#none">용인</a></li>
+							<li><a href="#none">파주</a></li>
+							<li><a href="#none">이천</a></li>
+							<li><a href="#none">안성</a></li>
+							<li><a href="#none">김포</a></li>
+							<li><a href="#none">화성</a></li>
+							<li><a href="#none">광주</a></li>
+							<li><a href="#none">양주</a></li>
+							<li><a href="#none">포천</a></li>
+							<li><a href="#none">여주</a></li>
+							<li><a href="#none">연천</a></li>
+							<li><a href="#none">가평</a></li>
+							<li><a href="#none">양평</a></li>
+						</ul>
+					
+						<!-- 강원도 -->
+						<ul>
+							<li><a href="#none">춘천</a></li>
+							<li><a href="#none">원주</a></li>
+							<li><a href="#none">강릉</a></li>
+							<li><a href="#none">동해</a></li>
+							<li><a href="#none">태백</a></li>
+							<li><a href="#none">속초</a></li>
+							<li><a href="#none">삼척</a></li>
+							<li><a href="#none">홍천</a></li>
+							<li><a href="#none">횡성</a></li>
+							<li><a href="#none">영월</a></li>
+							<li><a href="#none">평창</a></li>
+							<li><a href="#none">정선</a></li>
+							<li><a href="#none">철원</a></li>
+							<li><a href="#none">화천</a></li>
+							<li><a href="#none">양구</a></li>
+							<li><a href="#none">인제</a></li>
+							<li><a href="#none">고성</a></li>
+							<li><a href="#none">양양</a></li>
+						</ul>
+					
+						<!-- 세종시 -->
+						<ul>
+							<li><a href="#none">한솔동</a></li>
+							<li><a href="#none">도담동</a></li>
+							<li><a href="#none">조치원읍</a></li>
+							<li><a href="#none">연기면</a></li>
+							<li><a href="#none">연동면</a></li>
+							<li><a href="#none">부강면</a></li>
+							<li><a href="#none">금남면</a></li>
+							<li><a href="#none">장군면</a></li>
+							<li><a href="#none">연서면</a></li>
+							<li><a href="#none">전의면</a></li>
+							<li><a href="#none">전동면</a></li>
+							<li><a href="#none">소정면</a></li>
+						</ul>
+					
+						<!-- 대전광역시 -->
+						<ul>
+							<li><a href="#none">동구</a></li>
+							<li><a href="#none">중구</a></li>
+							<li><a href="#none">서구</a></li>
+							<li><a href="#none">유성구</a></li>
+							<li><a href="#none">대덕구</a></li>
+						</ul>
+					
+						<!-- 충청남도 -->
+						<ul>
+							<li><a href="#none">천안</a></li>
+							<li><a href="#none">공주</a></li>
+							<li><a href="#none">보령</a></li>
+							<li><a href="#none">아산</a></li>
+							<li><a href="#none">서산</a></li>
+							<li><a href="#none">논산</a></li>
+							<li><a href="#none">계룡</a></li>
+							<li><a href="#none">당진</a></li>
+							<li><a href="#none">금산</a></li>
+							<li><a href="#none">부여</a></li>
+							<li><a href="#none">서천</a></li>
+							<li><a href="#none">청양</a></li>
+							<li><a href="#none">홍성</a></li>
+							<li><a href="#none">예산</a></li>
+							<li><a href="#none">태안</a></li>
+						</ul>
+					
+						<!-- 충청북도 -->
+						<ul>
+							<li><a href="#none">청주</a></li>
+							<li><a href="#none">충주</a></li>
+							<li><a href="#none">제천</a></li>
+							<li><a href="#none">보은</a></li>
+							<li><a href="#none">옥천</a></li>
+							<li><a href="#none">영동</a></li>
+							<li><a href="#none">증평</a></li>
+							<li><a href="#none">진천</a></li>
+							<li><a href="#none">괴산</a></li>
+							<li><a href="#none">음성</a></li>
+							<li><a href="#none">단양</a></li>
+							<li><a href="#none">단양</a></li>
+						</ul>
+					
+						<!-- 대구광역시 -->
+						<ul>
+							<li><a href="#none">중구</a></li>
+							<li><a href="#none">동구</a></li>
+							<li><a href="#none">서구</a></li>
+							<li><a href="#none">남구</a></li>
+							<li><a href="#none">북구</a></li>
+							<li><a href="#none">수성구</a></li>
+							<li><a href="#none">달서구</a></li>
+							<li><a href="#none">달성군</a></li>
+						</ul>
+					
+						<!-- 울산광역시 -->
+						<ul>
+							<li><a href="#none">중구</a></li>
+							<li><a href="#none">남구</a></li>
+							<li><a href="#none">동구</a></li>
+							<li><a href="#none">북구</a></li>
+							<li><a href="#none">울주군</a></li>
+						</ul>
+					
+						<!-- 부산광역시 -->
+						<ul>
+							<li><a href="#none">중구</a></li>
+							<li><a href="#none">서구</a></li>
+							<li><a href="#none">동구</a></li>
+							<li><a href="#none">영도구</a></li>
+							<li><a href="#none">부산진구</a></li>
+							<li><a href="#none">동래구</a></li>
+							<li><a href="#none">상구</a></li>
+							<li><a href="#none">북구</a></li>
+							<li><a href="#none">해운대구</a></li>
+							<li><a href="#none">사하구</a></li>
+							<li><a href="#none">금정구</a></li>
+							<li><a href="#none">강서구</a></li>
+							<li><a href="#none">연제구</a></li>
+							<li><a href="#none">수영구</a></li>
+							<li><a href="#none">사상구</a></li>
+							<li><a href="#none">기장군</a></li>
+						</ul>
+					
+						<!-- 경상북도 -->
+						<ul>
+							<li><a href="#none">포항</a></li>
+							<li><a href="#none">경주</a></li>
+							<li><a href="#none">김천</a></li>
+							<li><a href="#none">안동</a></li>
+							<li><a href="#none">구미</a></li>
+							<li><a href="#none">영주</a></li>
+							<li><a href="#none">영천</a></li>
+							<li><a href="#none">상주</a></li>
+							<li><a href="#none">문경</a></li>
+							<li><a href="#none">경산</a></li>
+							<li><a href="#none">군위</a></li>
+							<li><a href="#none">의성</a></li>
+							<li><a href="#none">청송</a></li>
+							<li><a href="#none">영양</a></li>
+							<li><a href="#none">영덕</a></li>
+							<li><a href="#none">청도</a></li>
+							<li><a href="#none">고령</a></li>
+							<li><a href="#none">성주</a></li>
+							<li><a href="#none">칠곡</a></li>
+							<li><a href="#none">예천</a></li>
+							<li><a href="#none">봉화</a></li>
+							<li><a href="#none">울진</a></li>
+							<li><a href="#none">울릉도</a></li>
+							<li><a href="#none">독도</a></li>
+						</ul>
+					
+						<!-- 경상남도 -->
+						<ul>
+							<li><a href="#none">창원</a></li>
+							<li><a href="#none">진주</a></li>
+							<li><a href="#none">통영</a></li>
+							<li><a href="#none">사천</a></li>
+							<li><a href="#none">김해</a></li>
+							<li><a href="#none">밀양</a></li>
+							<li><a href="#none">거제</a></li>
+							<li><a href="#none">양산</a></li>
+							<li><a href="#none">의령</a></li>
+							<li><a href="#none">함안</a></li>
+							<li><a href="#none">창녕</a></li>
+							<li><a href="#none">고성</a></li>
+							<li><a href="#none">남해</a></li>
+							<li><a href="#none">하동</a></li>
+							<li><a href="#none">산청</a></li>
+							<li><a href="#none">함양</a></li>
+							<li><a href="#none">거창</a></li>
+							<li><a href="#none">합천</a></li>
+						</ul>
+					
+						<!-- 광주광역시 -->
+						<ul>
+							<li><a href="#none">동구</a></li>
+							<li><a href="#none">서구</a></li>
+							<li><a href="#none">남구</a></li>
+							<li><a href="#none">북구</a></li>
+							<li><a href="#none">광산구</a></li>
+						</ul>
+					
+						<!-- 전라북도 -->
+						<ul>
+							<li><a href="#none">전주</a></li>
+							<li><a href="#none">군산</a></li>
+							<li><a href="#none">익산</a></li>
+							<li><a href="#none">정읍</a></li>
+							<li><a href="#none">남원</a></li>
+							<li><a href="#none">김제</a></li>
+							<li><a href="#none">완주</a></li>
+							<li><a href="#none">진안</a></li>
+							<li><a href="#none">무주</a></li>
+							<li><a href="#none">장수</a></li>
+							<li><a href="#none">임실</a></li>
+							<li><a href="#none">순창</a></li>
+							<li><a href="#none">고창</a></li>
+							<li><a href="#none">부안</a></li>
+						</ul>
+					
+						<!-- 전라남도 -->
+						<ul>
+							<li><a href="#none">목포</a></li>
+							<li><a href="#none">여수</a></li>
+							<li><a href="#none">순천</a></li>
+							<li><a href="#none">나주</a></li>
+							<li><a href="#none">광양</a></li>
+							<li><a href="#none">담양</a></li>
+							<li><a href="#none">곡성</a></li>
+							<li><a href="#none">구례</a></li>
+							<li><a href="#none">고흥</a></li>
+							<li><a href="#none">보성</a></li>
+							<li><a href="#none">화순</a></li>
+							<li><a href="#none">장흥</a></li>
+							<li><a href="#none">강진</a></li>
+							<li><a href="#none">해남</a></li>
+							<li><a href="#none">영암</a></li>
+							<li><a href="#none">무안</a></li>
+							<li><a href="#none">함평</a></li>
+							<li><a href="#none">영광</a></li>
+							<li><a href="#none">장성</a></li>
+							<li><a href="#none">완도</a></li>
+							<li><a href="#none">진도</a></li>
+							<li><a href="#none">신안</a></li>
+						</ul>
+					
+						<!-- 제주도 -->
+						<ul>
+							<li><a href="#none">제주</a></li>
+							<li><a href="#none">서귀포</a></li>
+							<li><a href="#none">가파도</a></li>
+							<li><a href="#none">마라도</a></li>
+							<li><a href="#none">우도</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<script>
+					$(document).ready(function(){
+
+						// 모바일 시/도 선택 시 해당 행정구역 리스트 on/off
+						$('.mobile-map-wrap > .map-search > dd > ul').hide();
+						//$('.mobile-map-wrap > .map-search > dd > ul').first().show(); // 20200107 수정
+
+						$('#cityChoice').change(function() { 
+							var index = $("#cityChoice option:selected").val();
+								$('.map-search > dd').show(); // 20200107 추가
+					        	$(".map-search > dd > ul").hide();
+					        	$(".map-search > dd > ul").eq(index).slideDown(); // 20200107 수정
+						});
+
+					});
+						
+				</script>
+			</div>
+
+			<h3 class="h3-title-wrap">
+				<p class="h3-title">검색하신 지역의 가까운 지점</p>
+			</h3>
+
+			<div class="table-list-wrap location">
+				<!-- pc_table_list -->
+				<div class="pc-table-list-type01">
+					<table>
+						<caption>
+							<strong>가까운 지점 목록</strong>
+							<p>No, 지점명,  전화번호, 주소, 길찾기로 구성된 표</p>
+						</caption>
+						<colgroup>
+							<col style="width:5.390625%">
+							<col style="width:26.875%">
+							<col style="width:11.328125%">
+							<col style="width:auto">
+							<col style="width:15.3125%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">NO</th>
+								<th scope="col">지점명</th>
+								<th scope="col">전화번호</th>
+								<th scope="col">주소</th>
+								<th scope="col">길찾기</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td class="title"><a href="#modal-store" onclick="modal_open($(this).attr('href'));return false;">뽀로로파크 키즈카페 일산킨텍스점</a></td>
+								<td class="date">1661-6370</td>
+								<td class="align-left">경기 고양시 일산서구 킨텍스로 217-59</td>
+								<td>
+									<a href="#none" class="btn-location">
+										<img src="./resources/images/sub/ico_location.png" alt="길찾기">
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td class="title"><a href="#modal-store" onclick="modal_open($(this).attr('href'));return false;">타이니 키즈파크</a></td>
+								<td class="date">031-5174-4327</td>
+								<td class="align-left">경기 용인시 수지구 성복동 61-7 롯데몰 수지점 3F</td>
+								<td>
+									<a href="#none" class="btn-location">
+										<img src="./resources/images/sub/ico_location.png" alt="길찾기">
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td class="title"><a href="#modal-store" onclick="modal_open($(this).attr('href'));return false;">킨텍스 상상체험 키즈월드</a></td>
+								<td class="date">070-4801-4184</td>
+								<td class="align-left">경기 고양시 일산서구 킨텍스로 217-59 킨텍스 제2전시장</td>
+								<td>
+									<a href="#none" class="btn-location">
+										<img src="./resources/images/sub/ico_location.png" alt="길찾기">
+									</a> 
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5" class="no-data">검색결과가 없습니다.</td><!-- (D) 검색 결과 없을 시 클래스 'no-data' 기입 -->
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- mobile_table_list -->
+				<div class="mobile-table-list-type02">
+					<dl>
+						<dt><a href="#modal-store" onclick="modal_open($(this).attr('href'));return false;">뽀로로파크 키즈카페 일산킨텍스점</a></dt>
+						<dd>경기 고양시 일산서구 킨텍스로 217-59</dd>
+						<dd class="road"><a href="#none">길찾기</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="#modal-store" onclick="modal_open($(this).attr('href'));return false;">타이니 키즈파크</a></dt>
+						<dd>경기 용인시 수지구 성복동 61-7 롯데몰 수지점 3F</dd>
+						<dd class="road"><a href="#none">길찾기</a></dd>
+					</dl>
+					<div class="no-data">검색결과가 없습니다.</div><!-- (D) 검색 결과 없을 시 -->
+				</div>
+			</div>
+
+			<!-- mobile_paging -->
+			<div class="paging mobile">
+				<div class="control"><a href="#none" class="first">첫 페이지</a></div>
+				<div class="control"><a href="#none" class="prev">이전 페이지</a></div>
+				<ol>
+					<li class="on"><strong>1</strong></li>
+					<li><a href="#none">2</a></li>
+					<li><a href="#none">3</a></li>
+					<li><a href="#none">4</a></li>
+				</ol>
+				<div class="control"><a href="#none" class="next">다음 페이지</a></div>
+				<div class="control"><a href="#none" class="last">마지막 페이지</a></div>
+			</div>
+
+			<!-- 모달 팝업 시작 -->
+			<div class="modal">
+				<div class="modal-dim"></div>
+
+				<div class="modal-inner">
+					<div id="modal-store" class="js modal-inner-box">
+						<h4 class="modal-title">뽀로로파크 키즈카페 일산킨텍스점<a href="#none" target="_blank">홈페이지 바로가기</a></h4> <!-- 20200207 수정 -->
+						<div class="modal-content">
+							<div class="store-info-wrap">
+								<div>
+									<ul class="store-info-list left">
+										<li class="address">
+											<dl>
+												<dt>경기 고양시 일산서구 킨텍스로 217-59</dt>
+												<dd><span>지번</span>대화동 2700 (우)10390</dd>
+											</dl>
+										</li>
+										<li class="number">1661-6370</li>
+										<!-- 20200207 수정 시작 -->
+										<li class="url">
+											<a href="#none" target="_blank">홈페이지 바로가기</a>
+										</li>
+										<!-- 20200207 수정 끝 -->
+									</ul>
+								</div>
+								<div>
+									<ul class="store-info-list right">
+										<!-- 20200207 수정 시작 -->
+										<li class="price">
+											<span>어린이 : 12,000원</span>
+											<span class="line"> / </span>
+											<span>성인 : 3,000원</span>
+										</li>
+										<!-- 20200207 수정 끝 -->
+										<li class="text">놀이를 하면서, 교육효과를 창출하는 에듀테인먼트 공간이며, 친근한 뽀로로 캐릭터로 아이들을 서로 연결시키고 함께 즐기는 놀이문화의 장입니다.</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="store-img-list">
+								<div class="swiper-container store">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide"><img src="./resources/images/sub/img_store01.jpg" alt="뽀로로파크 키즈카페 일산킨텍스점 매장 사진"></li>
+										<li class="swiper-slide"><img src="./resources/images/sub/img_store02.jpg" alt="뽀로로파크 키즈카페 일산킨텍스점 매장 사진"></li>
+										<li class="swiper-slide"><img src="./resources/images/sub/img_store03.jpg" alt="뽀로로파크 키즈카페 일산킨텍스점 매장 사진"></li>
+										<li class="swiper-slide"><img src="./resources/images/sub/img_store04.jpg" alt="뽀로로파크 키즈카페 일산킨텍스점 매장 사진"></li>
+										<li class="swiper-slide"><img src="./resources/images/sub/img_store01.jpg" alt="뽀로로파크 키즈카페 일산킨텍스점 매장 사진"></li>
+										<li class="swiper-slide"><img src="./resources/images/sub/img_store02.jpg" alt="뽀로로파크 키즈카페 일산킨텍스점 매장 사진"></li>
+										<li class="swiper-slide"><img src="./resources/images/sub/img_store03.jpg" alt="뽀로로파크 키즈카페 일산킨텍스점 매장 사진"></li>
+										<li class="swiper-slide"><img src="./resources/images/sub/img_store04.jpg" alt="뽀로로파크 키즈카페 일산킨텍스점 매장 사진"></li>
+									</ul>
+								</div>
+									
+							    <div class="swiper-button-next store"></div>
+							    <div class="swiper-button-prev store"></div>
+							</div>
+						</div>
+						<a class="btn-close" href="#modal-store" onclick="modal_close($(this).attr('href'));return false;">닫기</a>
+					</div>
+				</div>
+			</div>
+			<!-- //모달 팝업 끝 -->
+
+			<!-- TOP -->
+			<div class="pg-top"><a href="#">TOP</a></div> <!-- (D) 상단으로 이동 버튼 추가 -->
+
+		</div>
+		<!-- //컨텐츠 끝-->
+		
+		<!-- 푸터 시작 -->
+		<footer class="footer">
+			<div class="footer-wrap">
+				<div class="footer-left">
+					<ul class="footer-util">
+						<li><a href="#none" target="_self">가맹점찾기</a></li>
+						<li><a href="#none" target="_self">가맹점문의</a></li>
+						<li><a href="#none" target="_self">이용약관</a></li>
+						<li><a href="#none" target="_self">개인정보처리방침</a></li>
+						<li><a href="#none" target="_self">이메일무단수집거부</a></li>
+					</ul>
+
+					<ul class="footer-address">
+						<li>회사명 : ㈜지앤플렉스</li>
+						<li>사업자번호 : 304-87-01159</li>
+						<li>대표 : 엄준형</li>
+						<li>개인정보관리 책임자 : 이희복</li>
+						<li>주소 : 서울 중구 소공로 96 GSG빌딩 3층</li>
+						<li>이메일 : orange@gnflex.co.kr</li>
+					</ul>
+
+					<p class="footer-copyright">Copyright © G&FLEX. All Right Reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- //푸터 끝 -->
+
+	</div>
+
+	<!-- Common Script -->
+	<script src="./resources/js/default.js"></script>
+	<!-- Sub Script -->
+	<script src="./resources/js/main.js"></script> <!-- 20200203 추가 -->
+	<script src="./resources/js/sub.js"></script>
+	<script>
+		(function($) {
+			
+		})(jQuery);
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="">
+	<meta name="keywords" content="">
+	<meta name="Author" content="yoon">
+	<title>EDL_K</title>
+	<link rel="stylesheet" href="./resources/css/jquery.mCustomScrollbar.css"> <!-- 20200113 추가 -->
+	<link rel="stylesheet" href="./resources/css/aos.css">
+	<link rel="stylesheet" href="./resources/css/swiper.min.css">
+	<link rel="stylesheet" href="./resources/css/slick.css">
+	<link rel="stylesheet" href="./resources/css/slick-theme.css">
+	<link rel="stylesheet" href="./resources/css/default.css">
+	<link rel="stylesheet" href="./resources/css/main.css"> <!-- 20200203 추가 -->
+	<link rel="stylesheet" href="./resources/css/page.css">
+	<script src="./resources/js/jquery-3.3.1.js"></script>
+	<script src="./resources/js/modernizr.custom.js"></script>
+	<script src="./resources/js/jquery.mCustomScrollbar.js"></script> <!-- 20200113 추가 -->
+	<script src="./resources/js/aos.js"></script>
+	<script src="./resources/js/swiper.min.js"></script>
+	<script src="./resources/js/slick.min.js"></script>
+</head>
+<body class="sub">
+
+	<div class="s-wrap">
+		<a href="#contents" class="skip">본문바로가기</a>
+
+		<!-- 상단 시작 -->
+		<header class="header">
+			<h1 class="logo">
+				<a href="main.html" target="_self">E.DL K</a>
+			</h1>
+
+			<div class="gnb-wrap">
+				<ul class="mobile-util">
+					<li><a href="login.html" target="_self">LOGIN</a></li>
+					<li><a href="joinTerms.html" target="_self">JOIN</a></li>
+				</ul> <!-- (D) 모바일용 유틸 메뉴 추가 -->
+
+				<ul class="gnb-list">
+					<li>
+						<a href="service.html" target="_self">SERVICE</a>
+					</li>
+					<li>
+						<a href="#none">CONTENTS</a>
+						<ul class="depth2_01">
+							<li><a href="contentPopular.html" target="_self">POPULAR ON EDL.K</a></li>
+							<li><a href="contentTrending.html" target="_self">TRENDING NOW</a></li>
+							<li><a href="contentTotal.html" target="_self">TOTAL CONTENTS</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="brand.html" target="_self">BRAND</a>
+					</li>
+					<li>
+						<a href="consulting.html" target="_self">CONSULTING</a>
+					</li>
+					<li>
+						<a href="#none">NEWSROOM</a>
+						<ul class="depth2_02">
+							<li><a href="noticeList.html" target="_self">NOTICE</a></li>
+							<li><a href="mediaList.html" target="_self">MEDIA &amp; MARKETING</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="location.html" target="_self">LOCATION</a>
+					</li>
+				</ul>
+
+				<!-- <ul class="sns-share">
+					<li><a href="#none" class="instagram">인스타그램</a></li>
+					<li><a href="#none" class="facebook">페이스북</a></li>
+				</ul> --> <!-- (D) sns공유 서비스 시작 시 주석 풀어주면 됨 -->
+				
+				<a href="#none" class="mobile-menu-close">
+					<span class="line01"></span>
+					<span class="line02"></span>
+				</a>
+			</div>
+
+			<ul class="util">
+				<li><a href="login.html" target="_self">LOGIN</a></li>
+				<li><a href="joinTerms.html" target="_self">JOIN</a></li>
+			</ul>
+
+			<ul class="mobile-menu">
+				<li><a href="login.html" target="_self" class="login"></a></li>
+				<li><a href="#none" class="menu"></a></li>
+			</ul>
+
+			<div class="mobile-menu-dim"></div>
+		</header>
+		<!-- //상단 끝 -->
+		
+		<!-- 컨텐츠 시작 -->
+		<div id="contents" class="s-contents" tabindex="-1">
+
+			<!-- 비주얼 -->
+			<div class="s-visual">
+				<h2 class="title">MEDIA &amp; MARKETING</h2>
+				<p class="text">E.DL K에 대한 새로운 뉴스를 알아보세요.</p>
+
+				<!-- mobile_bg_icon -->
+				<span class="icon ico01"></span>
+				<span class="icon ico02"></span>
+				<span class="icon ico03"></span>
+				<span class="icon ico04"></span>
+			</div>
+
+			<!-- 검색 -->
+			<div class="search-wrap">
+				<div class="search-box-wrap">
+					<div class="search-box">
+						<label for="">
+							<input type="text" id="" name="" value="" placeholder="검색어를 입력하세요.">
+						</label>
+						<button type="button" class="btn-search">검색</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- 미디어 & 마케팅 -->
+			<div class="table-info-wrap">
+				<div class="table-info">
+					<div class="table-info-left">총 <strong>50</strong> 건</div>
+					<div class="table-info-right">
+						<dl class="info-hits">
+							<dt><a href="#none">최신순</a></dt>
+							<dd>
+								<ul>
+									<li><a href="#none">최신순</a></li>
+									<li><a href="#none">조회순</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+
+			<div class="gallery-list-wrap">
+				<ul class="gallery-list">
+					<li>
+						<div class="thumb_box video"><!-- (D) 동영상인 경우 클래스 'video' 기입 -->
+							<img src="./resources/images/sub/img_gallery01.jpg" alt="">
+							<div class="dim"><!-- (D) 동영상인 경우 'div' 추가 -->
+								<span class="icon-play">동영상</span>
+							</div>
+						</div>
+						<div class="info_box">
+							<ul class="slogan">
+								<li class="media">MEDIA</li><!-- (D) 미디어인 경우 클래스 'media' -->
+								<li class="newspaper">한국경제</li>
+							</ul>
+							<a href="mediaDetail.html" target="_self" class="title">E.DL K 전세계 50여개국 수출, 수출액 $1000만</a>
+							<p class="date">2019-11-25</p>
+						</div>
+					</li>
+					<li class="no-img"><!-- (D) 이미지 없을 시 클래스 'no-img' 기입 -->
+						<!-- <div class="thumb_box"></div> -->
+						<div class="info_box">
+							<ul class="slogan">
+								<li class="media">MEDIA</li><!-- (D) 미디어인 경우 클래스 'media' -->
+								<li class="newspaper">한국경제</li>
+							</ul>
+							<a href="mediaDetail.html" target="_self" class="title">E.DL K 전세계 50여개국 수출, 수출액 $1000만</a>
+							<p class="date">2019-11-25</p>
+						</div>
+					</li>
+					<li>
+						<div class="thumb_box">
+							<img src="./resources/images/sub/img_gallery02.jpg" alt="">
+						</div>
+						<div class="info_box">
+							<ul class="slogan">
+								<li class="marketing">MARKETING</li><!-- (D) 마케팅인 경우 클래스 'marketing' -->
+								<li class="newspaper">한국경제</li>
+							</ul>
+							<a href="mediaDetail.html" target="_self" class="title">E.DL K 전세계 50여개국 수출, 수출액 $1000만</a>
+							<p class="date">2019-11-25</p>
+						</div>
+					</li>
+					<li>
+						<div class="thumb_box video"><!-- (D) 동영상인 경우 클래스 'video' 기입 -->
+							<img src="./resources/images/sub/img_gallery03.jpg" alt="">
+							<div class="dim"><!-- (D) 동영상인 경우 'div' 추가 -->
+								<span class="icon-play">동영상</span>
+							</div>
+						</div>
+						<div class="info_box">
+							<ul class="slogan">
+								<li class="media">MEDIA</li><!-- (D) 미디어인 경우 클래스 'media' -->
+								<li class="newspaper">한국경제</li>
+							</ul>
+							<a href="mediaDetail.html" target="_self" class="title">E.DL K 전세계 50여개국 수출, 수출액 $1000만</a>
+							<p class="date">2019-11-25</p>
+						</div>
+					</li>
+					<li>
+						<div class="thumb_box video"><!-- (D) 동영상인 경우 클래스 'video' 기입 -->
+							<img src="./resources/images/sub/img_gallery04.jpg" alt="">
+							<div class="dim"><!-- (D) 동영상인 경우 'div' 추가 -->
+								<span class="icon-play">동영상</span>
+							</div>
+						</div>
+						<div class="info_box">
+							<ul class="slogan">
+								<li class="media">MEDIA</li><!-- (D) 미디어인 경우 클래스 'media' -->
+								<li class="newspaper">한국경제</li>
+							</ul>
+							<a href="mediaDetail.html" target="_self" class="title">E.DL K 전세계 50여개국 수출, 수출액 $1000만</a>
+							<p class="date">2019-11-25</p>
+						</div>
+					</li>
+					<li>
+						<div class="thumb_box">
+							<img src="./resources/images/sub/img_gallery05.jpg" alt="">
+						</div>
+						<div class="info_box">
+							<ul class="slogan">
+								<li class="marketing">MARKETING</li><!-- (D) 마케팅인 경우 클래스 'marketing' -->
+								<li class="newspaper">한국경제</li>
+							</ul>
+							<a href="mediaDetail.html" target="_self" class="title">E.DL K 전세계 50여개국 수출, 수출액 $1000만</a>
+							<p class="date">2019-11-25</p>
+						</div>
+					</li>
+					<li class="no-img"><!-- (D) 이미지 없을 시 클래스 'no-img' 기입 -->
+						<!-- <div class="thumb_box"></div> -->
+						<div class="info_box">
+							<ul class="slogan">
+								<li class="media">MEDIA</li><!-- (D) 미디어인 경우 클래스 'media' -->
+								<li class="newspaper">한국경제</li>
+							</ul>
+							<a href="mediaDetail.html" target="_self" class="title">E.DL K 전세계 50여개국 수출, 수출액 $1000만</a>
+							<p class="date">2019-11-25</p>
+						</div>
+					</li>
+					<li>
+						<div class="thumb_box video"><!-- (D) 동영상인 경우 클래스 'video' 기입 -->
+							<img src="./resources/images/sub/img_gallery06.jpg" alt="">
+							<div class="dim"><!-- (D) 동영상인 경우 'div' 추가 -->
+								<span class="icon-play">동영상</span>
+							</div>
+						</div>
+						<div class="info_box">
+							<ul class="slogan">
+								<li class="media">MEDIA</li><!-- (D) 미디어인 경우 클래스 'media' -->
+								<li class="newspaper">한국경제</li>
+							</ul>
+							<a href="mediaDetail.html" target="_self" class="title">E.DL K 전세계 50여개국 수출, 수출액 $1000만</a>
+							<p class="date">2019-11-25</p>
+						</div>
+					</li>
+				</ul>
+
+				<button class="btn more">더보기</button>
+			</div>
+
+			<!-- TOP -->
+			<div class="pg-top"><a href="#">TOP</a></div> <!-- (D) 상단으로 이동 버튼 추가 -->
+
+		</div>
+		<!-- //컨텐츠 끝-->
+		
+		<!-- 푸터 시작 -->
+		<footer class="footer">
+			<div class="footer-wrap">
+				<div class="footer-left">
+					<ul class="footer-util">
+						<li><a href="#none" target="_self">가맹점찾기</a></li>
+						<li><a href="#none" target="_self">가맹점문의</a></li>
+						<li><a href="#none" target="_self">이용약관</a></li>
+						<li><a href="#none" target="_self">개인정보처리방침</a></li>
+						<li><a href="#none" target="_self">이메일무단수집거부</a></li>
+					</ul>
+
+					<ul class="footer-address">
+						<li>회사명 : ㈜지앤플렉스</li>
+						<li>사업자번호 : 304-87-01159</li>
+						<li>대표 : 엄준형</li>
+						<li>개인정보관리 책임자 : 이희복</li>
+						<li>주소 : 서울 중구 소공로 96 GSG빌딩 3층</li>
+						<li>이메일 : orange@gnflex.co.kr</li>
+					</ul>
+
+					<p class="footer-copyright">Copyright © G&FLEX. All Right Reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- //푸터 끝 -->
+
+	</div>
+
+	<!-- Common Script -->
+	<script src="./resources/js/default.js"></script>
+	<!-- Sub Script -->
+	<script src="./resources/js/main.js"></script> <!-- 20200203 추가 -->
+	<script src="./resources/js/sub.js"></script>
+	<script>
+		(function($) {
+			
+		})(jQuery);
+	</script>
+
+</body>
+</html>

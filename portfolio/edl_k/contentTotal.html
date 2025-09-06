@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="">
+	<meta name="keywords" content="">
+	<meta name="Author" content="yoon">
+	<title>EDL_K</title>
+	<link rel="stylesheet" href="./resources/css/jquery.mCustomScrollbar.css"> <!-- 20200113 추가 -->
+	<link rel="stylesheet" href="./resources/css/aos.css">
+	<link rel="stylesheet" href="./resources/css/swiper.min.css">
+	<link rel="stylesheet" href="./resources/css/slick.css">
+	<link rel="stylesheet" href="./resources/css/slick-theme.css">
+	<link rel="stylesheet" href="./resources/css/default.css">
+	<link rel="stylesheet" href="./resources/css/main.css"> <!-- 20200203 추가 -->
+	<link rel="stylesheet" href="./resources/css/page.css">
+	<script src="./resources/js/jquery-3.3.1.js"></script>
+	<script src="./resources/js/modernizr.custom.js"></script>
+	<script src="./resources/js/jquery.mCustomScrollbar.js"></script> <!-- 20200113 추가 -->
+	<script src="./resources/js/aos.js"></script>
+	<script src="./resources/js/swiper.min.js"></script>
+	<script src="./resources/js/slick.min.js"></script>
+</head>
+<body class="sub">
+
+	<div class="s-wrap">
+		<a href="#contents" class="skip">본문바로가기</a>
+
+		<!-- 상단 시작 -->
+		<header class="header">
+			<h1 class="logo">
+				<a href="main.html" target="_self">E.DL K</a>
+			</h1>
+
+			<div class="gnb-wrap">
+				<ul class="mobile-util">
+					<li><a href="login.html" target="_self">LOGIN</a></li>
+					<li><a href="joinTerms.html" target="_self">JOIN</a></li>
+				</ul> <!-- (D) 모바일용 유틸 메뉴 추가 -->
+
+				<ul class="gnb-list">
+					<li>
+						<a href="service.html" target="_self">SERVICE</a>
+					</li>
+					<li>
+						<a href="#none">CONTENTS</a>
+						<ul class="depth2_01">
+							<li><a href="contentPopular.html" target="_self">POPULAR ON EDL.K</a></li>
+							<li><a href="contentTrending.html" target="_self">TRENDING NOW</a></li>
+							<li><a href="contentTotal.html" target="_self">TOTAL CONTENTS</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="brand.html" target="_self">BRAND</a>
+					</li>
+					<li>
+						<a href="consulting.html" target="_self">CONSULTING</a>
+					</li>
+					<li>
+						<a href="#none">NEWSROOM</a>
+						<ul class="depth2_02">
+							<li><a href="noticeList.html" target="_self">NOTICE</a></li>
+							<li><a href="mediaList.html" target="_self">MEDIA &amp; MARKETING</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="location.html" target="_self">LOCATION</a>
+					</li>
+				</ul>
+
+				<!-- <ul class="sns-share">
+					<li><a href="#none" class="instagram">인스타그램</a></li>
+					<li><a href="#none" class="facebook">페이스북</a></li>
+				</ul> --> <!-- (D) sns공유 서비스 시작 시 주석 풀어주면 됨 -->
+				
+				<a href="#none" class="mobile-menu-close">
+					<span class="line01"></span>
+					<span class="line02"></span>
+				</a>
+			</div>
+
+			<ul class="util">
+				<li><a href="login.html" target="_self">LOGIN</a></li>
+				<li><a href="joinTerms.html" target="_self">JOIN</a></li>
+			</ul>
+
+			<ul class="mobile-menu">
+				<li><a href="login.html" target="_self" class="login"></a></li>
+				<li><a href="#none" class="menu"></a></li>
+			</ul>
+
+			<div class="mobile-menu-dim"></div>
+		</header>
+		<!-- //상단 끝 -->
+		
+		<!-- 컨텐츠 시작 -->
+		<div id="contents" class="s-contents" tabindex="-1">
+
+			<!-- TOTAL CONTENTS -->
+			<div class="total-search-content-wrap">
+				<div class="search-content-box">
+					<div class="search-content">
+						<label for="">
+							<input type="text" id="" name="" value="">
+						</label>
+						<button type="button">검색</button>
+						<a href="#none" class="filter">필터</a>
+
+						<div class="filter-list-wrap">
+							<div class="filter-list-box">
+								<p class="filter-title">콘텐츠타입</p>
+								<ul class="filter-list">
+									<li><a href="#none">전체</a></li>
+									<li><a href="#none">창의플레이</a></li><!-- (D) 클릭 시 클래스 'on' 기입 -->
+									<li><a href="#none">캡쳐플레이</a></li>
+									<li><a href="#none">바디플레이</a></li>
+									<li><a href="#none">소리플레이</a></li>
+									<li><a href="#none">캐치플레이</a></li>
+								</ul>
+
+								<p class="filter-title">움직임타입</p>
+								<ul class="filter-list">
+									<li><a href="#none">전체</a></li>
+									<li><a href="#none">볼터치</a></li>
+									<li><a href="#none">핸드터치</a></li>
+									<li><a href="#none">너프건</a></li>
+									<li><a href="#none">화살</a></li>
+									<li><a href="#none">총</a></li>
+								</ul>
+
+								<p class="filter-title">학습분류</p>
+								<ul class="filter-list">
+									<li><a href="#none">전체</a></li>
+									<li><a href="#none">안전/예방</a></li>
+									<li><a href="#none" >체력</a></li>
+									<li><a href="#none">미술</a></li>
+									<li><a href="#none">음악</a></li>
+									<li><a href="#none">연산</a></li>
+								</ul>
+
+								<p class="filter-title">체득효과</p>
+								<ul class="filter-list">
+									<li><a href="#none">전체</a></li>
+									<li><a href="#none">집중력</a></li>
+									<li><a href="#none">사고력</a></li>
+									<li><a href="#none">판단력</a></li>
+									<li><a href="#none">순발력</a></li>
+									<li><a href="#none">지구력</a></li>
+									<li><a href="#none">의지력</a></li>
+									<li><a href="#none">끈기력</a></li>
+									<li><a href="#none">몰입력</a></li>
+									<li><a href="#none">창의력</a></li>
+									<li><a href="#none">관찰력</a></li>
+								</ul>
+
+								<div class="btn-list-wrap">
+									<button class="btn reset">초기화</button>
+									<button class="btn search">검색</button>
+								</div>
+
+								<a href="#none" class="filter-close">필터 닫기</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<h2 class="s-cont-title-wrap">
+				<p class="s-cont-title eng">TOTAL CONTENTS</p>
+			</h2>
+
+			<div class="total-content-list-wrap">
+				<ul class="total-content-list">
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents01.jpg" alt="헨젤과 그레텔 Chapter 1 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 1</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents02.jpg" alt="헨젤과 그레텔 Chapter 2 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 2</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents03.jpg" alt="헨젤과 그레텔 Chapter 3 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 3</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents04.jpg" alt="헨젤과 그레텔 Chapter 4 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 4</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents05.jpg" alt="헨젤과 그레텔 Chapter 5 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 5</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents06.jpg" alt="헨젤과 그레텔 Chapter 6 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 6</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents07.jpg" alt="헨젤과 그레텔 Chapter 7 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 7</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents08.jpg" alt="헨젤과 그레텔 Chapter 8 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 8</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents09.jpg" alt="헨젤과 그레텔 Chapter 9 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 9</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents10.jpg" alt="헨젤과 그레텔 Chapter 10 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 10</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents01.jpg" alt="헨젤과 그레텔 Chapter 11 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 11</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents02.jpg" alt="헨젤과 그레텔 Chapter 12 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 12</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents03.jpg" alt="헨젤과 그레텔 Chapter 13 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 13</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents04.jpg" alt="헨젤과 그레텔 Chapter 14 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 14</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#modal-total-content" onclick="modal_open($(this).attr('href'));return false;"> <!-- 20200120 수정 -->
+							<div class="img"><img src="./resources/images/sub/img_total_contents05.jpg" alt="헨젤과 그레텔 Chapter 15 사진"></div><!-- (D) 이미지 사이즈 width=232px, height=180px -->
+							<dl>
+								<dt class="title">헨젤과 그레텔</dt>
+								<dd class="episode">Chapter 15</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+
+				<button class="btn more">더보기</button>
+			</div>
+
+			<!-- 20200120 추가 시작 -->
+			<!-- 모달 팝업 시작 -->
+			<div class="modal">
+				<div class="modal-dim"></div>
+
+				<div class="modal-inner">
+					<div id="modal-total-content" class="js modal-inner-box">
+						<div class="modal-content total">
+							<div class="mototal-total-content" style="background-image: url('./resources/images/sub/popular_content_visual01.jpg');">
+								<div class="text-wrap">
+									<dl class="text-box">
+										<dt class="title">헨젤과 그레텔</dt>
+										<dd class="episode">Chapter1</dd>
+										<dd class="text">헨젤 이드리와 함께 떠나는 동화 속 세계!<br>나와 함께 신나게 모험하고 지혜를 모아 마녀의 집을 탈출해볼래?</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<a class="btn-close total" href="#modal-total-content" onclick="modal_close($(this).attr('href'));return false;">닫기</a>
+					</div>
+				</div>
+			</div>
+			<!-- //모달 팝업 끝 -->
+			<!-- 20200120 추가 끝 -->
+
+			<!-- TOP -->
+			<div class="pg-top"><a href="#">TOP</a></div> <!-- (D) 상단으로 이동 버튼 추가 -->
+
+		</div>
+		<!-- //컨텐츠 끝-->
+		
+		<!-- 푸터 시작 -->
+		<footer class="footer">
+			<div class="footer-wrap">
+				<div class="footer-left">
+					<ul class="footer-util">
+						<li><a href="#none" target="_self">가맹점찾기</a></li>
+						<li><a href="#none" target="_self">가맹점문의</a></li>
+						<li><a href="#none" target="_self">이용약관</a></li>
+						<li><a href="#none" target="_self">개인정보처리방침</a></li>
+						<li><a href="#none" target="_self">이메일무단수집거부</a></li>
+					</ul>
+
+					<ul class="footer-address">
+						<li>회사명 : ㈜지앤플렉스</li>
+						<li>사업자번호 : 304-87-01159</li>
+						<li>대표 : 엄준형</li>
+						<li>개인정보관리 책임자 : 이희복</li>
+						<li>주소 : 서울 중구 소공로 96 GSG빌딩 3층</li>
+						<li>이메일 : orange@gnflex.co.kr</li>
+					</ul>
+
+					<p class="footer-copyright">Copyright © G&FLEX. All Right Reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- //푸터 끝 -->
+
+	</div>
+
+	<!-- Common Script -->
+	<script src="./resources/js/default.js"></script>
+	<!-- Sub Script -->
+	<script src="./resources/js/main.js"></script> <!-- 20200203 추가 -->
+	<script src="./resources/js/sub.js"></script>
+	<script>
+		(function($) {
+			
+		})(jQuery);
+	</script>
+
+</body>
+</html>

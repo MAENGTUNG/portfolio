@@ -1,0 +1,1335 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" />
+<title></title>
+<link rel="stylesheet" href="common/css/common.css">
+
+<!-- [140923] 기존 통계소스 -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-42821155-1', 'ez-i.co.kr');ga('send', 'pageview');
+</script>
+
+<script src="common/js/jquery-1.11.0.min.js"></script>
+<script src="common/js/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- [150206] 자동롤링 커버스토리 --><!-- jQuery 1.8.2 Ver. -->
+<script src="common/js/jquery.bxslider.js"></script>
+<link href="common/css/jquery.bxslider.css" rel="stylesheet" />
+<script>
+$(document).ready(function () {
+	var slider = $('.bxslider').bxSlider({
+		mode: 'horizontal',
+		startSlide:0,
+		speed: 1000,/* 1초 */
+		auto: true,/**/
+		infiniteLoop: false,/**/
+		hideControlOnEnd: true,
+		useCSS: false,
+		controls:false,/**/
+		pause:4000,/**/
+		swipeThreshold: 8,
+		pager:false,
+		oneToOneTouch:false
+	});
+
+	$('.bx-pager-item a').click(function(e){f
+		var i = $(this).attr("data-slide-index");
+		slider.goToSlide(i);
+		slider.stopAuto();
+		restart=setTimeout(function(){
+			slider.startAuto();
+		},500);
+		return false;
+	});
+});
+</script>
+
+</head>
+<body>
+	<section id="top" class="wrap">
+		<!-- [150206] 커버스토리 -->
+		<ul class="bxslider">
+			<li><a class="1-A" href="storemaincover://STORE/PID=Q08010132272"><img src="common/img/cover_story1.jpg" alt="무료 VOD 이벤트"/></a></li>
+		</ul>
+		<!-- //[150206] 커버스토리 -->
+
+		<!-- 카테고리 영역 -->
+		<article class="category">
+			<div>
+				<ul>
+					<li>
+						<!-- 필수앱 카테고리 입니다. href="" 안에 링크값을 기입하시면 됩니다. -->
+						<div><a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025079&MENUID=11032527&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="2-A"><span class="is_bg recommend"></span></a></div>
+					</li>
+					<li>
+						<!-- 랭킹 카테고리 입니다. href="" 안에 링크값을 기입하시면 됩니다. -->
+						<div><a href="storemaincover://CATEGORYVOD/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025181&MENUID=11025361&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="2-B"><span class="is_bg ranking"></span></a></div>
+					</li>
+					<li>
+						<!-- 게임 카테고리 입니다. href="" 안에 링크값을 기입하시면 됩니다. -->
+						<div><a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025061&MENUID=11025327&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="2-C"><span class="is_bg game"></span></a></div>
+					</li>
+					<li>
+						<!-- 뮤직 카테고리 입니다. href="" 안에 링크값을 기입하시면 됩니다. -->
+						<div><a href="storemaincover://CATEGORYMUSIC/http://adp.ez-i.co.kr/adp/second_music_list.lgt?TITLE_MID=11026045&MENUID=11026047&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="2-D"><span class="is_bg shops"></span></a></div>
+					</li>
+				</ul>
+			</div>
+		</article>
+		<!-- //카테고리 영역 -->
+
+		<!-- 텍스트 리스트 메뉴 -->
+		<!-- strong 안에 class="color_blue", class="color_green", class="color_black" 3 가지의 색이 지정되어 있습니다. 바꾸실 수 있습니다. -->
+		<div class="text_list_More">
+			<ul class="text_list">
+				<li><a href="storemaincover://STOREVOD/PID=SA3012518878" class="3-A"><strong class="color_blue">나를 잊지 말아요&nbsp;</strong>처음 본 여자가 날 보고 운다</a></li>
+				<li><a href="storemaincover://STORE/PID=Q06010027311" class="3-B"><strong class="color_blue">케이웨더&nbsp;</strong>이번주 날씨를 알려드립니다</a></li>
+			</ul>
+		</div>
+		<!-- //텍스트 리스트 메뉴 -->
+
+		<!-- 이벤트 띠배너 -->
+		<article class="event_benner1">
+			<a href="storemaincover://STOREWEB/http://pdainfo.uplus.co.kr/onestore/06/notice/" class="4-A"><img src="common/img/event_benner1.jpg" alt="통합스토어 안내" /></a>
+		</article>
+		<!-- //이벤트 띠배너 -->
+
+		<!-- app콘텐츠1 : 김대리 -->
+		<div class="app_area app">
+			<h2><span>김대리가 밀고 있는 요즘 대세 콘텐츠!</span></h2>
+			<div>
+				<a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025079&MENUID=11034367&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="5More">더보기</a>
+			</div>
+			<ul class="app_list">
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q06010907838" class="5-A">
+							<img src="common/img/app_img1.jpg" alt="" />
+							<div>
+								<p class="text">아이라이크<br/>캠핑</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q06011486141" class="5-B">
+							<img src="common/img/app_img2.jpg" alt="" />
+							<div>
+								<p class="text">방콜</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q06011088146" class="5-C">
+							<img src="common/img/app_img3.jpg" alt="" />
+							<div>
+								<p class="text">중고나라</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q06010267690" class="5-D">
+							<img src="common/img/app_img4.jpg" alt="" />
+							<div>
+								<p class="text">잡코리아</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q06011202878" class="5-E">
+							<img src="common/img/app_img5.jpg" alt="" />
+							<div>
+								<p class="text">홈다이어트<br/>전신 살빼기</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q04010884521" class="5-F">
+							<img src="common/img/app_img6.jpg" alt="" />
+							<div>
+								<p class="text">무료 와이파이<br/>검색기</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- //app콘텐츠1 : 김대리 -->
+
+		<!-- app콘텐츠2 : 게임 -->
+		<!-- <div class="app_area app2">
+			<h2>재미보장! 인기게임!</h2>
+			<div>
+				<a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025061&MENUID=11033297&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="6More">더보기</a>
+			</div>
+			<ul class="app_list">
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q02011202843" class="6-A">
+							<img src="common/img/app2_img1.jpg" alt="" />
+							<div>
+								<p class="text">마스터오브<br/>던전1</p> -->
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<!-- <p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q02010307711" class="6-B">
+							<img src="common/img/app2_img2.jpg" alt="" />
+							<div>
+								<p class="text">전략<br/>삼국지</p> -->
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<!-- <p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q02010308920" class="6-C">
+							<img src="common/img/app2_img3.jpg" alt="" />
+							<div>
+								<p class="text">삼국지<br/>난세의영웅</p> -->
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<!-- <p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q02010673021" class="6-D">
+							<img src="common/img/app2_img4.jpg" alt="" />
+							<div>
+								<p class="text">파이널<br/>판타지5</p> -->
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<!-- <p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q02010642403" class="6-E">
+							<img src="common/img/app2_img5.jpg" alt="" />
+							<div>
+								<p class="text">퍼즐로드</p> -->
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<!-- <p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q02010508100" class="6-F">
+							<img src="common/img/app2_img6.jpg" alt="" />
+							<div>
+								<p class="text">은별바둑2</p> -->
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<!-- <p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div> -->
+		<!-- //app콘텐츠2 : 게임 -->
+
+		<!-- app콘텐츠4 : VOD영화 -->
+		<div class="app_area app4">
+			<h2>최신 인기 영화</h2>
+			<div>
+				<a href="storemaincover://CATEGORYVOD/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025181&MENUID=11025361&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="9More">더보기</a>
+			</div>
+			<ul class="app_list">
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012640598" class="9-A">
+							<img src="common/img/app3_img1.jpg" alt="" />
+							<div>
+								<p class="text">쿵푸팬더 3</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">11,000</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012639878" class="9-B">
+							<img src="common/img/app3_img2.jpg" alt="" />
+							<div>
+								<p class="text">로봇, 소리</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">11,000</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012622058" class="9-C">
+							<img src="common/img/app3_img3.jpg" alt="" />
+							<div>
+								<p class="text">히말라야</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">4,950</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012632658" class="9-D">
+							<img src="common/img/app3_img4.jpg" alt="" />
+							<div>
+								<p class="text">007 스펙터</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">10,890</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012619858" class="9-E">
+							<img src="common/img/app3_img5.jpg" alt="" />
+							<div>
+								<p class="text">굿 다이노</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">3,500</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012622059" class="9-F">
+							<img src="common/img/app3_img6.jpg" alt="" />
+							<div>
+								<p class="text">그날의<br/>분위기</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">4,950</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- //app콘텐츠4 : VOD영화 -->
+
+		<!-- 오늘의 한 컷 -->
+		<div class="todaycut">
+			<h2>오늘의 한 컷</h2>
+			<ul>
+				<li>
+					<a href="storemaincover://STOREVOD/PID=SA3012418659" class="11">
+						<img src="common/img/todaycut_img.jpg" alt="" class="todaycut_img" />
+						<dl>
+							<dt class="blind"></dt>
+							<dd class="bold"><span>'슈가맨' 에일리, 복화술 달인 등극?</span></dd>
+							<dd class=""><span>김제동 "못 알아듣겠는데 왠지 기분 나빠"</span></dd>
+							<dd class="ellipsis mb_0"><span></span></dd>
+						</dl>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- //오늘의 한 컷 -->
+
+		<!-- app콘텐츠3 : 라이프 -->
+		<div class="app_area app3">
+			<h2>안전한 귀가를 부탁해~!</h2>
+			<div>
+				<a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025079&MENUID=11031007&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="7More">더보기</a>
+			</div>
+			<ul class="app_list">
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q06011306718" class="7-A">
+							<img src="common/img/app4_img1.jpg" alt="" />
+							<div>
+								<p class="text">경찰청 폴<br/>안티스파이</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q06010017067" class="7-B">
+							<img src="common/img/app4_img2.jpg" alt="" />
+							<div>
+								<p class="text">스마트<br/>안전귀가</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q04011512734" class="7-C">
+							<img src="common/img/app4_img3.jpg" alt="" />
+							<div>
+								<p class="text">NightMate</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q06010117952" class="7-D">
+							<img src="common/img/app4_img4.jpg" alt="" />
+							<div>
+								<p class="text">골목길<br/>안전귀가</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1,900</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q06010290577" class="7-E">
+							<img src="common/img/app4_img5.jpg" alt="" />
+							<div>
+								<p class="text">스마트<br/>안심귀가</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STORE/PID=Q06010024831" class="7-F">
+							<img src="common/img/app4_img6.jpg" alt="" />
+							<div>
+								<p class="text">택시탔숑</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- //app콘텐츠3 : 라이프 -->
+
+		<!-- app콘텐츠5 : 이북 -->
+		<div class="app_area app5">
+			<h2>추천 e-Book</h2>
+			<div>
+				<a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025101&MENUID=11032241&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="10More">더보기</a>
+			</div>
+			<ul class="app_list">
+				<li>
+					<div>
+						<a href="storemaincover://STOREBOOK/PID=RA1011559970" class="10-A">
+							<img src="common/img/app5_img1.jpg" alt="" />
+							<div>
+								<p class="text">늑대전설</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1권무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREBOOK/PID=RA1012632819" class="10-B">
+							<img src="common/img/app5_img2.jpg" alt="" />
+							<div>
+								<p class="text">더 헬퍼</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1권무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREBOOK/PID=RA1012635924" class="10-C">
+							<img src="common/img/app5_img3.jpg" alt="" />
+							<div>
+								<p class="text">신마기협</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1권무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<a href="storemaincover://STOREBOOK/PID=RA1011791594" class="10-D">
+							<img src="common/img/app5_img4.jpg" alt="" />
+							<div>
+								<p class="text">아마존<br/>주술사</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1권무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREBOOK/PID=RA1012632878" class="10-E">
+							<img src="common/img/app5_img5.jpg" alt="" />
+							<div>
+								<p class="text">아이템<br/>마스터</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1권무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREBOOK/PID=RA1011559936" class="10-F">
+							<img src="common/img/app5_img6.jpg" alt="" />
+							<div>
+								<p class="text">나 혼자<br/>마법사다</p>
+								<!-- span.ico의 클래스에,b 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1권무료</span>
+									<span class="ico ico_money_g"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- //app콘텐츠5 : 이북 -->
+
+		<!-- app콘텐츠6 : VOD드라마 -->
+		<div class="app_area app6">
+			<h2>놓친 드라마 다시보기</h2>
+			<div>
+				<a href="storemaincover://CATEGORYVOD/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025183&MENUID=11026903&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="20More">더보기</a>
+			</div>
+			<ul class="app_list">
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012518336" class="20-A">
+							<img src="common/img/app6_img1.jpg" alt="" />
+							<div>
+								<p class="text">동네의<br/>영웅</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1,320</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012510743" class="20-B">
+							<img src="common/img/app6_img2.jpg" alt="" />
+							<div>
+								<p class="text">시그널</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1,320</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012518105" class="20-C">
+							<img src="common/img/app6_img3.jpg" alt="" />
+							<div>
+								<p class="text">마담<br/>앙트완</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">770</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012498039" class="20-D">
+							<img src="common/img/app6_img4.jpg" alt="" />
+							<div>
+								<p class="text">치즈<br/>인더트랩</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1,320</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012429952" class="20-E">
+							<img src="common/img/app6_img5.jpg" alt="" />
+							<div>
+								<p class="text">응답하라<br/>1988</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1,320</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3011201423" class="20-F">
+							<img src="common/img/app6_img6.jpg" alt="" />
+							<div>
+								<p class="text">빠담빠담</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">770</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- //app콘텐츠6 : VOD드라마 -->
+
+		<!-- 놓치면 후회할 혜택! -->
+		<article class="event_zone">
+			<h2><span class="tit_event">놓치면 후회할 혜택!</span></h2>
+			<ul class="clearfix">
+				<li class="fl_l first">
+					<a href="storemaincover://STOREVOD/PID=SA3012458438" class="8-A">
+						<span class="tag mustard">30%할인</span>
+						<img src="common/img/ez_img1.jpg" alt="" class="ec_img" />
+						<dl class="event_zone_tit">
+							<dt><span>VOD</span>하늘을 걷는 남자(The Walk)</dt>
+							<dd>전세계를 뒤흔든 사상 초유의 위대한 도전이 시작된다!</dd>
+						</dl>
+					</a>
+				</li>
+				<li class="fl_l second">
+					<a href="storemaincover://STOREVOD/PID=SA3012458626" class="8-B">
+						<span class="tag mustard">50%할인</span>
+						<img src="common/img/ez_img2.jpg" alt="" class="ec_img" />
+						<dl class="event_zone_tit">
+							<dt><span>VOD</span>대명겁: 천하대전</dt>
+							<dd>위대한 영웅들의 전쟁 대서사시! 천하의 지배자는 오직 단 한 명뿐이다!</dd>
+						</dl>
+					</a>
+				</li>
+			</ul>
+		</article>
+		<!-- //놓치면 후회할 혜택! -->
+
+		<!-- app콘텐츠7 : 뮤직 -->
+		<div class="app_area app7">
+			<h2>요즘 뜨겁게 사랑받는 노래들~!</h2>
+			<ul class="app_list">
+				<li>
+					<div>
+						<a href="storemaincover://STOREMUSIC/CMID=01000013708724" class="tagwrap 12-A">
+							<!-- span 안에 태그 내용 기입. 택 컬러는 mustard/olive/skyblue 총 세가지이며 클래스명에서 해당단어로 바꿔주면서 사용하면 됩니다. -->
+							<!--span class="tag mustard">앨범</span-->
+							<img src="common/img/app7_img1.jpg" alt="" />
+							<div>
+								<p class="text">시간을 달려...<br/>여자친구</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">660</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREMUSIC/CMID=01000013727108" class="tagwrap 12-B">
+							<!-- span 안에 태그 내용 기입. 택 컬러는 mustard/olive/skyblue 총 세가지이며 클래스명에서 해당단어로 바꿔주면서 사용하면 됩니다. -->
+							<!--span class="tag mustard">앨범</span-->
+							<img src="common/img/app7_img2.jpg" alt="" />
+							<div>
+								<p class="text">Rain<br/>태연</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">660</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREMUSIC/CMID=01000013771788" class="tagwrap 12-C">
+							<!-- span 안에 태그 내용 기입. 택 컬러는 mustard/olive/skyblue 총 세가지이며 클래스명에서 해당단어로 바꿔주면서 사용하면 됩니다. -->
+							<!--span class="tag mustard">앨범</span-->
+							<img src="common/img/app7_img3.jpg" alt="" />
+							<div>
+								<p class="text">Press Your...<br/>태민</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">660</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<a href="storemaincover://STOREMUSIC/CMID=01000013768375" class="tagwrap 12-D">
+							<!-- span 안에 태그 내용 기입. 택 컬러는 mustard/olive/skyblue 총 세가지이며 클래스명에서 해당단어로 바꿔주면서 사용하면 됩니다. -->
+							<!--span class="tag mustard">앨범</span-->
+							<img src="common/img/app7_img4.jpg" alt="" />
+							<div>
+								<p class="text">길<br/>김윤아</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">660</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREMUSIC/CMID=01000013769745" class="tagwrap 12-E">
+							<!-- span 안에 태그 내용 기입. 택 컬러는 mustard/olive/skyblue 총 세가지이며 클래스명에서 해당단어로 바꿔주면서 사용하면 됩니다. -->
+							<!--span class="tag mustard">앨범</span-->
+							<img src="common/img/app7_img5.jpg" alt="" />
+							<div>
+								<p class="text">정말 사랑했...<br/>Eric Benet</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">660</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREMUSIC/CMID=01000013716620" class="tagwrap 12-F">
+							<!-- span 안에 태그 내용 기입. 택 컬러는 mustard/olive/skyblue 총 세가지이며 클래스명에서 해당단어로 바꿔주면서 사용하면 됩니다. -->
+							<!--span class="tag mustard">앨범</span-->
+							<img src="common/img/app7_img6.jpg" alt="" />
+							<div>
+								<p class="text">어디에도<br/>M.C. the Max</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">660</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- //app콘텐츠7 : 뮤직 -->
+
+		<!-- app콘텐츠8 : VOD예능 -->
+		<div class="app_area app8">
+			<h2>생활의 활력소! 최신예능</h2>
+			<div>
+				<a href="storemaincover://CATEGORYVOD/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025183&MENUID=11026905&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="13More">더보기</a>
+			</div>
+			<ul class="app_list">
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3010936037" class="13-A">
+							<img src="common/img/app8_img1.jpg" alt="" />
+							<div>
+								<p class="text">코미디<br/>빅리그</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1,320</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3011666009" class="13-B">
+							<img src="common/img/app8_img2.jpg" alt="" />
+							<div>
+								<p class="text">문제적<br/>남자</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1,320</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3011624019" class="13-C">
+							<img src="common/img/app8_img3.jpg" alt="" />
+							<div>
+								<p class="text">내친구의<br/>집은 어디…</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">770</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3011652028" class="13-D">
+							<img src="common/img/app8_img4.jpg" alt="" />
+							<div>
+								<p class="text">김제동의<br/>톡투유</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">770</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012469664" class="13-E">
+							<img src="common/img/app8_img5.jpg" alt="" />
+							<div>
+								<p class="text">아는형님</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">770</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="storemaincover://STOREVOD/PID=SA3012636189" class="13-F">
+							<img src="common/img/app8_img6.jpg" alt="" />
+							<div>
+								<p class="text">꽃보다 청춘<br/>아프리카</p>
+								<!-- span.ico의 클래스에, 유료일 경우 ico_money, 무료일 경우 ico_money_g 로 바꿔줍니다 -->
+								<p class="money">
+									<span class="buy">1,320</span>
+									<span class="ico ico_money"></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- //app콘텐츠8 : VOD예능 -->
+
+		<!-- 하단 서비스배너 -->
+		<article class="service_banner">
+			<ul>
+				<li><div><a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025061&MENUID=11025063&BILLFLAG=1&PAGEINDEX=1&SORT=0" class="21-A"><img src="common/img/service_banner1_1.jpg" alt="RPG게임" /><img src="common/img/service_banner1_2.jpg" alt="내 재미흥미취미!" /></a></div></li>
+				<li><div><a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025079&MENUID=11025689&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="21-B"><img src="common/img/service_banner2_1.jpg" alt="U+APP" /><img src="common/img/service_banner2_2.jpg" alt="" /></a></div></li>
+			</ul>
+		</article>
+		<!-- //하단 서비스배너 -->
+
+		<!-- 하단 메뉴 -->
+		<article class="navigation">
+			<ul>
+				<li><a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025061&MENUID=11025327&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="22-A">게임</a></li>
+				<li><a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025079&MENUID=11025341&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="22-B">라이프</a></li>
+				<li><a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025153&MENUID=11025347&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="22-C">FUN</a></li>
+				<li><a href="storemaincover://CATEGORYMUSIC/http://adp.ez-i.co.kr/adp/second_music_list.lgt?TITLE_MID=11026045&MENUID=11026047&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="22-D">뮤직</a></li>
+				<li><a href="storemaincover://CATEGORYVOD/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025181&MENUID=11025361&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="22-E">VOD</a></li>
+				<li><a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025101&MENUID=11025421&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="22-F">eBook</a></li>
+				<li><a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025103&MENUID=11025431&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="22-G">만화</a></li>
+			</ul>
+		</article>
+		<!-- //하단 메뉴 -->
+
+		<!-- (세로모드) 하단 롤링배너 -->
+		<!--
+		<article class="fixed_benner_vertical">
+			<a href="storemaincover://STORE/PID=Q06011806340" class="23-A"><img src="common/img/benner1.png" alt="민박다나와" /></a>
+		</article>
+		-->
+		<!-- //(가로모드) 하단 롤링배너 -->
+
+		<!-- (가로모드) 하단 롤링배너 -->
+		<!--
+		<article class="fixed_benner">
+			<a href="storemaincover://STORE/PID=Q06011806340" class="23-A"><img src="common/img/benner1.png" alt="민박다나와" /></a>
+			<a href="storemaincover://CATEGORYAPP/http://adp.ez-i.co.kr/adp/second_ctg_app_list.lgt?TITLE_MID=11025079&MENUID=11030569&BILLFLAG=2&PAGEINDEX=1&SORT=0" class="23-B"><img src="common/img/benner2.png" alt="잉글리쉬뤼딩북" /></a>
+		</article>
+		-->
+		<!-- //(가로모드) 하단 롤링배너 -->
+
+		<footer class="footer">
+			<p class="top"><a href="#top">맨위로</a></p>
+			<!--
+			<div class="guidepage">
+				<div><a href="storemaincover://STOREWEB/http://pdainfo.uplus.co.kr/ustore/terms/notice.html">
+				<p><span>[공지]</span> U+스토어 이용약관 변경 안내</p></a>
+				</div>
+			</div>
+			-->
+			<div class="addr">
+				<dl>
+					<dt>LG유플러스(주)<span class="bar"></span>대표이사 :</dt>
+					<dd>이상철</dd>
+				</dl>
+				<dl>
+					<dt>주소 :</dt>
+					<dd>140-883 서울특별시 용산구 한강대로 32 LG유플러스 빌딩</dd>
+				</dl>
+				<dl class="number">
+					<dt>사업자등록번호 :</dt>
+					<dd>220-81-39938</dd>
+					<dt><span class="bar"></span>통신판매업신고 :</dt>
+					<dd>제2015-서울용산-00481호</dd>
+				</dl>
+				<dl>
+					<dt>고객센터 :</dt>
+					<dd>114,<span class="mail_addr"></span></dd>
+				</dl>
+				<dl>
+					<dt>상담시간 :</dt>
+					<dd>09:00~18:00 (토요일,공휴일 휴무)</dd>
+				</dl>
+			</div>
+
+			<div class="copy">
+				<p>&copy; LG Uplus Corp.<span class="bar"></span><span class="link" onclick="javascript:location.href='storemaincover://STOREWEB/http://adp.ez-i.co.kr/terms/index.html'">이용약관</span></p>
+			</div>
+		</footer>
+	</section>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			/* 통계 스크립트 */
+			$('.1-A').on('click', function() {
+			  ga('send', 'event', '1-A', 'click');
+			});
+			$('.1-B').on('click', function() {
+			  ga('send', 'event', '1-B', 'click');
+			});
+			$('.1-C').on('click', function() {
+			  ga('send', 'event', '1-C', 'click');
+			});
+
+			$('.2-A').on('click', function() {
+			  ga('send', 'event', '2-A', 'click');
+			});
+			$('.2-B').on('click', function() {
+			  ga('send', 'event', '2-B', 'click');
+			});
+			$('.2-C').on('click', function() {
+			  ga('send', 'event', '2-C', 'click');
+			});
+			$('.2-D').on('click', function() {
+			  ga('send', 'event', '2-D', 'click');
+			});
+
+			$('.3-A').on('click', function() {
+			  ga('send', 'event', '3-A', 'click');
+			});
+			$('.3-B').on('click', function() {
+			  ga('send', 'event', '3-B', 'click');
+			});
+
+			$('.4-A').on('click', function() {
+			  ga('send', 'event', '4-A', 'click');
+			});
+
+			$('.5-A').on('click', function() {
+			  ga('send', 'event', '5-A', 'click');
+			});
+			$('.5-B').on('click', function() {
+			  ga('send', 'event', '5-B', 'click');
+			});
+			$('.5-C').on('click', function() {
+			  ga('send', 'event', '5-C', 'click');
+			});
+			$('.5-D').on('click', function() {
+			  ga('send', 'event', '5-D', 'click');
+			});
+			$('.5-E').on('click', function() {
+			  ga('send', 'event', '5-E', 'click');
+			});
+			$('.5-F').on('click', function() {
+			  ga('send', 'event', '5-F', 'click');
+			});
+			$('.5More').on('click', function() {
+			  ga('send', 'event', '5More', 'click');
+			});
+
+			$('.6-A').on('click', function() {
+			  ga('send', 'event', '6-A', 'click');
+			});
+			$('.6-B').on('click', function() {
+			  ga('send', 'event', '6-B', 'click');
+			});
+			$('.6-C').on('click', function() {
+			  ga('send', 'event', '6-C', 'click');
+			});
+			$('.6-D').on('click', function() {
+			  ga('send', 'event', '6-D', 'click');
+			});
+			$('.6-E').on('click', function() {
+			  ga('send', 'event', '6-E', 'click');
+			});
+			$('.6-F').on('click', function() {
+			  ga('send', 'event', '6-F', 'click');
+			});
+			$('.6More').on('click', function() {
+			  ga('send', 'event', '6More', 'click');
+			});
+
+			$('.7-A').on('click', function() {
+			  ga('send', 'event', '7-A', 'click');
+			});
+			$('.7-B').on('click', function() {
+			  ga('send', 'event', '7-B', 'click');
+			});
+			$('.7-C').on('click', function() {
+			  ga('send', 'event', '7-C', 'click');
+			});
+			$('.7-D').on('click', function() {
+			  ga('send', 'event', '7-D', 'click');
+			});
+			$('.7-E').on('click', function() {
+			  ga('send', 'event', '7-E', 'click');
+			});
+			$('.7-F').on('click', function() {
+			  ga('send', 'event', '7-F', 'click');
+			});
+			$('.7More').on('click', function() {
+			  ga('send', 'event', '7More', 'click');
+			});
+
+			$('.8-A').on('click', function() {
+			  ga('send', 'event', '8-A', 'click');
+			});
+			$('.8-B').on('click', function() {
+			  ga('send', 'event', '8-B', 'click');
+			});
+
+			$('.9-A').on('click', function() {
+			  ga('send', 'event', '9-A', 'click');
+			});
+			$('.9-B').on('click', function() {
+			  ga('send', 'event', '9-B', 'click');
+			});
+			$('.9-C').on('click', function() {
+			  ga('send', 'event', '9-C', 'click');
+			});
+			$('.9-D').on('click', function() {
+			  ga('send', 'event', '9-D', 'click');
+			});
+			$('.9-E').on('click', function() {
+			  ga('send', 'event', '9-E', 'click');
+			});
+			$('.9-F').on('click', function() {
+			  ga('send', 'event', '9-F', 'click');
+			});
+			$('.9More').on('click', function() {
+			  ga('send', 'event', '9More', 'click');
+			});
+
+			$('.10-A').on('click', function() {
+			  ga('send', 'event', '10-A', 'click');
+			});
+			$('.10-B').on('click', function() {
+			  ga('send', 'event', '10-B', 'click');
+			});
+			$('.10-C').on('click', function() {
+			  ga('send', 'event', '10-C', 'click');
+			});
+			$('.10-D').on('click', function() {
+			  ga('send', 'event', '10-D', 'click');
+			});
+			$('.10-E').on('click', function() {
+			  ga('send', 'event', '10-E', 'click');
+			});
+			$('.10-F').on('click', function() {
+			  ga('send', 'event', '10-F', 'click');
+			});
+			$('.10More').on('click', function() {
+			  ga('send', 'event', '10More', 'click');
+			});
+
+			$('.11').on('click', function() {
+			  ga('send', 'event', '11', 'click');
+			});
+
+			$('.20-A').on('click', function() {
+			  ga('send', 'event', '20-A', 'click');
+			});
+			$('.20-B').on('click', function() {
+			  ga('send', 'event', '20-B', 'click');
+			});
+			$('.20-C').on('click', function() {
+			  ga('send', 'event', '20-C', 'click');
+			});
+			$('.20-D').on('click', function() {
+			  ga('send', 'event', '20-D', 'click');
+			});
+			$('.20-E').on('click', function() {
+			  ga('send', 'event', '20-E', 'click');
+			});
+			$('.20-F').on('click', function() {
+			  ga('send', 'event', '20-F', 'click');
+			});
+			$('.20More').on('click', function() {
+			  ga('send', 'event', '20More', 'click');
+			});
+
+			$('.12-A').on('click', function() {
+			  ga('send', 'event', '12-A', 'click');
+			});
+			$('.12-B').on('click', function() {
+			  ga('send', 'event', '12-B', 'click');
+			});
+			$('.12-C').on('click', function() {
+			  ga('send', 'event', '12-C', 'click');
+			});
+			$('.12-D').on('click', function() {
+			  ga('send', 'event', '12-D', 'click');
+			});
+			$('.12-E').on('click', function() {
+			  ga('send', 'event', '12-E', 'click');
+			});
+			$('.12-F').on('click', function() {
+			  ga('send', 'event', '12-F', 'click');
+			});
+
+			$('.13-A').on('click', function() {
+			  ga('send', 'event', '13-A', 'click');
+			});
+			$('.13-B').on('click', function() {
+			  ga('send', 'event', '13-B', 'click');
+			});
+			$('.13-C').on('click', function() {
+			  ga('send', 'event', '13-C', 'click');
+			});
+			$('.13-D').on('click', function() {
+			  ga('send', 'event', '13-D', 'click');
+			});
+			$('.13-E').on('click', function() {
+			  ga('send', 'event', '13-E', 'click');
+			});
+			$('.13-F').on('click', function() {
+			  ga('send', 'event', '13-F', 'click');
+			});
+			$('.13More').on('click', function() {
+			  ga('send', 'event', '13More', 'click');
+			});
+
+			$('.14').on('click', function() {
+			  ga('send', 'event', '14', 'click');
+			});
+			$('.15').on('click', function() {
+			  ga('send', 'event', '15', 'click');
+			});
+			$('.16').on('click', function() {
+			  ga('send', 'event', '16', 'click');
+			});
+			$('.17').on('click', function() {
+			  ga('send', 'event', '17', 'click');
+			});
+			$('.18').on('click', function() {
+			  ga('send', 'event', '18', 'click');
+			});
+			$('.19').on('click', function() {
+			  ga('send', 'event', '19', 'click');
+			});
+			$('.20').on('click', function() {
+			  ga('send', 'event', '20', 'click');
+			});
+
+			$('.21-A').on('click', function() {
+			  ga('send', 'event', '21-A', 'click');
+			});
+			$('.21-B').on('click', function() {
+			  ga('send', 'event', '21-B', 'click');
+			});
+
+			$('.22-A').on('click', function() {
+			  ga('send', 'event', '22-A', 'click');
+			});
+			$('.22-B').on('click', function() {
+			  ga('send', 'event', '22-B', 'click');
+			});
+			$('.22-C').on('click', function() {
+			  ga('send', 'event', '22-C', 'click');
+			});
+			$('.22-D').on('click', function() {
+			  ga('send', 'event', '22-D', 'click');
+			});
+			$('.22-E').on('click', function() {
+			  ga('send', 'event', '22-E', 'click');
+			});
+			$('.22-F').on('click', function() {
+			  ga('send', 'event', '22-F', 'click');
+			});
+			$('.22-G').on('click', function() {
+			  ga('send', 'event', '22-G', 'click');
+			});
+
+			$('.23-A').on('click', function() {
+			  ga('send', 'event', '23-A', 'click');
+			});
+			$('.23-B').on('click', function() {
+			  ga('send', 'event', '23-B', 'click');
+			});
+
+		});
+	</script>
+</body>
+</html>

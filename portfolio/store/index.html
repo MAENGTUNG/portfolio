@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" />
+<title>이벤트</title>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60601266-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<link rel="stylesheet" href="common/css/common.css" />
+<script src="common/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+	window.onload = function(){
+		$(window).resize(function(){
+			//top_left , bottom_right 이미지에 배경색이 들어가 있지 않은 경우 스크립트
+			$('.top_left img').css({'height':$('.top_right img').height()});
+			$('.bottom_right img').css({'height':$('.bottom_left img').height()});
+
+			//top_left , bottom_right 이미지에 배경색이 들어가 있는 경우 스크립트
+			$('.top_left2 img').css({'height':$('.top_right').height()});
+			$('.bottom_right2 img').css({'height':$('.bottom_left').height()});
+		}).resize(); 
+	};
+</script>
+<style type="text/css">
+.top_left a{border:1px solid #dcdcdc;}
+.bottom_right a{border:1px solid #dcdcdc}
+.marT0{margin-top:0;}
+.marB0{margin-bottom:0;}
+</style>
+</head>
+<body>
+	<article id="eventpage">
+
+		<section class="txtbanner_area no_border" style="margin:0 4px;">
+			<img src="common/img/event_tit3.jpg" alt="놓칠 수 없는 혜택" />
+		</section>
+
+		<section class="txtbanner_area no_border">
+			<a class="EVT1" href="onestore://common/webview/http://www.uplusstoreevent.co.kr/adp/ussmainpage/subevent/20151217150439/index.html"><img src="common/img/mainbanner1.jpg" alt="밀려오는 감동의 물결 명작영화 2편 무료" /></a>
+		</section>
+
+		<section class="top_evnet marT0">
+			<div class="top_left"><a class="EVT2" href="onestore://uplusstore/MOVIE/SA3012488553"><img src="common/img/top_left.jpg" alt="귀요미들 러브 라이브!" /></a></div><!-- top_left 이미지에 배경색이 들어가 있는 경우 top_left2 class로 바꿔줌 -->
+			<div class="top_right"><a class="EVT3" href="onestore://uplusstore/MOVIE/SA3012474678"><img src="common/img/top_right.jpg" alt="다른 영화 말고 너 도리화가 50%" /></a></div>
+		</section>
+
+		<section class="bottom_evnet">
+			<div class="bottom_left"><a class="EVT4" href="onestore://uplusstore/MOVIE/SA3012458438"><img src="common/img/bottom_left.jpg" alt="무한도전 하늘을 걷는 남자" /></a></div>
+			<div class="bottom_right"><a class="EVT5" href="onestore://common/webview/http://www.uplusbox.co.kr/front/upload/event_html/2015/0629/mb2.htm"><img src="common/img/bottom_right.jpg" alt="LTE 데이터 업로드 무료" /></a></div><!-- bottom_right 이미지에 배경색이 들어가 있는 경우 bottom_right2로 바꿔줌 -->
+		</section>
+
+		<section class="txtbanner_area">
+			<a class="EVT6" href="onestore://common/webview/http://www.uplusstoreevent.co.kr/adp/ussmainpage/subevent/20151104094244/index.html"><img src="common/img/mainbanner2.jpg" alt="오늘 자정 마감! 2월의 캐쉬맨" /></a>
+		</section>
+
+		<section class="top_evnet marT0">
+			<div class="top_left2"><a class="EVT7" href="onestore://uplusstore/MOVIE/SA3012458626"><img src="common/img/top_left2.jpg" alt="대명겁 50%" /></a></div><!-- top_left 이미지에 배경색이 들어가 있는 경우 top_left2 class로 바꿔줌 -->
+			<div class="top_right"><a class="EVT8" href="onestore://uplusstore/product/0000697077"><img src="common/img/top_right2.jpg" alt="U네비 다운받고 주유권 당첨받고" /></a></div>
+		</section>
+
+		<section class="txtbanner_area no_border" style="margin:0 4px;">
+			<img src="common/img/event_tit1.jpg" alt="게임, 미리미리 사전예약!" />
+		</section>
+
+		<section class="txtbanner_area no_border">
+			<a class="EVT9" href="onestore://common/webview/http://m.onestore.co.kr/mobilepoc/uplus/preReserveGameInfoDetail.omp?gameInfoSeq=5340"><img src="common/img/mainbanner3.jpg" alt="원스토어 단독! 천명 CBT 사전예약 중 정식출시 시 한정판 날개 아이템 지급!" /></a>
+		</section>
+
+		<section class="txtbanner_area no_border">
+			<a class="EVT10" href="onestore://common/webview/http://m.onestore.co.kr/mobilepoc/uplus/preReserveGameEvent.omp?deviceTelecom=ustore"><img src="common/img/mainbanner4.jpg" alt="모든 게임 예약 + 득템을 한방에! HOT게임 사전예약전" /></a>
+
+	</article>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		/* 통계 스크립트 */
+		$('.EVT1').on('click', function() {
+		  ga('send', 'event', 'EVT1', 'click');
+		});
+		$('.EVT2').on('click', function() {
+		  ga('send', 'event', 'EVT2', 'click');
+		});
+		$('.EVT3').on('click', function() {
+		  ga('send', 'event', 'EVT3', 'click');
+		});
+		$('.EVT4').on('click', function() {
+		  ga('send', 'event', 'EVT4', 'click');
+		});
+		$('.EVT5').on('click', function() {
+		  ga('send', 'event', 'EVT5', 'click');
+		});
+		$('.EVT6').on('click', function() {
+		  ga('send', 'event', 'EVT6', 'click');
+		});
+		$('.EVT7').on('click', function() {
+		  ga('send', 'event', 'EVT7', 'click');
+		});
+		$('.EVT8').on('click', function() {
+		  ga('send', 'event', 'EVT8', 'click');
+		});
+		$('.EVT9').on('click', function() {
+		  ga('send', 'event', 'EVT9', 'click');
+		});
+		$('.EVT10').on('click', function() {
+		  ga('send', 'event', 'EVT10', 'click');
+		});
+
+	});
+</script>
+</body>
+</html>

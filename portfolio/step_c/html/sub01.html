@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<meta name="viewport" content="width=960">-->
+<!--<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?1" />-->
+<title>STEP-C</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+</head>
+<body>
+	<!--container-->
+	<div id="container" class="cssTable">
+		<!--head-->
+		<div id="head" class="cssTable-row">	
+			<!--head-wrap-->
+			<div id="head-wrap" class="cssTable-cell">
+				<div class="inner_wrap">
+					<h1><a href="login.html"><img src="../images/txt/logo.png" alt="STEP-C"></a></h1>
+					<div id="head-logInfo">
+						<span class="userName">홍길동 (ss01/성신양회)</span>
+						<a href="javascript:;"  class="logState">LOGOUT</a>
+						<a href="javascript:;" class="mypage">MYPAGE</a>
+					</div>
+				</div>				
+			</div>	
+			<!--//head-wrap-->
+		</div>
+		<!--//head-->
+
+		<!--cssTable-row-->
+		<div class="cssTable-row">
+			<!--cssTable-cell-->
+			<div class="cssTable-cell">
+				<!--cssTable-->
+				<div class="cssTable">
+					<!--cssTable-row-->
+					<div class="cssTable-row">	
+						<!--left-wrap-->						
+						<div id="left-wrap" class="bg_gnb_00 cssTable-cell">
+							<ul>
+								<li><a href="javascript:;" class="gnb_menu_01"><span>ASSESSMENT Project</span></a></li>
+								<li><a href="javascript:;" class="gnb_menu_02"><span>SUPPORT 1:1 Q&A</span></a></li>
+								<li><a href="javascript:;" class="gnb_menu_03"><span>FAQ</span></a></li>
+								<li><a href="javascript:;" class="gnb_menu_04"><span>Manual</span></a></li>
+								<li><a href="javascript:;" class="gnb_menu_05"><span>Introduction</span></a></li>
+								<li><a href="javascript:;" class="gnb_menu_06"><span>Administrator</span></a></li>
+							</ul>
+						</div>	
+						<!--//left-wrap-->		
+						<!--right-wrap-->						
+						<div id="right-wrap" class="cssTable-cell">
+							<!--inner_wrap_2-->					
+							<div class="inner_wrap_2">
+								
+								<!--contents-->
+
+									<!--내용을 넣으세요-->
+									<h2 class="content_h2 type04">상세평가</h2>
+
+									<div class="s_tit_list"><img src="../images/common/s_tit_list01.jpg" alt="기본정보"></div>
+
+									<!-- content_stit_box -->
+									<div class="content_stit_box clearfix">
+										<h2 class="content_stit">기본정보</h2>
+									</div>
+									<!-- //content_stit_box -->
+
+									<!-- UI Object -->
+			
+									<form action="" method="post">
+										<fieldset>
+											<legend>기본정보 폼</legend>
+											<div class="form_table type_02 clearfix">
+												<div class="content_basic_box mt40 clearfix">
+													<div class="content_basic_left clearfix">
+														<table border="0" cellspacing="0" summary="기본정보 폼">
+														<tbody>
+														<tr>
+														<td>
+															<span class="tit">평가구분</span>
+															<div class="item" style="margin-left: 74px">
+																<input type="radio"name="appraisal" id="simple" value="" style="margin-right:2px; vertical-align:top;">
+																<label for="simple" style="vertical-align:top;">간이 평가</label>
+																<input type="radio"name="appraisal" id="detail" value="" style="margin-right:2px; vertical-align:top;">
+																<label for="detail" style="vertical-align:top;">상세 평가</label>
+															</div>
+														</td>					
+														</tr>
+														<tr>
+														<td>
+															<span class="tit">명칭</span>
+															<div class="item" style="margin-left: 101px">
+																<input type="text" name="" class="i_text" style="width:207px" value="25-24-15 (OPC)">
+															</div>
+														</td>
+														</tr>
+														<tr>
+														<td>
+															<span class="tit">적용현장</span>
+															<div class="item" style="margin-left: 74px">
+																<select name="" style="padding:1px 0 2px 0; width:119px;">
+																	<option>경기도</option>
+																</select>
+															</div>
+
+															<div class="item" style="margin-left:5px">
+																<input type="text" name="" class="i_text" style="width:382px" value="안산 푸른 마을 5단지">
+															</div>
+														</td>
+														</tr>
+														<tr>
+														<td>
+															<span class="tit">종류</span>
+															<div class="item" style="margin-left: 99px">
+																<select name="" style="padding:1px 0 2px 0; width:204px;">
+																	<option>보통 중량 콘크리트</option>
+																</select>
+															</div>
+
+															<span class="tit" style="margin-left:26px;">압축강도</span>
+															<div class="item" style="margin-left: 15px">
+																<select name="" style="padding:1px 0 2px 0; width:204px;">
+																	<option>24 Mpa</option>
+																</select>
+															</div>
+														</td>
+														</tr>
+														<tr>
+														<td>
+															<span class="tit">굵은골재 최대지수</span>
+															<div class="item" style="margin-left:23px">
+																<input type="text" name="" class="i_text" style="width:119px" value="25">
+																mm
+															</div>
+
+															<span class="tit" style="margin-left:85px;">슬럼프</span>
+															<div class="item" style="margin-left: 29px">
+																<input type="text" name="" class="i_text" style="width:119px" value="15">
+																cm
+															</div>
+														</td>
+														</tr>
+														<tr>
+														<td>
+															<span class="tit">데이터 수집기간</span>
+															<div class="item" style="margin-left: 35px">
+																<input type="text" name="" class="i_text" style="width:174px" value="2015년 01월 23일">
+																<img src="../images/bg/icon_date.jpg" width="21" height="21" alt="달력" style="margin-left:-3px;">
+																~
+																<input type="text" name="" class="i_text" style="width:174px" value="2015년 01월 23일">
+																<img src="../images/bg/icon_date.jpg" width="21" height="21" alt="달력" style="margin-left:-3px;">
+															</div>
+														</td>
+														</tr>
+														<tr>
+														<td>
+															<p class="basic_summary mt10">수집기간 내 해당강도 콘크리트  생산량</p>
+															<!-- table_wrap -->
+															<div class="table_wrap">
+																<table class="table_type04 td_color" border="0" cellspacing="0" summary="수집기간 내 해당강도 콘크리트  생산량" style="border-top: 2px solid #666666;">
+																<caption>
+																수집기간 내 해당강도 콘크리트  생산량
+																</caption>
+																<colgroup>
+																	<col width="" />
+																	<col width="" />
+																	<col width="" />
+																	<col width="" />
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col" class="txt_center"><input type="checkbox" value=""></th>
+																		<th scope="col" class="txt_center">배쳐플랜트명</th>
+																		<th scope="col" class="txt_center">단위</th>
+																		<th scope="col" class="txt_center">생산량</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td><input type="checkbox" value=""></td>
+																		<td class="input_type03">
+																			<input type="text" value="안산공장">
+																		</td>
+																		<td><img src="../images/txt/unit_13.gif" alt="m3"></td>
+																		<td >271.470</td>
+																	</tr>
+																	<tr>
+																		<td><input type="checkbox" value=""></td>
+																		<td class="input_type03">
+																			<input type="text" value="수원공장">
+																		</td>
+																		<td><img src="../images/txt/unit_13.gif" alt="m3"></td>
+																		<td>152.724</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="br_none background_type04"><span class="black_b">합계</span></td>
+																		<td class="br_none background_type04"><img src="../images/txt/unit_14.gif" alt="m3"></td>
+																		<td class="br_none background_type04">424.194</td>
+																	</tr>
+																</tbody>
+																</table>
+															</div>
+															<!-- //table_wrap -->
+															<div class="btn_st01 mt20 mb20 clearfix">
+																<p class="btn_st01_left"><a href="#"><img src="../images/btn/btn_type01_01.png" alt="삭제"></a></p>
+																<p class="btn_st01_right"><a href="#"><img src="../images/btn/btn_type01_02.png" alt="추가"></a></p>
+															</div>
+														</td>
+														</tr>
+														<tr>
+														<td>
+															<span class="tit">시스템경계</span>
+															<div class="item" style="margin-left: 63px">
+																<input type="text" name="" class="i_text" style="width:207px" value="Cradle to Gate">
+															</div>
+
+															<span class="tit" style="margin-left:25px;">기능단위</span>
+															<div class="item" style="margin-left: 15px">
+																<input type="text" name="" class="i_text" style="width:207px" value="1m3">
+															</div>
+														</td>
+														</tr>
+														<tr>
+														<td>
+															<span class="tit">제외기준</span>
+															<div class="item" style="margin-left: 76px">
+																<input type="text" name="" class="i_text" style="width:207px" value="99%">
+															</div>
+														</td>
+														</tr>
+														</tbody>
+														</table>
+													</div>
+													<div class="content_basic_right clearfix">
+														<div class="img_upload mb10"><img src="../images/dummy/img_upload.jpg" alt="업로드 사진"></div>
+														<div class="file_upload"><input type="file" value=""></div>
+													</div>
+												</div>	
+											</div>
+										</fieldset>
+									</form>
+
+									<!-- <div class="content_basic_box mt40 clearfix">
+										<div class="content_basic_left">
+											<p class="basic_summary">수집기간 내 해당강도 콘크리트  생산량</p> -->
+											<!-- table_wrap -->
+											<!-- <div class="table_wrap">
+												<table class="table_type01 td_color" border="0" cellspacing="0" summary="수집기간 내 해당강도 콘크리트  생산량">
+												<caption>
+												수집기간 내 해당강도 콘크리트  생산량
+												</caption>
+												<colgroup>
+													<col width="" />
+													<col width="" />
+													<col width="" />
+													<col width="" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col"><input type="checkbox" value=""></th>
+														<th scope="col">배쳐플랜트명</th>
+														<th scope="col">단위</th>
+														<th scope="col">생산량</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><input type="checkbox" value=""></td>
+														<td class="input_type03">
+															<input type="text" value="안산공장">
+														</td>
+														<td><img src="../images/txt/unit_13.gif" alt="m3"></td>
+														<td >271.470</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" value=""></td>
+														<td class="input_type03">
+															<input type="text" value="수원공장">
+														</td>
+														<td><img src="../images/txt/unit_13.gif" alt="m3"></td>
+														<td>152.724</td>
+													</tr>
+													<tr>
+														<td colspan="2" class="br_none background_type04"><span class="black_b">합계</span></td>
+														<td class="br_none background_type04"><img src="../images/txt/unit_14.gif" alt="m3"></td>
+														<td class="br_none background_type04">424.194</td>
+													</tr>
+												</tbody>
+												</table>
+											</div> -->
+											<!-- //table_wrap -->
+											<!-- <div class="btn_st01 mt20 clearfix">
+												<p class="btn_st01_left"><a href="#"><img src="../images/btn/btn_type01_01.png" alt="삭제"></a></p>
+												<p class="btn_st01_right"><a href="#"><img src="../images/btn/btn_type01_02.png" alt="추가"></a></p>
+											</div>
+										</div>
+										<div class="content_basic_right clearfix">
+											<div class="img_upload mb10"><img src="../images/dummy/img_upload.jpg" alt="업로드 사진"></div>
+											<div class="file_upload"><input type="file" value=""></div>
+										</div>
+									</div> -->
+									<!-- //UI Object -->
+
+									<div class="btn_st01 mt40 clearfix">
+										<p class="btn_st01_left"><a href="#"><img src="../images/btn/btn_prev.gif" alt="이전"></a></p>
+										<p class="btn_st01_right"><a href="#"><img src="../images/btn/btn_next.gif" alt="다음"></a></p>
+									</div>									
+
+								<!--//contents-->
+
+								<!-- <div id="footer">
+									<span>Sustainable Building Evaluation Special Technology Lab.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<span>TEL 031-436-8125</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<span>FAX 031-406-411</span><br>
+									<span>COPYRIGHT 2016  S-PRISM STM ALL RIGHT RESERVED</span>
+								</div> -->
+
+							</div>	
+							<!--//inner_wrap_2-->								
+						</div>
+						<!--//right-wrap-->	
+					</div>
+					<!--//cssTable-row-->
+				</div>
+				<!--//cssTable-->	
+			</div>
+			<!--//cssTable-cell-->
+		</div>
+		<!--//cssTable-row-->
+	</div>
+	<!--//container-->
+</body>
+</html>

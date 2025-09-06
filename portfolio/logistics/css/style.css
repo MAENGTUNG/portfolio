@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+@import url("common.css");
+@import url("reset.css");
+
+#wrap {width:100%;}
+
+/*main*/
+
+/*header 부분*/
+#wrap>#header {height:67px; background:url(../image/header_bg.gif) 0 0 repeat-x;}
+#wrap>#header>#h_box {margin:0 auto; width:1000px; height:67px;}
+#wrap>#header>#h_box>.logo {float:left; margin-right:31px; width:200px; height:67px;}
+#nav {position:relative; float:left; padding-top:11px; width:769px; height:56px;}
+#nav>ul {overflow:hidden;}
+#nav>ul>li {float:left;}
+
+.nav_2depth01 {position:absolute; left:-30px; top:53px;}
+.nav_2depth02 {position:absolute; left:68px; top:53px;}
+.nav_2depth03 {position:absolute; left:176px; top:53px;}
+.nav_2depth04 {position:absolute; left:278px; top:53px;}
+.nav_2depth05 {position:absolute; left:363px; top:53px;}
+ul>li.nav_2depth_top_bg {width:163px; height:19px; background:url(../image/2depth_top_bg.png) 0 0 no-repeat;}
+ul>li.nav_2depth_center_bg {width:163px; background:url(../image/2depth_center_bg.png) 0 0 repeat-y;}
+ul>li.nav_2depth_center_bg>ul {overflow:hidden;}
+ul>li.nav_2depth_center_bg>ul>li {padding:0 9px 0 9px; height:23px; font:12px/23px "Dotum";}
+ul>li.nav_2depth_center_bg>ul>li.on {background:url(../image/2depth_ov_bg.png) 0 0 no-repeat;}
+ul>li.nav_2depth_center_bg>ul>li>a {display:block; padding-left:15px; height:23px; border-bottom:1px dotted #84ade9; color:#b9d5ff;}
+li.nav_2depth_bottom_bg {width:163px; height:10px; background:url(../image/2depth_bottom_bg.png) 0 0 no-repeat;}
+
+/*container 부분*/
+#wrap>#container {margin:0 auto; width:1000px;}
+
+/*cont_left 부분*/
+#wrap>#container>#cont_left {float:left; padding-top:12px; margin-right:22px; width:215px;}
+#wrap>#container>#cont_left>.login_box {margin-bottom:11px; padding-top:17px; width:200px; height:73px; background:url(../image/login_box_bg.gif) 0 0 no-repeat;}
+#wrap>#container>#cont_left>.login_box>.login_info {margin-bottom:7px; text-align:center; font:bold 14px "Gulim"; color:#2c47a9;}
+#wrap>#container>#cont_left>.login_box>.login_info>span {font:12px "Gulim"; color:#838383;}
+#wrap>#container>#cont_left>.login_box>.login_btn {text-align:center;}
+
+#wrap>#container>#cont_left>.logistics_list {margin-bottom:14px; width:215px;height:330px;}
+#wrap>#container>#cont_left>.logistics_list>dl>dt {}
+#wrap>#container>#cont_left>.logistics_list>dl>dd {padding-right:29px; height:33px; background:url(../image/logistics_list_bg.gif) 0 0 no-repeat;}
+#wrap>#container>#cont_left>.logistics_list>dl>dd.on {height:33px; background:url(../image/logistics_list_bg_on.gif) 0 0 no-repeat;}
+#wrap>#container>#cont_left>.logistics_list>dl>dd>span {float:left;}
+#wrap>#container>#cont_left>.logistics_list>dl>dd>span.red {float:right; font:bold 14px/30px "Tahoma"; color:#e00400;}
+#wrap>#container>#cont_left>.logistics_list>dl>dd>span.blue {float:right; font:bold 14px/30px "Tahoma"; color:#003ace;}
+
+#wrap>#container>#cont_left>.logistics_list>dl>dd.logistics_list_txt {padding:14px 11px 0 11px; width:178px; height:61px; border-top:2px solid #6980b8; background:url(../image/logistics_list_txt_bg.gif) 0 0 no-repeat;}
+#wrap>#container>#cont_left>.logistics_list>dl>dd.logistics_list_txt>p>span {float:left; margin-bottom:7px; letter-spacing:-1px; font:bold 12px/19px "Dotum"; color:#231f20;}
+#wrap>#container>#cont_left>.logistics_list>dl>dd.logistics_list_txt>p>span.right {float:right; margin-bottom:7px;}
+
+#wrap>#container>#cont_left>.notice_box {position:relative; margin-bottom:13px; width:200px; height:147px; background:url(../image/notice_box_bg.gif) 0 0 no-repeat;}
+#wrap>#container>#cont_left>.notice_box>dl>dt {margin-bottom:9px; height:45px;}
+#wrap>#container>#cont_left>.notice_box>dl>dd {padding-left:13px; font:11px/18px "Dotum"; white-space:nowrap; overflow: hidden; text-overflow:ellipsis;}
+#wrap>#container>#cont_left>.notice_box>dl>dd>a {color:#00377b;}
+#wrap>#container>#cont_left>.notice_box>dl>dd.more {position:absolute; left:150px; top:13px;}
+
+#wrap>#container>#cont_left>.manual_down {margin-bottom:66px;}
+
+
+/*cont_right 부분*/
+#wrap>#container>#cont_right {float:left; width:763px;}
+#wrap>#container>#cont_right>.visual {height:293px;}
+#wrap>#container>#cont_right>#tab_cont01{display:block;}
+#wrap>#container>#cont_right>#tab_cont02{display:none;}
+#wrap>#container>#cont_right>#tab_cont03{display:none;}
+#wrap>#container>#cont_right>#tab_cont04{display:none;}
+#wrap>#container>#cont_right>#tab_cont05{display:none;}
+#wrap>#container>#cont_right>#tab_cont06{display:none;}
+#wrap>#container>#cont_right>.cont_table {padding:3px 55px 0 71px; height:398px; background:url(../image/cont_table_bg.gif) 0 0 no-repeat;}
+#wrap>#container>#cont_right>.cont_table>h5 {margin-bottom:34px; height:38px; text-align:center; font:bold 12px/37px "Tahoma"; color:#585858;}
+#wrap>#container>#cont_right>.cont_table>p {margin-bottom:13px;}
+#wrap>#container>#cont_right>.cont_table>table {border-top:2px solid #d0d8e6;}
+#wrap>#container>#cont_right>.cont_table>table th {height:23px; border-left:1px solid #d0d8e6; border-right:1px solid #d0d8e6; border-bottom:2px solid #c6d8e6; font:bold 11px "Dotum"; color:#00377b; background:#dee9f9;}
+#wrap>#container>#cont_right>.cont_table>table th.txt01 {height:21px; font-weight:normal;}
+#wrap>#container>#cont_right>.cont_table>table th.txt02 {color:#273e9b;}
+#wrap>#container>#cont_right>.cont_table>table td {padding-right:5px; height:21px; text-align:right; border-left:1px solid #d0d8e6; border-right:1px solid #d0d8e6; border-bottom:2px solid #c6d8e6; font:11px "Tahoma"; color:#5d5d5d;}
+
+/*footer 부분*/
+#wrap>#footer {height:102px; border-top:1px solid #bebfc1;}
+#wrap>#footer>#f_box {margin:0 auto; padding:15px 0 0 388px; width:612px; height:87px;}
+
+/*sub*/
+
+/*sub_header 부분*/
+#wrap>#sub_header {height:67px; background:url(../image/header_bg.gif) 0 0 repeat-x;}
+#wrap>#sub_header>.logo {float:left; margin-right:31px; width:233px; height:67px;}
+#wrap>#sub_header>.sub_login {float:right; padding:15px 20px 0 0; width:165px; height:61px;}
+#wrap>#sub_header>.sub_login>p {margin-bottom:3px; text-align:right; font:11px "Dotum"; color:#2c47a9;}
+#wrap>#sub_header>.sub_login>p>span {font-weight:bold;}
+
+/*sub_container 부분*/
+#wrap>#sub_container {padding:26px 0 60px 20px; width:1032px;}
+#wrap>#sub_container>.sub_cont_advice {margin-bottom:13px;}
+#wrap>#sub_container>.sub_cont_advice>h3 {height:25px; font:bold 16px "Dotum"; color:#ee3b33;}
+#wrap>#sub_container>.sub_cont_advice>.advice_top {height:6px; background:url(../image/advice_top_bg.gif) 0 0 no-repeat;}
+#wrap>#sub_container>.sub_cont_advice>.advice_center {padding:3px 30px 4px 30px; background:url(../image/advice_center_bg.gif) 0 0 repeat-y; }
+#wrap>#sub_container>.sub_cont_advice>.advice_center>p {font:11px/15px "Dotum"; color:#304464;}
+#wrap>#sub_container>.sub_cont_advice>.advice_center>p>span {text-decoration:underline;}
+#wrap>#sub_container>.sub_cont_advice>.advice_center>p>span.bold {font-weight:bold; text-decoration:none;}
+#wrap>#sub_container>.sub_cont_advice>.advice_bottom {height:6px; background:url(../image/advice_bottom_bg.gif) 0 0 no-repeat;}
+
+#wrap>#sub_container>.sub_cont_box {}
+#wrap>#sub_container>.sub_cont_box>.sub_lnb {float:left; padding-right:21px; width:245px;}
+#wrap>#sub_container>.sub_cont_box>.sub_lnb>h3 {padding:20px 0 0 14px; height:30px; background:url(../image/sub_lnb_top_bg.gif) 0 0 no-repeat; font:bold 14px "Dotum"; color:#000000;;}
+#wrap>#sub_container>.sub_cont_box>.sub_lnb>ul {padding:14px 14px 16px 14px; background:url(../image/sub_lnb_center_bg.gif) 0 0 repeat-y;}
+#wrap>#sub_container>.sub_cont_box>.sub_lnb>ul>li {margin-bottom:7px; font:bold 12px/17px "Dotum";}
+#wrap>#sub_container>.sub_cont_box>.sub_lnb>ul>li>a {color:#000000;}
+#wrap>#sub_container>.sub_cont_box>.sub_lnb>ul>li>ul {padding:6px 0 7px 8px;}
+#wrap>#sub_container>.sub_cont_box>.sub_lnb>ul>li>ul>li {height:20px; font:12px "Dotum";}
+#wrap>#sub_container>.sub_cont_box>.sub_lnb>ul>li>ul>li>a {color:#585f6e;}
+#wrap>#sub_container>.sub_cont_box>.sub_lnb>ul>li>ul>li>a:hover {font-weight:bold; color:#466ff2;}
+#wrap>#sub_container>.sub_cont_box>.sub_lnb>.sub_lnb_bottom {height:7px; background:url(../image/sub_lnb_bottom_bg.gif) 0 0 no-repeat;}
+
+#wrap>#sub_container>.sub_cont_box>.sub_table {float:left; padding-top:16px; width:766px;}
+#wrap>#sub_container>.sub_cont_box>.sub_table>h4 {height:34px; font:bold 14px "Dotum"; color:#000000;}
+#wrap>#sub_container>.sub_cont_box>.sub_table>h4>span {color:#466ff2;}
+
+#wrap>#sub_container>.sub_cont_box>.sub_table dl {position:relative; height:450px; background:url(../image/table_tab_bg.gif) 0 0 repeat-x;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dt {float:left; margin-right:2px; margin-bottom:4px; width:90px; height:28px; text-align:center; background:url(../image/tab_list_bg.gif) 0 0 no-repeat;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dt>a {display:block; height:28px; font:bold 12px/28px "Dotum"; color:#7f858a;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dt>a.on {background:url(../image/tab_list_bg_on.gif) 0 0 no-repeat; color:#466ff2;}
+
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd {position:absolute; left:0; top:32px; background:#ffffff;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd>table th {height:30px; border-right:1px solid #e0e0e0; border-bottom:2px solid #c6d8e6; border-top:2px solid #c6d8e6; background:#dee9f9; font:bold 12px "Dotum"; color:#273e9b;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd>table td {padding-left:6px; height:30px; border-right:1px solid #e0e0e0; border-bottom:2px solid #c6d8e6; border-top:2px solid #c6d8e6; font:12px "Dotum"; color:#000000;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd>table td.comment {padding-left:0; text-align:center; background:#f4f8fb;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd>table td.align {padding-left:6px; text-align:left;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd>table .border_none {border-right:none;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd>table td.number {padding-left:0; text-align:center; color:#5d5d5d;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd>table td.input {padding-left:0; text-align:center; background:#f4f8fb;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd>table td input {width:77px; height:17px; border-top:1px solid #b8b8b8; border-left:1px solid #b8b8b8; border-right:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8; font:12px "Dotum"; color:#273e9b;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd>table td.paging {padding-top:26px; text-align:center; border:none;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd>table td.paging>a {margin:0 3px 0 3px; font:bold 12px "Tahoma"; color:#8a8a8a;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd>table td.paging>a:hover {color:#466ff2;}
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd>table td.paging>a.mg_none {margin:0;}
+
+#wrap>#sub_container>.sub_cont_box>.sub_table dl>dd.down {position:absolute; left:690px; top:0; width:76px; text-align:right; background:none;}

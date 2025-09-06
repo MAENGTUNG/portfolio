@@ -1,0 +1,48 @@
+@import "base.css";
+
+/* ================================================ login_page =============================================================== */
+
+#login_wrap {width:100%; height:676px; padding-top:124px; background:url(../image/login_wrap_bg.gif) repeat;}
+#login_content {width:850px; height:530px; margin:0 auto; border:10px solid #2d4281;}
+.login_img {width:850px; height:389px;}
+.login_box1 {width:850px; height:91px; padding-top:50px; background:#fff;}
+.login_box2 {width:830px; height:39px; padding-left:20px;}
+.login_input1 {float:left; width:330px; height:39px;}
+.login_text {float:left; height:39px;}
+.login_id {float:left; width:240px; height:39px;}
+.login_input_id {width:236px; height:26px; border:1px solid #c8cbcc;}
+.login_input2 {float:left; width:364px; height:39px;}
+.login_btn {float:left; width:85px; height:39px;}
+.login_box3 {width:740px; height:52px; padding-left:110px;}
+.login_checkbox {float:left; width:519px; height:52px; font-size:12px; font-weight:normal; color:#999999;}
+.login_checkbox input {border-top:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #c0c0c0; border-bottom:1px solid #c0c0c0; border:none;}
+.login_password {float:left; width:170px; height:52px;}
+.login_password a {font-size:12px; font-weight:normal; color:#999999; text-decoration:underline;}
+
+/* ================================================ login_page =============================================================== */
+
+/* ================================================ main_page =============================================================== */
+
+#wrap {width:100%;}
+#header {width:100%; height:93px; background:url(../image/main_header_bg.gif) repeat-x;}
+.header_box {width:1249px; height:93px;}
+.header_top {width:1173px; height:66px; padding-left:76px;}
+.main_logo {float:left; width:125px; height:66px;}
+.main_login {float:left; width:1048px; height:42px; padding-top:24px; font-size:11px; font-weight:normal; color:#012543;}
+.main_login_text {padding-top:4px;}
+.main_login_text .text_green {font-size:11px; font-weight:bold; color:#436300;}
+.main_login_text .text_blue {font-size:11px; font-weight:bold; color:#012543;}
+.main_login ul li {float:right; margin:0 6px 0 7px;}
+.header_menu {width:1190px; height:27px; padding-left:59px;}
+.header_menu ul li a {}
+.header_menu ul li {float:left; margin:0 28px 0 28px;}
+.text_top1 {padding-top:7px;}
+.text_top1 a {font-size:12px; font-weight:bold; color:#444444;}
+.text_top2 {padding-top:7px;}
+.text_top2 a {font-size:12px; font-weight:bold; color:#6b9710;}
+#content {width:100%;}
+#content:after {clear:both; display:block; content:'';}
+
+
+
+/* ================================================ main_page =============================================================== */

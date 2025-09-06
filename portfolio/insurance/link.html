@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="">
+	<meta name="keywords" content="">
+	<meta name="Author" content="yoon">
+	<script src="linkList/jquery-3.2.1.min.js"></script>
+	<title>보험</title>
+	<style>
+	* { margin: 0; padding: 0; }
+	body {font-family: 'Noto Sans KR', sans-serif; font-weight: 400;}
+	body { background: #fff;padding: 0; }
+	img { border: 0; }
+	ul, ol { list-style: none; }
+	a {text-decoration:underline;color:#1e1e1e;}
+
+	/* Noto Sans KR (korean) */
+	@font-face {
+	  font-family: 'Noto Sans KR';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: url("linkList/NotoSansKR-Regular.woff2") format("woff2"), url("linkList/NotoSansKR-Regular.woff") format("woff"), url("linkList/NotoSansKR-Regular.otf") format("opentype");
+	}
+	@font-face {
+	  font-family: 'Noto Sans KR';
+	  font-style: normal;
+	  font-weight: 700;
+	  src: url("linkList/NotoSansKR-Bold.woff2") format("woff2"), url("linkList/NotoSansKR-Bold.woff") format("woff"), url("linkList/NotoSansKR-Bold.otf") format("opentype");
+	}
+
+	.wrap { margin:0 auto;}
+	#contents{max-width:1200px; margin:0 auto;}
+	#headers h1 {padding:20px 0; font-size:32px; font-weight: 700;color:#231916; text-align:center;  }
+	#nav{ text-align:center;  border-top:3px solid #231916; margin-bottom:30px; border-bottom:1px solid #ddd; width:100%;background:rgba(255,255,255, 0.9); }
+	#nav.fixed{position:fixed; top:0; width:100%;}
+	ul{margin:0 auto; width:100%;max-width:1200px;overflow:hidden;}	
+	ul li{ width:33.33%; float:left; border-left:1px solid #eee; border-bottom:1px solid #eee; box-sizing:border-box; }
+	ul li:nth-child(3n){border-right:1px solid #eee; }
+	ul li:nth-child(7), ul li:nth-child(8), ul li:nth-child(9){border-bottom:0;}
+	ul li a{display:block;  width:100%; padding:9px 0; font-size:15px; }
+	ul li a:hover{text-decoration:underline;}
+	.scroll.pd{padding-top:120px;}
+	table.conbox{}
+	table{width:100%; border-top:2px solid #222; border-bottom:1px solid #ddd;border-collapse:collapse; word-break:keep-all; margin-bottom:50px;}
+	table caption{display:none;}
+	table th{padding:15px; background:#f2f5f8; color:#333; border:1px solid #ddd;font-weight: 700; }
+	table td{padding:13px 15px; text-align:center; border:1px solid #ddd;color:#4c4c4c; font-size:14px;}
+	table td.title{background:#636e86;color:#fff;font-size:16px;line-height:24px;}
+	table td.title2{background:#f2f5f8;}
+	table td a{font-size:12px;vertical-align:1px;}
+	table td .ok{height:16px; vertical-align:-3px;}
+	table td .btn_finish{width:16px; height:16px; color:#fff; font-size:11px; line-height:15px; background:#3580db; display:inline-block;vertical-align:1px;}
+	table td .pop{width:12px; height:12px; color:#fff;  line-height:12px; background:#888; display:inline-block; vertical-align:middle; margin-left:2px; font-size:10px;}	
+	table .tcolor{ color:#ccc; background:#f8f8f8;}
+	.pg-top{text-align:center; position:fixed; bottom:50px; left:50%; margin-left:620px; width:45px; height:45px; background:#636e86;  line-height:45px; font-weight:bold; display:none; font-size:12px;}
+	.pg-top a{ color:#fff; display:block;}
+	@media screen and (max-width: 768px) {.pg-top{left:auto; right:10px; bottom:50px;}}
+	@media screen and (max-width: 640px) {
+		#headers h1{padding:10px 0;}
+		ul{width:100%;}
+		ul li{width:33.33%; border:0; border-right:1px solid #eee; border-bottom:1px solid #eee;}
+		ul li:last-child{border-bottom:0;}
+		ul li a{ font-size:13px; padding:5px 0; letter-spacing:-1px;}		
+		.scroll{width:100%; overflow:scroll; }
+		.scroll.pd{padding-top:240px;}
+		table{min-width:600px; }
+		table th, table td{padding:5px 10px;font-size:12px;}
+		table td.title2{width:100px;}		
+	}
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<div id="headers">
+		<h1>보험</h1>
+	</div>
+	<div id="nav">
+		<ul>
+			<li><a onclick="fnMove('1')" href="#">재난배상 책임보험</a></li>
+			<li><a onclick="fnMove('2')" href="#">다중이용업소화재 배상책임보험</a></li>
+			<li><a onclick="fnMove('3')" href="#">개인정보보호 배상책임보험</a></li>
+			<li><a onclick="fnMove('4')" href="#">승강기사고 배상책임보험</a></li>
+			<li><a onclick="fnMove('5')" href="#">세계최대 방제기업 터미닉스</a></li>
+		</ul>
+	</div>
+	<div id="contents">
+		<div class="scroll">
+			<table>
+				<caption>
+				프로젝트명 퍼블리싱 리스트
+				</caption>
+				<colgroup>
+					<col width="15%" />
+					<col width="15%" />
+					<col width="" />
+					<col width="4%" />
+					<col width="4%" />
+					<col width="4%" />
+					<col width="4%" />
+					<col width="15%" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th colspan="2" scope="col" abbr="리스트">LIST</th>
+						<th scope="col" abbr="html">HTML</th>
+						<th scope="col" abbr="완료날짜">완료</th>
+						<th scope="col" abbr="수정날짜">수정</th>
+						<th scope="col" abbr="마크업 검사">W3C</th>
+						<th scope="col" abbr="마크업 검사">A=</th>
+						<th scope="col" abbr="이슈사항">이슈</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="4" class="title2">메인</td>
+						<td>재난배상 책임보험</td>
+						<td><a href="main01.html" target="_blank" title="새창">main01.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>
+						<td><!-- <img class="ok" src="linkList/acool.png" alt="acoolcheck" /> --></td>
+						<td>팝업(개인정보수집 동의)</td>
+					</tr>
+					<tr>
+						<td>다중이용업소화재 배상책임보험</td>
+						<td><a href="main02.html" target="_blank" title="새창">main02.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>
+						<td><!-- <img class="ok" src="linkList/acool.png" alt="acoolcheck" /> --></td>
+						<td>팝업(개인정보수집 동의)</td>
+					</tr>
+					<tr>
+						<td>개인정보보호 배상책임보험</td>
+						<td><a href="main03.html" target="_blank" title="새창">main03.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>
+						<td><!-- <img class="ok" src="linkList/acool.png" alt="acoolcheck" /> --></td>
+						<td>팝업(개인정보수집 동의)</td>
+					</tr>
+					<tr>
+						<td>승강기사고 배상책임보험</td>
+						<td><a href="main04.html" target="_blank" title="새창">main04.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>
+						<td><!-- <img class="ok" src="linkList/acool.png" alt="acoolcheck" /> --></td>
+						<td>팝업(개인정보수집 동의)</td>
+					</tr>
+
+
+					<tr>
+						<td colspan="8" class="title" id="PCSV_1">재난배상 책임보험</td>
+					</tr>
+					<tr>
+						<td class="title2">재난배상 책임보험</td>
+						<td>상세</td>
+						<td><a href="insurance01.html" target="_blank" title="새창">insurance01.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td>
+							팝업(개인정보수집 동의)<br>
+							팝업(상담접수완료)
+						</td>
+					</tr>
+
+
+					<tr>
+						<td colspan="8" class="title" id="PCSV_2">다중이용업소화재 배상책임보험</td>
+					</tr>
+					<tr>
+						<td class="title2">다중이용업소화재 배상책임보험</td>
+						<td>상세</td>
+						<td><a href="insurance02.html" target="_blank" title="새창">insurance02.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td>
+							팝업(개인정보수집 동의)<br>
+							팝업(상담접수완료)
+						</td>
+					</tr>
+
+
+					<tr>
+						<td colspan="8" class="title" id="PCSV_3">개인정보보호 배상책임보험</td>
+					</tr>
+					<tr>
+						<td class="title2">개인정보보호 배상책임보험</td>
+						<td>상세</td>
+						<td><a href="insurance03.html" target="_blank" title="새창">insurance03.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td>팝업(개인정보수집 동의)</td>
+					</tr>
+
+
+					<tr>
+						<td colspan="8" class="title" id="PCSV_4">승강기사고 배상책임보험</td>
+					</tr>
+					<tr>
+						<td class="title2">승강기사고 배상책임보험</td>
+						<td>상세</td>
+						<td><a href="insurance04.html" target="_blank" title="새창">insurance04.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td>팝업(개인정보수집 동의)</td>
+					</tr>
+
+
+					<tr>
+						<td colspan="8" class="title" id="PCSV_5">세계최대 방제기업 터미닉스</td>
+					</tr>
+					<tr>
+						<td class="title2">세계최대 방제기업 터미닉스</td>
+						<td>상세</td>
+						<td><a href="insurance05.html" target="_blank" title="새창">insurance05.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td>팝업(개인정보수집 동의)</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+	<div class="pg-top"><a href="#">TOP</a></div>
+</div>
+
+<script>
+$ (document).ready(function(){	
+	var menu = $('#nav');
+	var con = $('.scroll');
+	var mlink = $('#nav a');
+	$(document).scroll(function(){
+		if ( $(document).scrollTop() > $('#nav').scrollTop() ){		
+			$('.pg-top').css('display','block');				
+		}
+		else{	
+			$('.pg-top').css('display','none');	
+		}
+	});	
+});
+function fnMove(seq) {
+	var offset = $("#PCSV_" + seq ).offset();
+	$('html, body').animate({scrollTop : offset.top}, 400);	
+}
+</script>
+
+</body>
+</html>

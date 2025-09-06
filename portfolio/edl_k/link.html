@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="">
+	<meta name="keywords" content="">
+	<meta name="Author" content="yoon">
+	<script src="linkList/jquery-3.2.1.min.js"></script>
+	<title>EDL_K</title>
+	<style>
+	* { margin: 0; padding: 0; }
+	body {font-family: 'Noto Sans KR', sans-serif; font-weight: 400;}
+	body { background: #fff;padding: 0; }
+	img { border: 0; }
+	ul, ol { list-style: none; }
+	a {text-decoration:underline;color:#1e1e1e;}
+
+	/* Noto Sans KR (korean) */
+	@font-face {
+	  font-family: 'Noto Sans KR';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: url("linkList/NotoSansKR-Regular.woff2") format("woff2"), url("linkList/NotoSansKR-Regular.woff") format("woff"), url("linkList/NotoSansKR-Regular.otf") format("opentype");
+	}
+	@font-face {
+	  font-family: 'Noto Sans KR';
+	  font-style: normal;
+	  font-weight: 700;
+	  src: url("linkList/NotoSansKR-Bold.woff2") format("woff2"), url("linkList/NotoSansKR-Bold.woff") format("woff"), url("linkList/NotoSansKR-Bold.otf") format("opentype");
+	}
+
+	.wrap { margin:0 auto;}
+	#contents{max-width:1200px; margin:0 auto;}
+	#headers h1 {padding:20px 0; font-size:32px; font-weight: 700;color:#231916; text-align:center;  }
+	#nav{ text-align:center;  border-top:3px solid #231916; margin-bottom:30px; border-bottom:1px solid #ddd; width:100%;background:rgba(255,255,255, 0.9); }
+	#nav.fixed{position:fixed; top:0; width:100%;}
+	ul{margin:0 auto; width:100%;max-width:1200px;overflow:hidden;}	
+	ul li{ width:33.33%; float:left; border-left:1px solid #eee; border-bottom:1px solid #eee; box-sizing:border-box; }
+	ul li:nth-child(3n){border-right:1px solid #eee; }
+	ul li:nth-child(7), ul li:nth-child(8), ul li:nth-child(9){border-bottom:0;}
+	ul li a{display:block;  width:100%; padding:9px 0; font-size:15px; }
+	ul li a:hover{text-decoration:underline;}
+	.scroll.pd{padding-top:120px;}
+	table.conbox{}
+	table{width:100%; border-top:2px solid #222; border-bottom:1px solid #ddd;border-collapse:collapse; word-break:keep-all; margin-bottom:50px;}
+	table caption{display:none;}
+	table th{padding:15px; background:#f2f5f8; color:#333; border:1px solid #ddd;font-weight: 700; }
+	table td{padding:13px 15px; text-align:center; border:1px solid #ddd;color:#4c4c4c; font-size:14px;}
+	table td.title{background:#636e86;color:#fff;font-size:16px;line-height:24px;}
+	table td.title2{background:#f2f5f8;}
+	table td a{font-size:12px;vertical-align:1px;}
+	table td .ok{height:16px; vertical-align:-3px;}
+	table td .btn_finish{width:16px; height:16px; color:#fff; font-size:11px; line-height:15px; background:#3580db; display:inline-block;vertical-align:1px;}
+	table td .pop{width:12px; height:12px; color:#fff;  line-height:12px; background:#888; display:inline-block; vertical-align:middle; margin-left:2px; font-size:10px;}	
+	table .tcolor{ color:#ccc; background:#f8f8f8;}
+	.pg-top{text-align:center; position:fixed; bottom:50px; left:50%; margin-left:620px; width:45px; height:45px; background:#636e86;  line-height:45px; font-weight:bold; display:none; font-size:12px;}
+	.pg-top a{ color:#fff; display:block;}
+	@media screen and (max-width: 768px) {.pg-top{left:auto; right:10px; bottom:50px;}}
+	@media screen and (max-width: 640px) {
+		#headers h1{padding:10px 0;}
+		ul{width:100%;}
+		ul li{width:33.33%; border:0; border-right:1px solid #eee; border-bottom:1px solid #eee;}
+		ul li:last-child{border-bottom:0;}
+		ul li a{ font-size:13px; padding:5px 0; letter-spacing:-1px;}		
+		.scroll{width:100%; overflow:scroll; }
+		.scroll.pd{padding-top:240px;}
+		table{min-width:600px; }
+		table th, table td{padding:5px 10px;font-size:12px;}
+		table td.title2{width:100px;}		
+	}
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<div id="headers">
+		<h1>EDL_K</h1>
+	</div>
+	<div id="nav">
+		<ul>
+			<li><a onclick="fnMove('1')" href="#">SERVICE</a></li>
+			<li><a onclick="fnMove('2')" href="#">CONTENTS</a></li>
+			<li><a onclick="fnMove('3')" href="#">BRAND</a></li>
+			<li><a onclick="fnMove('4')" href="#">CONSULTING</a></li>
+			<li><a onclick="fnMove('5')" href="#">NEWSROOM</a></li>
+			<li><a onclick="fnMove('6')" href="#">LOCATION</a></li>
+		</ul>
+	</div>
+	<div id="contents">
+		<div class="scroll">
+			<table>
+				<caption>
+				프로젝트명 퍼블리싱 리스트
+				</caption>
+				<colgroup>
+					<col width="15%" />
+					<col width="12%" />
+					<col width="12%" />
+					<col width="" />
+					<col width="4%" />
+					<col width="4%" />
+					<col width="4%" />
+					<col width="4%" />
+					<col width="4%" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th colspan="3" scope="col" abbr="리스트">LIST</th>
+						<th scope="col" abbr="html">HTML</th>
+						<th scope="col" abbr="완료날짜">완료</th>
+						<th scope="col" abbr="수정날짜">수정</th>
+						<th scope="col" abbr="마크업 검사">W3C</th>
+						<th scope="col" abbr="마크업 검사">A=</th>
+						<th scope="col" abbr="이슈사항">이슈</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="title2">메인</td>
+						<td colspan="2">메인</td>
+						<td><a href="main.html" target="_blank" title="새창">main.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>
+						<td><!-- <img class="ok" src="linkList/acool.png" alt="acoolcheck" /> --></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td colspan="9" class="title" id="PCSV_1">SERVICE</td>
+					</tr>
+					<tr>
+						<td class="title2">SERVICE</td>
+						<td colspan="2">SERVICE</td>
+						<td><a href="service.html" target="_blank" title="새창">service.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td colspan="9" class="title" id="PCSV_1">CONTENTS</td>
+					</tr>
+					<tr>
+						<td rowspan="3" class="title2">CONTENTS</td>
+						<td colspan="2">POPULAR ON EDL.K</td>
+						<td><a href="contentPopular.html" target="_blank" title="새창">contentPopular.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="2">TRENDING NOW</td>
+						<td><a href="contentTrending.html" target="_blank" title="새창">contentTrending.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="2">TOTAL CONTENTS</td>
+						<td><a href="contentTotal.html" target="_blank" title="새창">contentTotal.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td colspan="9" class="title" id="PCSV_1">BRAND</td>
+					</tr>
+					<tr>
+						<td class="title2">BRAND</td>
+						<td colspan="2">BRAND</td>
+						<td><a href="brand.html" target="_blank" title="새창">brand.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td colspan="9" class="title" id="PCSV_1">CONSULTING</td>
+					</tr>
+					<tr>
+						<td class="title2">CONSULTING</td>
+						<td colspan="2">CONSULTING</td>
+						<td><a href="consulting.html" target="_blank" title="새창">consulting.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td colspan="9" class="title" id="PCSV_1">NEWSROOM</td>
+					</tr>
+					<tr>
+						<td rowspan="4" class="title2">NEWSROOM</td>
+						<td rowspan="2">NOTICE</td>
+						<td>목록</td>
+						<td><a href="noticeList.html" target="_blank" title="새창">noticeList.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>상세</td>
+						<td><a href="noticeDetail.html" target="_blank" title="새창">noticeDetail.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">MEDIA &amp;<br>MARKETING</td>
+						<td>목록</td>
+						<td><a href="mediaList.html" target="_blank" title="새창">mediaList.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>상세</td>
+						<td><a href="mediaDetail.html" target="_blank" title="새창">mediaDetail.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td colspan="9" class="title" id="PCSV_1">LOCATION</td>
+					</tr>
+					<tr>
+						<td class="title2">LOCATION</td>
+						<td colspan="2">LOCATION</td>
+						<td><a href="location.html" target="_blank" title="새창">location.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td colspan="9" class="title" id="PCSV_1">로그인 / 회원가입</td>
+					</tr>
+					<tr>
+						<td rowspan="3" class="title2">로그인 / 회원가입</td>
+						<td colspan="2">Login</td>
+						<td><a href="login.html" target="_blank" title="새창">login.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">회원가입</td>
+						<td>이용약관</td>
+						<td><a href="joinTerms.html" target="_blank" title="새창">joinTerms.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>정보입력</td>
+						<td><a href="joinInfoEntry.html" target="_blank" title="새창">joinInfoEntry.html</a></td>
+						<td><span class="btn_finish">완</span></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td colspan="9" class="title" id="PCSV_1">유틸메뉴</td>
+					</tr>
+					<tr>
+						<td rowspan="3" class="title2">유틸메뉴</td>
+						<td colspan="2">이용약관</td>
+						<td><a href="utilTerms.html" target="_blank" title="새창">utilTerms.html</a></td>
+						<td><!-- <span class="btn_finish">완</span> --></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="2">개인정보처리방침</td>
+						<td><a href="utilPolicy.html" target="_blank" title="새창">utilPolicy.html</a></td>
+						<td><!-- <span class="btn_finish">완</span> --></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="2">이메일무단수집거부</td>
+						<td><a href="utilEmail.html" target="_blank" title="새창">utilEmail.html</a></td>
+						<td><!-- <span class="btn_finish">완</span> --></td>
+						<td></td>
+						<td><!-- <img class="ok" src="linkList/w3c.png" alt="w3c" /> --></td>				
+						<td></td>
+						<td></td>
+					</tr>
+
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+	<div class="pg-top"><a href="#">TOP</a></div>
+</div>
+
+<script>
+$ (document).ready(function(){	
+	var menu = $('#nav');
+	var con = $('.scroll');
+	var mlink = $('#nav a');
+	$(document).scroll(function(){
+		if ( $(document).scrollTop() > $('#nav').scrollTop() ){		
+			$('.pg-top').css('display','block');				
+		}
+		else{	
+			$('.pg-top').css('display','none');	
+		}
+	});	
+});
+function fnMove(seq) {
+	var offset = $("#PCSV_" + seq ).offset();
+	$('html, body').animate({scrollTop : offset.top}, 400);	
+}
+</script>
+
+</body>
+</html>

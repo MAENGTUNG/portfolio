@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="">
+	<meta name="keywords" content="">
+	<meta name="Author" content="yoon">
+	<title>EDL_K</title>
+	<link rel="stylesheet" href="./resources/css/jquery.mCustomScrollbar.css"> <!-- 20200113 추가 -->
+	<link rel="stylesheet" href="./resources/css/aos.css">
+	<link rel="stylesheet" href="./resources/css/swiper.min.css">
+	<link rel="stylesheet" href="./resources/css/slick.css">
+	<link rel="stylesheet" href="./resources/css/slick-theme.css">
+	<link rel="stylesheet" href="./resources/css/default.css">
+	<link rel="stylesheet" href="./resources/css/main.css"> <!-- 20200203 추가 -->
+	<link rel="stylesheet" href="./resources/css/page.css">
+	<script src="./resources/js/jquery-3.3.1.js"></script>
+	<script src="./resources/js/modernizr.custom.js"></script>
+	<script src="./resources/js/jquery.mCustomScrollbar.js"></script> <!-- 20200113 추가 -->
+	<script src="./resources/js/aos.js"></script>
+	<script src="./resources/js/swiper.min.js"></script>
+	<script src="./resources/js/slick.min.js"></script>
+</head>
+<body class="sub">
+
+	<div class="s-wrap">
+		<a href="#contents" class="skip">본문바로가기</a>
+
+		<!-- 상단 시작 -->
+		<header class="header">
+			<h1 class="logo">
+				<a href="main.html" target="_self">E.DL K</a>
+			</h1>
+
+			<div class="gnb-wrap">
+				<ul class="mobile-util">
+					<li><a href="login.html" target="_self">LOGIN</a></li>
+					<li><a href="joinTerms.html" target="_self">JOIN</a></li>
+				</ul> <!-- (D) 모바일용 유틸 메뉴 추가 -->
+
+				<ul class="gnb-list">
+					<li>
+						<a href="service.html" target="_self">SERVICE</a>
+					</li>
+					<li>
+						<a href="#none">CONTENTS</a>
+						<ul class="depth2_01">
+							<li><a href="contentPopular.html" target="_self">POPULAR ON EDL.K</a></li>
+							<li><a href="contentTrending.html" target="_self">TRENDING NOW</a></li>
+							<li><a href="contentTotal.html" target="_self">TOTAL CONTENTS</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="brand.html" target="_self">BRAND</a>
+					</li>
+					<li>
+						<a href="consulting.html" target="_self">CONSULTING</a>
+					</li>
+					<li>
+						<a href="#none">NEWSROOM</a>
+						<ul class="depth2_02">
+							<li><a href="noticeList.html" target="_self">NOTICE</a></li>
+							<li><a href="mediaList.html" target="_self">MEDIA &amp; MARKETING</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="location.html" target="_self">LOCATION</a>
+					</li>
+				</ul>
+
+				<!-- <ul class="sns-share">
+					<li><a href="#none" class="instagram">인스타그램</a></li>
+					<li><a href="#none" class="facebook">페이스북</a></li>
+				</ul> --> <!-- (D) sns공유 서비스 시작 시 주석 풀어주면 됨 -->
+				
+				<a href="#none" class="mobile-menu-close">
+					<span class="line01"></span>
+					<span class="line02"></span>
+				</a>
+			</div>
+
+			<ul class="util">
+				<li><a href="login.html" target="_self">LOGIN</a></li>
+				<li><a href="joinTerms.html" target="_self">JOIN</a></li>
+			</ul>
+
+			<ul class="mobile-menu">
+				<li><a href="login.html" target="_self" class="login"></a></li>
+				<li><a href="#none" class="menu"></a></li>
+			</ul>
+
+			<div class="mobile-menu-dim"></div>
+		</header>
+		<!-- //상단 끝 -->
+		
+		<!-- 컨텐츠 시작 -->
+		<div id="contents" class="s-contents" tabindex="-1">
+
+			<!-- 비주얼 -->
+			<div class="s-visual">
+				<h2 class="title">NOTICE</h2>
+				<p class="text">E.DL K에 대한 새로운 뉴스를 알아보세요.</p>
+
+				<!-- mobile_bg_icon -->
+				<span class="icon ico01"></span>
+				<span class="icon ico02"></span>
+				<span class="icon ico03"></span>
+				<span class="icon ico04"></span>
+			</div>
+
+			<!-- 검색 -->
+			<div class="search-wrap">
+				<div class="search-box-wrap">
+					<div class="search-box">
+						<label for="">
+							<input type="text" id="" name="" value="" placeholder="검색어를 입력하세요.">
+						</label>
+						<button type="button" class="btn-search">검색</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- 공지사항 -->
+			<div class="table-info-wrap">
+				<div class="table-info">
+					<div class="table-info-left">총 <strong>50</strong> 건</div>
+					<div class="table-info-right">
+						<dl class="info-hits">
+							<dt><a href="#none">최신순</a></dt>
+							<dd>
+								<ul>
+									<li><a href="#none">최신순</a></li>
+									<li><a href="#none">조회순</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+
+			<div class="table-list-wrap">
+				<!-- pc_table_list -->
+				<div class="pc-table-list-type01">
+					<table>
+						<caption>
+							<strong>공지사항 목록</strong>
+							<p>No, 제목,  작성일, 조회수로 구성된 표</p>
+						</caption>
+						<colgroup>
+							<col style="width:5.390625%">
+							<col style="width:auto">
+							<col style="width:12.34375%">
+							<col style="width:6.71875%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">NO</th>
+								<th scope="col">제목</th>
+								<th scope="col">작성일</th>
+								<th scope="col">조회수</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="notice"><strong>공지</strong></td>
+								<td class="title notice"><a href="noticeDetail.html" target="_self">[당첨자발표] 응원댓글 이벤트 당첨자 발표</a></td> <!-- 20200107 'notice' 클래스 추가 -->
+								<td class="date">2019.12.31</td>
+								<td class="hits">352</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td class="title"><a href="noticeDetail.html" target="_self">헨젤과 그레텔 NEW 에피소드 업데이트 안내</a></td>
+								<td class="date">2019.12.31</td>
+								<td class="hits">400</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td class="title"><a href="noticeDetail.html" target="_self">홈페이지 오픈기념 응원댓글 이벤트 안내</a></td>
+								<td class="date">2019.12.31</td>
+								<td class="hits">558</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td class="title"><a href="noticeDetail.html" target="_self">[당첨자발표] 응원댓글 이벤트 당첨자 발표</a></td>
+								<td class="date">2019.12.31</td>
+								<td class="hits">352</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td class="title"><a href="noticeDetail.html" target="_self">헨젤과 그레텔 NEW 에피소드 업데이트 안내</a></td>
+								<td class="date">2019.12.31</td>
+								<td class="hits">400</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td class="title"><a href="noticeDetail.html" target="_self">홈페이지 오픈기념 응원댓글 이벤트 안내</a></td>
+								<td class="date">2019.12.31</td>
+								<td class="hits">558</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td class="title"><a href="noticeDetail.html" target="_self">[당첨자발표] 응원댓글 이벤트 당첨자 발표</a></td>
+								<td class="date">2019.12.31</td>
+								<td class="hits">352</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td class="title"><a href="noticeDetail.html" target="_self">헨젤과 그레텔 NEW 에피소드 업데이트 안내</a></td>
+								<td class="date">2019.12.31</td>
+								<td class="hits">400</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td class="title"><a href="noticeDetail.html" target="_self">홈페이지 오픈기념 응원댓글 이벤트 안내</a></td>
+								<td class="date">2019.12.31</td>
+								<td class="hits">558</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td class="title"><a href="noticeDetail.html" target="_self">[당첨자발표] 응원댓글 이벤트 당첨자 발표</a></td>
+								<td class="date">2019.12.31</td>
+								<td class="hits">352</td>
+							</tr>
+							<tr>
+								<td colspan="4" class="no-data">검색결과가 없습니다.</td><!-- (D) 검색 결과 없을 시 클래스 'no-data' 기입 -->
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- mobile_table_list -->
+				<div class="mobile-table-list-type01">
+					<a href="noticeDetail.html" target="_self">
+						<dl>
+							<dt>[당첨자발표] 응원댓글 이벤트 당첨자 발표</dt>
+							<dd>2019.12.31</dd>
+						</dl>
+					</a>
+					<a href="noticeDetail.html" target="_self">
+						<dl>
+							<dt>헨젤과 그레텔 NEW 에피소드 업데이트 안내</dt>
+							<dd>2019.12.31</dd>
+						</dl>
+					</a>
+					<a href="noticeDetail.html" target="_self">
+						<dl>
+							<dt>홈페이지 오픈기념 응원댓글 이벤트 안내</dt>
+							<dd>2019.12.31</dd>
+						</dl>
+					</a>
+					<a href="noticeDetail.html" target="_self">
+						<dl>
+							<dt>[당첨자발표] 응원댓글 이벤트 당첨자 발표</dt>
+							<dd>2019.12.31</dd>
+						</dl>
+					</a>
+					<a href="noticeDetail.html" target="_self">
+						<dl>
+							<dt>헨젤과 그레텔 NEW 에피소드 업데이트 안내</dt>
+							<dd>2019.12.31</dd>
+						</dl>
+					</a>
+					<a href="noticeDetail.html" target="_self">
+						<dl>
+							<dt>홈페이지 오픈기념 응원댓글 이벤트 안내</dt>
+							<dd>2019.12.31</dd>
+						</dl>
+					</a>
+					<a href="noticeDetail.html" target="_self">
+						<dl>
+							<dt>[당첨자발표] 응원댓글 이벤트 당첨자 발표</dt>
+							<dd>2019.12.31</dd>
+						</dl>
+					</a>
+					<a href="noticeDetail.html" target="_self">
+						<dl>
+							<dt>헨젤과 그레텔 NEW 에피소드 업데이트 안내</dt>
+							<dd>2019.12.31</dd>
+						</dl>
+					</a>
+					<a href="noticeDetail.html" target="_self">
+						<dl>
+							<dt>홈페이지 오픈기념 응원댓글 이벤트 안내</dt>
+							<dd>2019.12.31</dd>
+						</dl>
+					</a>
+					<a href="noticeDetail.html" target="_self">
+						<dl>
+							<dt>[당첨자발표] 응원댓글 이벤트 당첨자 발표</dt>
+							<dd>2019.12.31</dd>
+						</dl>
+					</a>
+					<div class="no-data">검색결과가 없습니다.</div><!-- (D) 검색 결과 없을 시 -->
+				</div>
+			</div>
+
+			<!-- pc_paging -->
+			<div class="paging pc">
+				<div class="control"><a href="#none" class="first">첫 페이지</a></div>
+				<div class="control"><a href="#none" class="prev">이전 페이지</a></div>
+				<ol>
+					<li class="on"><strong>1</strong></li>
+					<li><a href="#none">2</a></li>
+					<li><a href="#none">3</a></li>
+					<li><a href="#none">4</a></li>
+					<li><a href="#none">5</a></li>
+					<li><a href="#none">6</a></li>
+					<li><a href="#none">7</a></li>
+					<li><a href="#none">8</a></li>
+					<li><a href="#none">9</a></li>
+					<li><a href="#none">10</a></li>
+				</ol>
+				<div class="control"><a href="#none" class="next">다음 페이지</a></div>
+				<div class="control"><a href="#none" class="last">마지막 페이지</a></div>
+			</div>
+
+			<!-- mobile_paging -->
+			<div class="paging mobile">
+				<div class="control"><a href="#none" class="first">첫 페이지</a></div>
+				<div class="control"><a href="#none" class="prev">이전 페이지</a></div>
+				<ol>
+					<li class="on"><strong>1</strong></li>
+					<li><a href="#none">2</a></li>
+					<li><a href="#none">3</a></li>
+					<li><a href="#none">4</a></li>
+				</ol>
+				<div class="control"><a href="#none" class="next">다음 페이지</a></div>
+				<div class="control"><a href="#none" class="last">마지막 페이지</a></div>
+			</div>
+
+			<!-- TOP -->
+			<div class="pg-top"><a href="#">TOP</a></div> <!-- (D) 상단으로 이동 버튼 추가 -->
+
+		</div>
+		<!-- //컨텐츠 끝-->
+		
+		<!-- 푸터 시작 -->
+		<footer class="footer">
+			<div class="footer-wrap">
+				<div class="footer-left">
+					<ul class="footer-util">
+						<li><a href="#none" target="_self">가맹점찾기</a></li>
+						<li><a href="#none" target="_self">가맹점문의</a></li>
+						<li><a href="#none" target="_self">이용약관</a></li>
+						<li><a href="#none" target="_self">개인정보처리방침</a></li>
+						<li><a href="#none" target="_self">이메일무단수집거부</a></li>
+					</ul>
+
+					<ul class="footer-address">
+						<li>회사명 : ㈜지앤플렉스</li>
+						<li>사업자번호 : 304-87-01159</li>
+						<li>대표 : 엄준형</li>
+						<li>개인정보관리 책임자 : 이희복</li>
+						<li>주소 : 서울 중구 소공로 96 GSG빌딩 3층</li>
+						<li>이메일 : orange@gnflex.co.kr</li>
+					</ul>
+
+					<p class="footer-copyright">Copyright © G&FLEX. All Right Reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- //푸터 끝 -->
+
+	</div>
+
+	<!-- Common Script -->
+	<script src="./resources/js/default.js"></script>
+	<!-- Sub Script -->
+	<script src="./resources/js/main.js"></script> <!-- 20200203 추가 -->
+	<script src="./resources/js/sub.js"></script>
+	<script>
+		(function($) {
+			
+		})(jQuery);
+	</script>
+
+</body>
+</html>

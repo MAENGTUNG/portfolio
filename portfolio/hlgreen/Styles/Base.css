@@ -1,0 +1,41 @@
+﻿
+
+body,div,ul,li,dl,dt,dd,ol,p,h1,h2,h3,h4,h5,h6,form {margin:0; padding:0;}
+
+ul,ol,dl {list-style:none}
+
+img {border:0; vertical-align:top;}
+
+table{border-collapse:collapse; border-spacing:0; font-size:12px;}
+
+
+address,caption,cite,code,dfn,em,strong,var{font-style:normal;font-weight:normal;}
+
+caption {text-align:left;}
+
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+h4 {font:17px dotum; color:#000; font-weight:bold;}
+
+input,textarea,select
+{
+    font-family:inherit;font-size:12px;font-weight:inherit; font-family: "Dotum", "돋움", arial;
+    /*
+    이거 풀면 Telerik컨트롤 깨짐
+ 	border:expression((this.type=='checkbox' || this.type=='radio' || this.type=='image' || this.type=='image')?'':'1px solid #DDDDDD'); 
+    */
+}
+input,textarea,select{font-size:100%;}
+
+td input {border:1px solid #CCCCCC;}
+
+html, body {width:100%; height:100%; margin:0; padding:0; font-family: "Dotum", "돋움", arial; font-size:12px;}
+div, table {font-family: "Dotum", "돋움", arial; font-size:12px;}
+
+a {color:#000;text-decoration:none; cursor:pointer;}
+a:hover, a:active, a:focus {color:#000; text-decoration:none; cursor:pointer;}
+
+
+
+
+
+

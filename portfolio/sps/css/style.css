@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+@import url("common.css");
+@import url("reset.css");
+
+#wrap {width:100%;}
+
+/*header 부분*/
+#wrap>#header {margin:0 auto; width:1107px; height:102px;}
+#wrap>#header>.header_top {padding-top:10px; height:33px;}
+#wrap>#header>.header_top>.visit_box {float:left; width:162px; height:23px; background:url(../image/visit_bg.gif) 0 0 no-repeat;}
+#wrap>#header>.header_top>.visit_box>ul>li {float:left;}
+#wrap>#header>.header_top>.visit_box>ul>li.visit_today01 {padding-top:4px; width:44px; height:19px; font:bold 11px "Tahoma"; color:#ff3f40;}
+#wrap>#header>.header_top>.visit_box>ul>li.visit_today02 {padding-top:4px; width:37px; height:19px; font:bold 11px "Tahoma"; color:#ffffff;}
+
+#wrap>#header>.header_top>.login_box {float:left; width:945px; height:23px;}
+#wrap>#header>.header_top>.login_box>ul>li {float:right;}
+#wrap>#header>.header_top>.login_box>ul>li.myinfo_mr {margin-right:7px;}
+#wrap>#header>.header_top>.login_box>ul>li.login_txt {width:266px; height:21px; text-align:center; font:bold 11px/21px "Malgun Gothic"; color:#3f3f3f; background:url(../image/login_txt_bg.gif) 0 0 no-repeat;}
+
+#wrap>#header>.header_bottom {position:relative; clear:both; height:59px;}
+#wrap>#header>.header_bottom>.main_logo {float:left; margin-right:68px; width:97px; height:59px;}
+#wrap>#header>.header_bottom>#nav {float:left; width:942px; height:59px;}
+#wrap>#header>.header_bottom>#nav>ul>li {float:left;}
+#wrap>#header>.header_bottom>#nav>ul>li>ul.nav_2depth01 {position:absolute; left:180px; top:59px; padding-top:2px; width:161px; height:162px; background:url(../image/2depth_bg_v1.png) 0 0 no-repeat;}
+#wrap>#header>.header_bottom>#nav>ul>li>ul.nav_2depth02 {position:absolute; left:337px; top:59px; padding-top:2px; width:161px; height:103px; background:url(../image/2depth_bg_v2.png) 0 0 no-repeat;}
+#wrap>#header>.header_bottom>#nav>ul>li>ul.nav_2depth03 {position:absolute; left:488px; top:59px; padding-top:2px; width:161px; height:195px; background:url(../image/2depth_bg_v3.png) 0 0 no-repeat;}
+#wrap>#header>.header_bottom>#nav>ul>li>ul.nav_2depth04 {position:absolute; left:640px; top:59px; padding-top:2px; width:161px; height:132px; background:url(../image/2depth_bg_v4.png) 0 0 no-repeat;}
+#wrap>#header>.header_bottom>#nav>ul>li>ul.nav_2depth05 {position:absolute; left:793px; top:59px; padding-top:2px; width:161px; height:255px; background:url(../image/2depth_bg_v5.png) 0 0 no-repeat;}
+#wrap>#header>.header_bottom>#nav>ul>li>ul.nav_2depth06 {position:absolute; left:180px; top:59px; padding:2px 0 0 3px; width:876px; height:195px; background:url(../image/2depth_bg_v6.png) 0 0 no-repeat;}
+#wrap>#header>.header_bottom>#nav>ul>li>ul.nav_2depth06>li {float:left;}
+#wrap>#header>.header_bottom>#nav>ul>li>ul li.on {background:url(../image/2depth_v1_on.png) 0 0 no-repeat;}
+
+/*container 부분*/
+#wrap>#container {clear:both; background:url(../image/visual_bg.gif) 0 0 repeat-x;}
+
+/*container visual 부분*/
+#wrap>#container>.visual {margin:0 auto; padding:250px 0 0 626px; width:481px; height:120px; background:url(../image/visual_img.jpg) 0 0 no-repeat;}
+#wrap>#container>.visual>ul>li {float:left;}
+#wrap>#container>.visual .visual_notice01 {width:136px; height:73px; background:url(../image/visual_notice_v1.png) 0 0 no-repeat;}
+#wrap>#container>.visual .visual_notice01>a {display:block; height:73px;}
+#wrap>#container>.visual .visual_notice02 {padding:10px 0 0 24px; width:111px; height:63px; font:bold 15px "Myriad Pro"; color:#444444; background:url(../image/visual_notice_v2.png) 0 0 no-repeat;}
+#wrap>#container>.visual .visual_notice03 {padding:10px 0 0 24px; width:111px; height:63px; font:bold 15px "Myriad Pro"; color:#444444; background:url(../image/visual_notice_v3.png) 0 0 no-repeat;}
+
+/*container content_top 부분*/
+#wrap>#container>#content {margin:0 auto; padding-top:45px; width:1107px; height:385px;}
+#wrap>#container>#content>.content_top {height:186px;}
+#wrap>#container>#content>.content_top>.content_box01 {float:left; width:358px; margin-right:11px;}
+#wrap>#container>#content>.content_top>.content_box01>dl {position:relative; padding:6px 0 0 8px; height:169px; background:url(../image/content_notice_v1_bg.png) 0 0 no-repeat;}
+#wrap>#container>#content>.content_top>.content_box01>dl>dt {float:left;}
+#wrap>#container>#content>.content_top>.content_box01>dl>dt a {display:block; text-indent:-9999px;}
+#wrap>#container>#content>.content_top>.content_box01>dl>dt.tab01 a { width:73px; height:37px; background:url(../image/content_security_v1.gif) 0 0 no-repeat;}
+#wrap>#container>#content>.content_top>.content_box01>dl>dt.tab01 a.on {width:73px; height:37px; background:url(../image/content_security_v1_on.gif) 0 0 no-repeat;}
+#wrap>#container>#content>.content_top>.content_box01>dl>dt.tab02 a { width:104px; height:37px; background:url(../image/content_security_v2.gif) 0 0 no-repeat;}
+#wrap>#container>#content>.content_top>.content_box01>dl>dt.tab02 a.on {width:104px; height:37px; background:url(../image/content_security_v2_on.gif) 0 0 no-repeat;}
+#wrap>#container>#content>.content_top>.content_box01>dl>dd.txt {position:absolute; left:20px; top:56px; width:315px; height:105px; font:12px "Malgun Gothic"; background:#fcfdff;}
+#wrap>#container>#content>.content_top>.content_box01>dl>dd.txt>ul>li {clear:both; height:20px; line-height:20px;}
+#wrap>#container>#content>.content_top>.content_box01>dl>dd.txt>ul>li>a {display:block; height:20px; color:#595959;}
+#wrap>#container>#content>.content_top>.content_box01>dl>dd.txt>ul>li>a>span {float:left;}
+#wrap>#container>#content>.content_top>.content_box01>dl>dd.txt>ul>li>a>span.list_right {float:right;}
+#wrap>#container>#content>.content_top>.content_box01>dl>dd.more {position:absolute; left:318px; top:6px;}
+
+#wrap>#container>#content>.content_top>.content_box02 {float:left; width:161px; margin-right:13px;}
+#wrap>#container>#content>.content_top>.content_box02>dl {padding:6px 0 0 19px; height:175px; background:url(../image/content_notice_v2_bg.png) 0 0 no-repeat;}
+#wrap>#container>#content>.content_top>.content_box02>dl>dt {height:36px;}
+#wrap>#container>#content>.content_top>.content_box02>dl>dd {padding-left:12px; height:32px; font:12px/32px "Malgun Gothic"; color:#002247;}
+#wrap>#container>#content>.content_top>.content_box02>dl>dd>span {margin-left:14px; font-weight:bold; color:#006fba;}
+
+#wrap>#container>#content>.content_top>.content_box03 {float:left; width:195px; height:175px;}
+
+/*container content_bottom 부분*/
+#wrap>#container>#content>.content_bottom {clear:both; height:157px;}
+#wrap>#container>#content>.content_bottom>.content_box04 {float:left; margin-right:11px; width:248px; height:157px; background:url(../image/content_box04_bg.png) 0 0 no-repeat;}
+#wrap>#container>#content>.content_bottom>.content_box05 {float:left; margin-right:11px; width:308px; height:157px; background:url(../image/content_box05_bg.png) 0 0 no-repeat;}
+#wrap>#container>#content>.content_bottom>.content_box06 {float:left; margin-right:11px; width:323px; height:157px; background:url(../image/content_box06_bg.png) 0 0 no-repeat;}
+#wrap>#container>#content>.content_bottom .content_bottom_title {padding:10px 0 0 15px; height:31px;}
+#wrap>#container>#content>.content_bottom .content_bottom_table {padding:0 9px 0 6px; height:106px;}
+#wrap>#container>#content>.content_bottom .content_bottom_table>.table_title {padding-top:4px; height:30px;}
+#wrap>#container>#content>.content_bottom .content_bottom_table>.table_title>table th {height:30px; font:12px "Malgun Gothic"; color:#1b4977;}
+#wrap>#container>#content>.content_bottom .content_bottom_table>.table_txt {padding-top:7px; height:65px; overflow:auto;}
+#wrap>#container>#content>.content_bottom .content_bottom_table>.table_txt>table td {text-align:center; font:12px/30px "Malgun Gothic"; color:#2f4a64;}
+#wrap>#container>#content>.content_bottom>.content_box07 {float:left; padding-right:6px; width:189px; height:157px; background:url(../image/content_box07_bg.png) 0 0 no-repeat;}
+#wrap>#container>#content>.content_bottom .content_bottom_mymenu {padding:9px 0 0 20px; height:97px; overflow:auto;}
+#wrap>#container>#content>.content_bottom .content_bottom_mymenu>ul>li>a {font:bold 12px/30px "Malgun Gothic"; color:#1b4977;}
+
+/*footer 부분*/
+#wrap>#footer {height:29px; border-top:1px solid #e6e6e6;}
+#wrap>#footer>.footer_box {margin:0 auto; padding:10px 0 0 381px; width:726px; height:19px;}
+
+/*sub*/
+
+/*sub_header 부분*/
+#wrap>#sub_header {height:100px;}
+#wrap>#sub_header>.sub_header_left {float:left; padding:25px 0 0 86px; width:134px; height:75px;}
+
+#wrap>#sub_header>.sub_header_right {margin-left:220px; height:100px;}
+#wrap>#sub_header>.sub_header_right>.sub_login {padding:21px 0 18px 0; width:973px; height:23px;}
+#wrap>#sub_header>.sub_header_right>.sub_login>ul>li {float:right;}
+#wrap>#sub_header>.sub_header_right>.sub_login>ul>li.myinfo_mr {margin-right:7px;}
+#wrap>#sub_header>.sub_header_right>.sub_login>ul>li.login_txt {width:266px; height:21px; text-align:center; font:bold 11px/21px "Malgun Gothic"; color:#3f3f3f; background:url(../image/login_txt_bg.gif) 0 0 no-repeat;}
+
+#wrap>#sub_header>.sub_header_right>#sub_nav {height:38px; background:url(../image/sub_nav_bg.gif) 0 0 repeat-x;}
+#wrap>#sub_header>.sub_header_right>#sub_nav>ul>li {float:left; padding:0 37px 0 37px; font:bold 13px/38px "Malgun Gothic";}
+#wrap>#sub_header>.sub_header_right>#sub_nav>ul>li>a {display:block; height:38px; color:#ffffff;}
+#wrap>#sub_header>.sub_header_right>#sub_nav>ul>li.padding_none {padding:0;}
+
+/*sub_container 부분*/
+#wrap>#sub_container {border-top:1px solid #5c8bcc; background:url(../image/sub_content_bg.gif) 0 0 repeat-y;}
+
+/*sub_content_left 부분*/
+#wrap>#sub_container>#sub_content_left {float:left; width:220px;}
+#wrap>#sub_container>#sub_content_left>ul>li {width:214px; height:39px; font:bold 14px/37px "Malgun Gothic"; background:url(../image/sub_left_menu_bg.gif) 0 0 repeat-x;}
+#wrap>#sub_container>#sub_content_left>ul>li>a {display:block; height:39px; color:#1d4270;}
+
+/*sub_content_right 부분*/
+#wrap>#sub_container>#sub_content_right {margin-left:220px;}
+#wrap>#sub_container>#sub_content_right>.sub_title {height:39px; font:bold 13px/37px "Malgun Gothic"; color:#112642; background:url(../image/sub_left_menu_bg.gif) 0 0 repeat-x;}
+#wrap>#sub_container>#sub_content_right>.sub_content {padding:25px 0 0 20px; width:948px;}
+
+/*sub_cont_table01 부분*/
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table01 {margin-bottom:30px;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table01>table {border:1px solid #9bafc4;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table01>table th {height:27px; border:1px solid #9bafc4; font:bold 12px "Malgun Gothic"; color:#112642; background:#f1f5fb;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table01>table td {height:27px; text-align:center; font:bold 12px "Malgun Gothic"; color:#112642; border:1px solid #9bafc4;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table01>table td.cont_table01_title {padding-left:20px; text-align:left; font:bold 38px "Malgun Gothic"; color:#354152; background:url(../image/cont_table01_title_bg.gif) 0 0 repeat-x;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table01>table td.cont_table01_name {height:50px; font-size:14px;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table01>table td.cont_table01_txt {padding-left:22px; text-align:left; color:#404040;}
+
+/*sub_cont_btn01 부분*/
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_btn_box {padding-left:427px; height:22px; margin-bottom:3px;}
+.sub_cont_btn01 {float:left; margin-left:2px; height:22px;}
+.cont_btn01_left {float:left; width:14px; height:22px; background:url(../image/cont_btn01_left.gif) 0 0 no-repeat;}
+.cont_btn01_center {float:left; padding:0 5px 0 5px; height:22px; font:bold 11px/21px "Malgun Gothic"; background:url(../image/cont_btn01_center.gif) 0 0 repeat-x;}
+.cont_btn01_center>a {color:#112642;}
+.cont_btn01_right {float:left; width:5px; height:22px; background:url(../image/cont_btn01_right.gif) 0 0 no-repeat;}
+
+/*sub_cont_title 부분*/
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_title {height:26px; font:bold 12px/26px "Malgun Gothic"; color:#112642;}
+
+/*sub_cont_table02 부분*/
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table02 {padding-bottom:13px;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table02>table {border:1px solid #c2cedb;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table02>table th {height:27px; border:1px solid #c2cedb; font:bold 12px "Malgun Gothic"; color:#112642; background:#f1f5fb;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table02>table td {padding-left:4px; font:bold 12px "Malgun Gothic"; color:#112642; border:1px solid #c2cedb;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table02>table td input {width:206px; height:18px; border:1px solid #b8cbde;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table02>table td #visit01 {width:12px; height:12px; margin-right:6px; border:none;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table02>table td #visit02 {width:12px; height:12px; margin-right:6px; border:none;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table02>table td #visit03 {float:left; width:158px; height:18px; margin-right:6px;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table02>table td select {width:208px; height:20px; border:1px solid #b8cbde;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table02>table td textarea {width:838px; height:47px; border:1px solid #b8cbde;}
+
+/*sub_cont_table03 부분*/
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table03 {padding-bottom:20px;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table03>table {border-top:2px solid #c2cedb;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table03>table th {height:29px; border:1px solid #c2cedb; font:bold 12px "Malgun Gothic"; color:#112642; background:#f1f5fb;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table03>table td {height:27px; border:1px solid #c2cedb; text-align:center; font:bold 12px "Malgun Gothic"; color:#4c4c4c;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table03>table th.table_search {padding-left:16px; height:31px; text-align:left; border-left:1px solid #e9eef8; border-right:1px solid #e9eef8; background:#f4f7fb;}
+#wrap>#sub_container>#sub_content_right>.sub_content>.sub_cont_table03>table th.table_search>input {width:162px; height:18px; border:1px solid #b8cbde;}
+
+/*sub_cont_btn02 부분*/
+.sub_cont_btn02 {float:left; height:20px;}
+.cont_btn02_left {float:left; width:2px; height:20px; background:url(../image/cont_btn02_left.png) 0 0 no-repeat;} 
+.cont_btn02_center {float:left; padding:0 8px 0 8px; height:20px; font:bold 11px/20px "Malgun Gothic"; background:url(../image/cont_btn02_center.png) 0 0 repeat-x;} 
+.cont_btn02_center>a {color:#112642;}
+.cont_btn02_right {float:left; width:2px; height:20px; background:url(../image/cont_btn02_right.png) 0 0 no-repeat;} 
+
+/*sub_footer 부분*/
+#wrap>#sub_footer {height:29px; border-top:1px solid #acc5ed;}
+#wrap>#sub_footer>.sub_footer_box {margin:0 auto; padding:10px 0 0 467px; height:19px; background:url(../image/sub_footer_bg.gif) 0 0 repeat-x;}

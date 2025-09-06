@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<title>HL그린파워</title>
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<link rel="stylesheet" type="text/css" href="Styles/Base.css" />
+<link rel="stylesheet" type="text/css" href="Styles/Style.css" />
+<style type="text/css"></style>
+<script type="text/javascript" language="javascript">
+function menu_tab(a) {
+	for (i = 1; i < 3; i++) {
+		document.getElementById("Menu_Tit" + i).className = "text_top1" ;
+	}
+	document.getElementById("Menu_Tit" + a).className = "text_top2";
+}
+</script>
+</head>
+<body>
+<div id="wrap">
+		<div id="header">
+			<div class="header_box">
+				<div class="header_top">
+					<h1 class="main_logo"><a href="login.html"><img src="image/main_logo.png" alt="로고" /></a></h1>
+					<div class="main_login">
+						<ul>
+							<li><a href="#"><img src="image/main_ico_v2.png" alt="" /></a></li>
+							<li><img src="image/main_login_line.gif" alt="" /></li>
+							<li><a href="#"><img src="image/main_ico_v1.png" alt="" /></a></li>
+							<li><img src="image/main_login_line.gif" alt="" /></li>
+							<li class="main_login_text"><span class="text_green">구매담당자 :</span> <span class="text_blue">한상우</span> 대리</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header_menu">
+					<ul>
+						<li id="Menu_Tit1" class="text_top2" onclick="javascript:menu_tab(1);"><a href="#">견적관리</a></li>
+						<li><img src="image/menu_line.gif" alt="" /></li>
+						<li id="Menu_Tit2" class="text_top1" onclick="javascript:menu_tab(2);"><a href="#">환경설정</a></li>
+						<li><img src="image/menu_line.gif" alt="" /></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="content"></div>
+	</div>
+</body>
+</html>

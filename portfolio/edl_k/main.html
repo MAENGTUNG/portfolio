@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="">
+	<meta name="keywords" content="">
+	<meta name="Author" content="yoon">
+	<title>EDL_K</title>
+	<link rel="stylesheet" href="./resources/css/jquery.mCustomScrollbar.css"> <!-- 20200113 추가 -->
+	<link rel="stylesheet" href="./resources/css/aos.css">
+	<link rel="stylesheet" href="./resources/css/swiper.min.css">
+	<link rel="stylesheet" href="./resources/css/slick.css">
+	<link rel="stylesheet" href="./resources/css/slick-theme.css">
+	<link rel="stylesheet" href="./resources/css/default.css">
+	<link rel="stylesheet" href="./resources/css/main.css">
+	<link rel="stylesheet" href="./resources/css/page.css"> <!-- 20200203 추가 -->
+	<script src="./resources/js/jquery-3.3.1.js"></script>
+	<script src="./resources/js/modernizr.custom.js"></script>
+	<script src="./resources/js/jquery.mCustomScrollbar.js"></script> <!-- 20200113 추가 -->
+	<script src="./resources/js/aos.js"></script>
+	<script src="./resources/js/swiper.min.js"></script>
+	<script src="./resources/js/slick.min.js"></script>
+</head>
+<body class="main">
+
+	<div class="m-wrap">
+		<a href="#contents" class="skip">본문바로가기</a>
+
+		<!-- 상단 시작 -->
+		<header class="header main">
+			<h1 class="logo">
+				<a href="main.html">E.DL K</a>
+			</h1>
+
+			<div class="gnb-wrap">
+				<ul class="mobile-util">
+					<li><a href="login.html" target="_self">LOGIN</a></li>
+					<li><a href="joinTerms.html" target="_self">JOIN</a></li>
+				</ul> <!-- (D) 모바일용 유틸 메뉴 추가 -->
+
+				<ul class="gnb-list">
+					<li>
+						<a href="service.html">SERVICE</a>
+					</li>
+					<li>
+						<a href="#none">CONTENTS</a>
+						<ul class="depth2_01">
+							<li><a href="contentPopular.html">POPULAR ON EDL.K</a></li>
+							<li><a href="contentTrending.html">TRENDING NOW</a></li>
+							<li><a href="contentTotal.html">TOTAL CONTENTS</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="brand.html">BRAND</a>
+					</li>
+					<li>
+						<a href="consulting.html">CONSULTING</a>
+					</li>
+					<li>
+						<a href="#none">NEWSROOM</a>
+						<ul class="depth2_02">
+							<li><a href="noticeList.html">NOTICE</a></li>
+							<li><a href="mediaList.html">MEDIA &amp; MARKETING</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="location.html">LOCATION</a>
+					</li>
+				</ul>
+
+				<!-- <ul class="sns-share">
+					<li><a href="#none" class="instagram">인스타그램</a></li>
+					<li><a href="#none" class="facebook">페이스북</a></li>
+				</ul> --> <!-- (D) sns공유 서비스 시작 시 주석 풀어주면 됨 -->
+				
+				<a href="#none" class="mobile-menu-close">
+					<span class="line01"></span>
+					<span class="line02"></span>
+				</a>
+			</div>
+
+			<ul class="util">
+				<li><a href="login.html" target="_self">LOGIN</a></li>
+				<li><a href="joinTerms.html" target="_self">JOIN</a></li>
+			</ul>
+
+			<ul class="mobile-menu">
+				<li><a href="login.html" target="_self" class="login"></a></li>
+				<li><a href="#none" class="menu"></a></li>
+			</ul>
+
+			<a href="#none" class="login-btn-back">뒤로가기</a>
+
+			<div class="mobile-menu-dim"></div>
+		</header>
+		<!-- //상단 끝 -->
+		
+		<!-- 컨텐츠 시작 -->
+		<div id="contents" class="m-contents" tabindex="-1">
+
+			<!-- 메인 비주얼 -->
+			<div class="visual-slider-wrap">
+				<div class="visual-slider">
+					<div class="slider-item item01" style="background-image: url('./resources/images/main/mainVisual01.jpg');">
+						<div class="slider-item-wrap">
+							<p class="visual-text">Movement<br>Digital<br>Content</p>
+							<a href="#none" class="visual-btn">자세히 보기</a>
+						</div>
+						<span class="icon-left"><img src="./resources/images/main/mainVisual_gretel.png" alt="그레텔"></span>
+						<span class="icon-right"><img src="./resources/images/main/mainVisual_banana.png" alt="바나나"></span>
+
+						<!-- 20200129 추가 시작 -->
+						<a href="#none" class="visual-video">
+							<div class="icon">
+								<img class="video" src="./resources/images/main/mainVideo_bg.png" alt="동영상 배경 사진">
+								<img class="play" src="./resources/images/main/mainVideo_play_bg.png" alt="동영상 아이콘">
+							</div>
+							<dl>
+								<dt class="title">E.DLK PLAY</dt>
+								<dd class="text">이.들 케이의 <span>실제</span> 활동 영상입니다.</dd>
+							</dl>
+						</a>
+						<div class="video-dim"></div>
+						<!-- 20200129 추가 끝 -->
+					</div>
+					<div class="slider-item item02" style="background-image: url('./resources/images/main/mainVisual02.jpg');">
+						<div class="slider-item-wrap">
+							<p class="visual-text">Movement<br>Digital<br>Content</p>
+							<a href="#none" class="visual-btn">자세히 보기</a>
+						</div>
+						<span class="icon-left"><img src="./resources/images/main/mainVisual_hansel.png" alt="헨젤"></span>
+						<span class="icon-right"><img src="./resources/images/main/mainVisual_avocado.png" alt="아보카도"></span>
+
+						<!-- 20200129 추가 시작 -->
+						<a href="#none" class="visual-video">
+							<div class="icon">
+								<img class="video" src="./resources/images/main/mainVideo_bg.png" alt="동영상 배경 사진">
+								<img class="play" src="./resources/images/main/mainVideo_play_bg.png" alt="동영상 아이콘">
+							</div>
+							<dl>
+								<dt class="title">E.DLK PLAY</dt>
+								<dd class="text">이.들 케이의 <span>실제</span> 활동 영상입니다.</dd>
+							</dl>
+						</a>
+						<div class="video-dim"></div>
+						<!-- 20200129 추가 끝 -->
+					</div>
+				</div>
+			</div>
+
+			<!-- 인기 컨텐츠 -->
+			<div class="popular-bg-wrap">
+				<div class="popular-wrap">
+					<h2 class="h2-title">Popular on<br>E.DL K</h2>
+					<div class="popular-list-wrap popular">
+						<ul class="popular-list">
+							<li> <!-- 20200129 수정 -->
+								<a href="#none">
+									<div class="popular-img"><img src="./resources/images/main/mainPopular_img01.jpg" alt="헨젤과 그레텔 #1 사진"></div>
+									<h3 class="popular-title">헨젤과 그레텔 #1</h3>
+									<p class="popular-text">
+										헨젤 이드리와 함께 떠나는 동화 속 세계!<br>
+										나와 함께 신나게 모험하고 지혜를 모아 마녀의 집을 탈출해 볼래?
+									</p>
+								</a>
+							</li>
+							<li> <!-- 20200129 수정 -->
+								<a href="#none">
+									<div class="popular-img">
+										<img src="./resources/images/main/mainPopular_img02.jpg" alt="헨젤과 그레텔 #2 사진">
+									</div>
+									<h3 class="popular-title">헨젤과 그레텔 #2</h3>
+									<p class="popular-text">
+										헨젤 이드리와 함께 떠나는 동화 속 세계!<br>
+										나와 함께 신나게 모험하고 지혜를 모아 마녀의 집을 탈출해 볼래?
+									</p>
+								</a>
+							</li>
+							<li> <!-- 20200129 수정 -->
+								<a href="#none">
+									<div class="popular-img">
+										<img src="./resources/images/main/mainPopular_img03.jpg" alt="헨젤과 그레텔 #3 사진">
+									</div>
+									<h3 class="popular-title">헨젤과 그레텔 #3</h3>
+									<p class="popular-text">
+										헨젤 이드리와 함께 떠나는 동화 속 세계!<br>
+										나와 함께 신나게 모험하고 지혜를 모아 마녀의 집을 탈출해 볼래?
+									</p>
+								</a>
+							</li>
+							<li> <!-- 20200129 수정 -->
+								<a href="#none">
+									<div class="popular-img">
+										<img src="./resources/images/main/mainPopular_img04.jpg" alt="헨젤과 그레텔 #4 사진">
+									</div>
+									<h3 class="popular-title">헨젤과 그레텔 #4</h3>
+									<p class="popular-text">
+										헨젤 이드리와 함께 떠나는 동화 속 세계!<br>
+										나와 함께 신나게 모험하고 지혜를 모아 마녀의 집을 탈출해 볼래?
+									</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#none" class="more-main">더보기</a> <!-- 20200203 수정 -->
+					<span class="icon-bg icon01"></span>
+					<span class="icon-bg icon02"></span>
+					<span class="icon-bg icon03"></span>
+				</div>
+			</div>
+
+			<!-- 최신 컨텐츠 -->
+			<div class="trend-wrap">
+				<h2 class="h2-title">Trending now</h2>
+				<div class="trend-list-wrap swiper-container trend">
+					<ul class="trend-list swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="#none">
+								<div class="trend-img">
+									<img src="./resources/images/main/mainTrend_img01.jpg" alt="헨젤과 그레텔 #5 사진">
+								</div>
+								<dl>
+									<dt class="trend-title">헨젤과 그레텔 #5</dt>
+									<dd class="trend-text">#집중력 #주의력 #근력 #조약돌 #가시덤불</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#none">
+								<div class="trend-img">
+									<img src="./resources/images/main/mainTrend_img02.jpg" alt="헨젤과 그레텔 #6 사진">
+								</div>
+								<dl>
+									<dt class="trend-title">헨젤과 그레텔 #6</dt>
+									<dd class="trend-text">#창의력 #주의력 #움직임 #탈출</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#none">
+								<div class="trend-img">
+									<img src="./resources/images/main/mainTrend_img03.jpg" alt="헨젤과 그레텔 #7 사진">
+								</div>
+								<dl>
+									<dt class="trend-title">헨젤과 그레텔 #7</dt>
+									<dd class="trend-text">#헨젤 #그레텔 #집중력 #움직임</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#none">
+								<div class="trend-img">
+									<img src="./resources/images/main/mainTrend_img04.jpg" alt="헨젤과 그레텔 #8 사진">
+								</div>
+								<dl>
+									<dt class="trend-title">헨젤과 그레텔 #8</dt>
+									<dd class="trend-text">#집중력 #창의력 #근력</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#none">
+								<div class="trend-img">
+									<img src="./resources/images/main/mainTrend_img01.jpg" alt="헨젤과 그레텔 #5 사진">
+								</div>
+								<dl>
+									<dt class="trend-title">헨젤과 그레텔 #5</dt>
+									<dd class="trend-text">#집중력 #주의력 #근력 #조약돌 #가시덤불</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#none">
+								<div class="trend-img">
+									<img src="./resources/images/main/mainTrend_img02.jpg" alt="헨젤과 그레텔 #6 사진">
+								</div>
+								<dl>
+									<dt class="trend-title">헨젤과 그레텔 #6</dt>
+									<dd class="trend-text">#창의력 #주의력 #움직임 #탈출</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#none">
+								<div class="trend-img">
+									<img src="./resources/images/main/mainTrend_img03.jpg" alt="헨젤과 그레텔 #7 사진">
+								</div>
+								<dl>
+									<dt class="trend-title">헨젤과 그레텔 #7</dt>
+									<dd class="trend-text">#헨젤 #그레텔 #집중력 #움직임</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#none">
+								<div class="trend-img">
+									<img src="./resources/images/main/mainTrend_img04.jpg" alt="헨젤과 그레텔 #8 사진">
+								</div>
+								<dl>
+									<dt class="trend-title">헨젤과 그레텔 #8</dt>
+									<dd class="trend-text">#집중력 #창의력 #근력</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+							
+					<div class="arrow-wrap">		
+					    <div class="swiper-button-next trend"></div>
+					    <div class="swiper-button-prev trend"></div>
+					</div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<a href="#none" class="more-main">더보기<span></span></a> <!-- 20200203 수정 -->
+			</div>
+
+			<!-- 컨설팅 -->
+			<div class="consulting-wrap-main"> <!-- 20200203 수정 -->
+				<h2 class="title">CONSULTANT</h2>
+				<p class="text">전문 컨설턴트들이 당신의 사업에 해법을 제시해 드립니다.</p>
+				<a href="#none" class="btn">상담신청하기</a>
+			</div>
+
+			<!-- News -->
+			<!-- PC -->
+			<div class="pc-news-wrap">
+				<h2 class="h2-title">News</h2>
+				<div class="news-list-wrap swiper-container news">
+					<ul class="news-list swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="#none">
+								<h3 class="title">[당첨자발표] 응원댓글 이벤트 당첨자 발표</h3>
+								<p class="text">선물 전달을 위해서 당첨자 분들의 성함, 전화번호, 경품 배송받을 주소를 12월 15일까지 해당 게시물의 비밀댓글로 달아주세요. 이벤트에</p>
+								<p class="date">2019-12-21</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#none">
+								<h3 class="title">헨젤과 그레텔 NEW 에피소드 업데이트 안내</h3>
+								<p class="text">헨젤과 그레텔의 새로운 콘텐츠가 업데이트 되었습니다. 가난에 허덕여  버려질 수 밖에 없었던 헨젤과 그레텔 남매는 돌맹이를 무사히 주울 수 있을지.</p>
+								<p class="date">2019-12-15</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#none">
+								<h3 class="title">홈페이지 오픈기념 응원댓글 이벤트 안내</h3>
+								<p class="text">기대하는 댓글 또는 응원 댓글을 남겨주시면, 추첨을 통해 10분에게 'SK주유소 3만원권 기프티콘'을 증정합니다!</p>
+								<p class="date">2019-12-08</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#none">
+								<h3 class="title">[당첨자발표] 응원댓글 이벤트 당첨자 발표</h3>
+								<p class="text">선물 전달을 위해서 당첨자 분들의 성함, 전화번호, 경품 배송받을 주소를 12월 15일까지 해당 게시물의 비밀댓글로 달아주세요. 이벤트에</p>
+								<p class="date">2019-12-21</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#none">
+								<h3 class="title">헨젤과 그레텔 NEW 에피소드 업데이트 안내</h3>
+								<p class="text">헨젤과 그레텔의 새로운 콘텐츠가 업데이트 되었습니다. 가난에 허덕여  버려질 수 밖에 없었던 헨젤과 그레텔 남매는 돌맹이를 무사히 주울 수 있을지.</p>
+								<p class="date">2019-12-15</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#none">
+								<h3 class="title">홈페이지 오픈기념 응원댓글 이벤트 안내</h3>
+								<p class="text">기대하는 댓글 또는 응원 댓글을 남겨주시면, 추첨을 통해 10분에게 'SK주유소 3만원권 기프티콘'을 증정합니다!</p>
+								<p class="date">2019-12-08</p>
+							</a>
+						</li>
+					</ul>
+							
+					<div class="arrow-wrap">		
+					    <div class="swiper-button-next news"></div>
+					    <div class="swiper-button-prev news"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 모바일 -->
+			<div class="mobile-news-wrap">
+				<a href="#none" class="title">헨젤과 그레텔 NEW 에피소드 업데이트 안내</a>
+			</div>
+
+			<!-- TOP -->
+			<div class="pg-top"><a href="#">TOP</a></div> <!-- (D) 상단으로 이동 버튼 추가 -->
+
+		</div>
+		<!-- //컨텐츠 끝-->
+		
+		<!-- 푸터 시작 -->
+		<footer class="footer">
+			<div class="footer-wrap">
+				<div class="footer-left">
+					<ul class="footer-util">
+						<li><a href="#none">가맹점찾기</a></li>
+						<li><a href="#none">가맹점문의</a></li>
+						<li><a href="#none">이용약관</a></li>
+						<li><a href="#none">개인정보처리방침</a></li>
+						<li><a href="#none">이메일무단수집거부</a></li>
+					</ul>
+
+					<ul class="footer-address">
+						<li>회사명 : ㈜지앤플렉스</li>
+						<li>사업자번호 : 304-87-01159</li>
+						<li>대표 : 엄준형</li>
+						<li>개인정보관리 책임자 : 이희복</li>
+						<li>주소 : 서울 중구 소공로 96 GSG빌딩 3층</li>
+						<li>이메일 : orange@gnflex.co.kr</li>
+					</ul>
+
+					<p class="footer-copyright">Copyright © G&FLEX. All Right Reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- //푸터 끝 -->
+
+	</div>
+
+	<!-- Common Script -->
+	<script src="./resources/js/default.js"></script>
+	<!-- Main Script -->
+	<script src="./resources/js/main.js"></script>
+	<script src="./resources/js/sub.js"></script> <!-- 20200203 추가 -->
+	<script>
+		(function($) {
+			
+		})(jQuery);
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+/* @font-face {
+	font-family:"nanum";
+	src:url('../fonts/NanumGothic.eot');
+	src:url('../fonts/NanumGothic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NanumGothic.woff') format('woff');
+}
+ */
+@font-face {
+	font-family:"nanum";
+	src:url("../fonts/NanumGothic.eot");
+	src:url("../fonts/NanumGothic.eot?#iefix") format("embedded-opentype"),
+	    url("../fonts/NanumGothic.woff") format("woff");
+}
+@font-face {
+	font-family:"nanumB";
+	src:url("../fonts/NanumGothicBold.eot");
+	src:url("../fonts/NanumGothicBold.eot?#iefix") format("embedded-opentype"),
+	    url("../fonts/NanumGothicBold.woff") format("woff");
+}
+@font-face {
+	font-family:"nanumEB";
+	src:url("../fonts/NanumGothicExtraBold.eot");
+	src:url("../fonts/NanumGothicExtraBold.eot?#iefix") format("embedded-opentype"),
+	    url("../fonts/NanumGothicExtraBold.woff") format("woff");
+}
+@font-face {
+	font-family:"nanum";
+	src:url("../fonts/NanumGothic.eot");
+	src:url("../fonts/NanumGothic.eot?#iefix") format("embedded-opentype"),
+	    url("../fonts/NanumGothic.woff") format("woff");
+}
+@font-face {
+	font-family:"barun";
+	src:url("../fonts/NanumBarunGothic.eot");
+	src:url("../fonts/NanumBarunGothic.eot?#iefix") format("embedded-opentype"),
+	    url("../fonts/NanumBarunGothic.woff") format("woff");
+}
+@font-face {
+	font-family:"barunB";
+	src:url("../fonts/NanumBarunGothicBold.eot");
+	src:url("../fonts/NanumBarunGothicBold.eot?#iefix") format("embedded-opentype"),
+	    url("../fonts/NanumBarunGothicBold.woff") format("woff");
+}
+
+@font-face {
+	font-family:"sangB";
+	src:url("../fonts/SangSangTitleB.eot");
+	src:url("../fonts/SangSangTitleB.eot?#iefix") format("embedded-opentype"),
+	    url("../fonts/SangSangTitleB.woff") format("woff");
+}
+
+@font-face {
+	font-family:"sangM";
+	src:url("../fonts/SangSangTitleM.eot");
+	src:url("../fonts/SangSangTitleM.eot?#iefix") format("embedded-opentype"),
+	    url("../fonts/SangSangTitleM.woff") format("woff");
+}
+@font-face {
+	font-family:"clearM";
+	src:url("../fonts/ClearSans-Medium.eot");
+	src:url("../fonts/ClearSans-Medium.eot?#iefix") format("embedded-opentype"),
+	    url("../fonts/ClearSans-Medium.woff") format("woff");
+}
+@font-face {
+	font-family:"clearL";
+	src:url("../fonts/ClearSans-Light.eot");
+	src:url("../fonts/ClearSans-Light.eot?#iefix") format("embedded-opentype"),
+	    url("../fonts/ClearSans-Light.woff") format("woff");
+}
